@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gabaustria2020
+CLASS:PUBLIC
+DESCRIPTION:Build state of the art APIs with GraphQL and Azure Functions\n\n---\n\nGraphQL is a query language designed to build  applications by providing an intuitive and flexible syntax and system for describing their data requirements and interactions. GitHub utilizes GraphQL as API because it offers greater adaptability for the developers. The choice to absolutely produce the data that a client needs is an incredible advantage over sending numerous REST calls to get the same. In this session you will learn how you can combine the strength of GraphQL with the power and scalability of the Azure platform to build state of the art APIs.\n\n---\n\nMicrosoft Teams live event: https://www.globalazurebootcamp.at/sessions/build-state-of-the-art-apis-with-graphql-and-azure-functions
+DTSTAMP;VALUE=DATE-TIME:20200414T140256
+DTSTART;VALUE=DATE-TIME:20200424T090000
+DTEND;VALUE=DATE-TIME:20200424T095000
+LOCATION:Microsoft Teams Live Event
+SUMMARY;LANGUAGE=en-us:Build state of the art APIs with GraphQL and Azure Functions
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

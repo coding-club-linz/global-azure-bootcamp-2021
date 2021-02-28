@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gabaustria2020
+CLASS:PUBLIC
+DESCRIPTION:Identity Governance for Microsoft Azure\n\n---\n\nWith Microsoft Azure as an evergreen service we need to be evergreen with our governance model as well. Join Martina on this end-to-end Microsoft Azure governance journey and learn about the foundation of a governance framework which helps organizations to adopt the solution to their organizational requirements and terms. Building a governance around Microsoft Azure is the key element for a successful implementation of services.\n\n---\n\nMicrosoft Teams live event: https://www.globalazurebootcamp.at/sessions/identity-governance-for-azure
+DTSTAMP;VALUE=DATE-TIME:20200414T140256
+DTSTART;VALUE=DATE-TIME:20200424T090000
+DTEND;VALUE=DATE-TIME:20200424T095000
+LOCATION:Microsoft Teams Live Event
+SUMMARY;LANGUAGE=en-us:Identity Governance for Microsoft Azure
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

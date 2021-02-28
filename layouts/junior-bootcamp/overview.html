@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body id="page">
+    {{ partial "nav.html" . }}
+
+    <section id="junior-bootcamp" class="bg-primary junior-bootcamp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Junior Bootcamp</h2>
+
+                    <hr class="light">
+
+                    <p class="text-faded">Habt ihr <b>schon etwas Erfahrung beim Programmieren</b> (z.B. mit Scratch,
+                        JavaScript, Python oder Ähnlichem)? Dann könnt Ihr im Junior Bootcamp zum ersten Mal
+                        Konferenz-Luft schnuppern. Ihr verbringt den Tag mit vielen Entwicklungs-Profis und könnt von
+                        international gefragten Expertinnen und Experten lernen.</p>
+
+                    <p class="text-faded">Am 16. April 2021 werden im Rahmen des Global Azure Bootcamps auf der ganzen
+                        Welt hunderte Workshops zum Thema Cloud Computing und Microsoft Azure stattfinden. In Linz
+                        machen wir parallel zu dieser Veranstaltung auch wieder das <b>Junior Bootcamp</b>, das sich an
+                        <b>junge Coder zwischen 13 und 17 Jahren</b> richtet.
+                    </p>
+
+                    <h3>Virtuelle Konferenz</h3>
+
+                    <p class="text-faded">Aufgrund der aktuellen COVID-19 Lage kann dieses Jahr kein persönliches Treffen aller Teilnehmer stattfinden, daher gibt es diesmal eine virtuelle Konferenz. Die Sessions werden als <a href="https://products.office.com/de-at/microsoft-teams/group-chat-software" target="_blank">Microsoft Teams Live Events</a> stattfinden. Bis Mitte April werden wir den Zeitplan um Teilnahmelinks ergänzen.</p>
+
+                    <p class="text-faded text-center">Die Teilnahme am Event ist dank der Sponsoren kostenlos.</p>
+
+                    <hr class="light">
+
+                    <h3>Join us on Friday, April 16, 2021!</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{ partial "newsletter.html" . }}
+
+    <!-- {{ partial "tickets-junior.html" . }} -->
+
+    <!-- {{ partial "schedule-junior.html" . }} -->
+
+    <!-- {{ partial "location-junior.html" . }} -->
+
+    {{ partial "sponsors.html" . }}
+
+    {{ partial "contact.html" . }}
+
+    {{ partial "js.html" . }}
+</body>
+
+</html>

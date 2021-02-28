@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gabaustria2020
+CLASS:PUBLIC
+DESCRIPTION:Stories of void\n\n---\n\nTypeScript was designed to make the most sense out of any JavaScript code. Given the dynamic nature of JavaScript, this can lead to some very interesting typings that may seem odd at a first glance. One such thing is void. A concept that's well known in high-level programming languages, that takes a life of its own when used with TypeScript. The reason for that? Void in JavaScript! Join us to hear a story about tooling, program language design, static types, midlife crisis and undefined!\n\n---\n\nMicrosoft Teams live event: https://www.globalazurebootcamp.at/sessions/stories-of-void
+DTSTAMP;VALUE=DATE-TIME:20200414T140256
+DTSTART;VALUE=DATE-TIME:20200424T090000
+DTEND;VALUE=DATE-TIME:20200424T095000
+LOCATION:Microsoft Teams Live Event
+SUMMARY;LANGUAGE=en-us:Stories of void
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

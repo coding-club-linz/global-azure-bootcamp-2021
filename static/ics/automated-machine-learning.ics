@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gabaustria2020
+CLASS:PUBLIC
+DESCRIPTION:Automated Machine Learning – do we need any more Data Scientists?\n\n---\n\nWhat is really "automated" here? Do we need any Data Scientists and what's our (I'm such a Data Scientist) role in this scenario. A short overview over all the libraries available so far (H2O, auto_ml, Azure AutoML, ...).\n\nHow and why (?) does it work (giving an overview)? What is the difference between the different libraries and concepts? What is this thing doing exactly? Look at tools like Power BI, Azure ML Workspace, ...\n\nThese methods left the early stage of their development and are becoming more and more mature. Many tools are already relying on the work of this algorithms. But is this AI? Really? We will see....\n\n---\n\nMicrosoft Teams live event: https://www.globalazurebootcamp.at/sessions/automated-machine-learning
+DTSTAMP;VALUE=DATE-TIME:20200414T140256
+DTSTART;VALUE=DATE-TIME:20200424T090000
+DTEND;VALUE=DATE-TIME:20200424T095000
+LOCATION:Microsoft Teams Live Event
+SUMMARY;LANGUAGE=en-us:Automated Machine Learning – do we need any more Data Scientists?
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

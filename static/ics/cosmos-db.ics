@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gabaustria2020
+CLASS:PUBLIC
+DESCRIPTION:Cosmos DB - Verwandlungskünstler unter den Datenbanken\n\n---\n\nCosmosDB, der Verwandlungskünstler unter den NoSQL-Datenbanken. CosmosDB ist eine globale verteilte hochskalierbare und performante Datenbank die noch dazu einfach zu verwenden ist. Aufwendige Konfigurationen und Wartung der Infrastruktur entfallen, denn hierbei handelt es sich um einen verwalteten Datenbankdienst. In dieser Session erfahren sie mehr über die verschiedenen Kostüme der Datenbank und einige der einzigartigen Features der CosmosDB.\n\n\n---\n\nMicrosoft Teams live event: https://www.globalazurebootcamp.at/sessions/cosmos-db
+DTSTAMP;VALUE=DATE-TIME:20200414T140256
+DTSTART;VALUE=DATE-TIME:20200424T090000
+DTEND;VALUE=DATE-TIME:20200424T095000
+LOCATION:Microsoft Teams Live Event
+SUMMARY;LANGUAGE=en-us:Cosmos DB - Verwandlungskünstler unter den Datenbanken
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

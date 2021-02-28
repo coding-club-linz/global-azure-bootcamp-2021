@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body id="page">
+    {{ partial "nav.html" . }}
+
+    <section id="sponsors" class="sponsors">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Sponsors</h2>
+
+                    <hr class="primary">
+
+                    <p class="text-muted"><b>Our great sponsors make Global Azure Bootcamp Linz possible!<br/>Check out their
+                        websites and come and say hello on the day.</b></p>
+                    <p class="text-muted">If you’d like to get involved in supporting Global Azure Bootcamp Linz, please
+                        get
+                        in touch to <a
+                            href="mailto:info@coderdojo-linz.org?subject=Global%20Azure%20Bootcamp%20Linz%20Sponsor%20Pack">request
+                            a sponsor pack</a>.</p>
+                </div>
+            </div>
+
+            {{ range((.Page.Pages.ByParam "title")).ByParam "priority" }}
+            <div class="row sponsor" id="{{ .Title }}">
+                <hr class="primary full">
+
+                <div class="col-lg-3 text-center">
+                    <h3 class="visible-lg">&nbsp;</h3>
+                    <p>
+                        <img class="prio{{.Params.priority}}" src="/img/sponsors/{{ .Params.logo }}" />
+                    </p>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-6">
+                            <h3>{{ .Title }}</h3>
+                        </div>
+                        <div class="col-sm-6 col-xs-6 text-right">
+                            <h3 class="sponsor-type">{{ .Type }}</h3>
+                        </div>
+                    </div>
+
+                    {{ .Content | safeHTML}}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+
+    {{ partial "contact.html" . }}
+
+    {{ partial "js.html" . }}
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+{{ $shortLinkQuestionId := (index (where $.Site.Data.sessionize.questions "question" "Short Link") 0).id }}
+{{ $youTubeVideoQuestionId := (index (where $.Site.Data.sessionize.questions "question" "YouTube Video") 0).id }}
+{{ $streamingUrlQuestionId := (index (where $.Site.Data.sessionize.questions "question" "Streaming URL") 0).id }}
+<section id="schedule" class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Schedule</h2>
+                <hr class="light">
+                <p>
+                    Below is a listing of the preliminary conference schedule. Until mid April we will provide a new
+                    schedule for the virtual event with links to join the <a href="https://products.office.com/de-at/microsoft-teams/group-chat-software" target="_blank">Microsoft Teams Live Events</a>.
+                </p>
+                <p>Browse the <a href="/sessions">session catalog</a>.</p>
+                <p><a class="btn btn-success discord-button" href="https://discord.gg/CVGFZFy" target="_blank">
+                        <img src="img/Discord-Logo-White.png">Join us on Discord!</a></p>
+            </div>
+
+            <div class="col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0">
+                <table class="table schedule">
+                    <!-- <tr class="hidden-xs">
+                        {{ range $room := $.Site.Data.rooms.rooms }}
+                        <th>Theater {{ .roomNumber }}</th>
+                        {{ end }}
+                    </tr> -->
+                    {{ range $timeslot := $.Site.Data.timeslots.timeslots }}
+                    <tr class="{{ if eq $timeslot.isServiceTimeslot true }}service-session{{ end }}">
+
+                        {{ if eq $timeslot.isServiceTimeslot true }}
+                        <td colspan="5" class="service-session">
+                            {{ range (where (where $.Site.Data.sessionize.sessions "isServiceSession" true ) "startsAt" $timeslot.startsAt) }}
+                            <span class="service-session-time">{{ dateFormat "15:04" .startsAt }} -
+                                {{ dateFormat "15:04" .endsAt }}</span>{{ .title }}
+                            {{ end }}
+                        </td>
+                        {{ end }}
+
+                        {{ if eq $timeslot.isServiceTimeslot false }}
+                        <td class="visible-xs">{{ dateFormat "15:04" .startsAt }} - {{ dateFormat "15:04" .endsAt }}
+                        </td>
+                        {{ range $room := $.Site.Data.rooms.rooms }}
+                        <td class="session">
+                            {{ range (where (where (where $.Site.Data.sessionize.sessions "isServiceSession" false ) "roomId" .id ) "startsAt" $timeslot.startsAt) }}
+                            {{ if in .categoryItems 35850 }}
+                            <div class="timeslot">
+                                <!--Theater {{ $room.roomNumber }}, -->
+                                {{ dateFormat "15:04" $timeslot.startsAt }} - {{ dateFormat "15:04" .endsAt }}</div>
+
+                            {{ range where (index $.Site.Data.sessionize.categories 1).items "id" "in" .categoryItems }}
+                            {{ if eq .name "English" }}
+                            <span class="label label-default">{{ .name }}</span>
+                            {{ end }}
+                            {{ end }}
+                            <a href="/sessions#{{.id}}">{{ .title }}</a>
+
+                            <div class="speaker">
+                                {{ range $index, $speaker := where $.Site.Data.sessionize.speakers "id" "in" .speakers }}
+                                {{ if ne $index 0 }}<span>, </span>{{ end }}<span onclick="$('#{{ $speaker.id }}').modal({})">{{ .firstName }} {{ .lastName }}</span>
+                                {{ end }}
+                            </div>
+
+                            <div class="links">
+                                {{ range $question := .questionAnswers }}
+                                {{ if eq (int $question.questionId) (int $youTubeVideoQuestionId) }}
+                                <a href="{{$question.answerValue}}" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i>Open in YouTube</a>
+                                {{ end }}
+                                {{ end }}
+                            </div>
+
+                            {{ end }}
+                            {{ end }}
+                        </td>
+                        {{ end }}
+                        {{ end }}
+                    </tr>
+                    {{ end }}
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ range sort $.Site.Data.sessionize.speakers ".lastName" }}
+<div class="modal fade schedule-speaker" id="{{ .id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">{{ .firstName }} {{ .lastName }}</h4>
+            </div>
+            <div class="modal-body speaker">
+                <figure class="avatar"><img src="{{ .profilePicture }}" alt="{{ .firstName }} {{ .lastName }}">
+                </figure>
+                <h5><b>{{ .tagLine }}</b></h5>
+
+                <p class="text-muted bio">{{ .bio }}</p>
+
+                <h5><b>Sessions</b></h5>
+                <p class="sessions">
+                    {{ range where $.Site.Data.sessionize.sessions "id" "in" (apply .sessions "string" ".") }}
+
+                    <a href="/sessions#{{.id}}">{{ .title }}</a>
+                    {{ end }}
+                </p>
+
+                <h5><b>Links</b></h5>
+                <p>{{ range .links }}
+                    <div><a href="{{ .url }}" target="_blank">{{ .title }}</a></div>
+                    {{ end }}
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

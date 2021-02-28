@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gabaustria2020
+CLASS:PUBLIC
+DESCRIPTION:Die Wahrheit über Micro Frontends und Angular\n\n---\n\nMicroservices sind im Backend mittlerweile Standard. Sie sind klein und somit wartbar und einfach austauschbar. Außerdem können verschiedene Teams autonom daran arbeiten.\nÜberträgt man diese Idee ins Frontend, landet man bei Microfrontends. \n\nDoch verträgt sich diese Idee mit SPA-Frameworks, wie Angular? Was bedeutet Shared Nothing und Isolation? Wie kann man diese Idee technisch Umsetzen und welche Hürden gibt es?\nHier erhalten Sie handfeste Antworten. Wir diskutieren, wann sich Microfrontends eignen und wann man lieber die Finger davon lassen sollte. Verschiedene Ansätze zur Realisierung mit Angular werden vorgestellt und sowohl deren Vor- als auch deren Nachteile werden herausgearbeitet.  \n\nAm Ende wissen Sie nicht nur was es mit Microfrontends auf sich hat und wie man sie realisiert, sondern auch welche Herausforderungen es zu meistern gilt und welche pragmatischen Kunstkniffe sich bewährt haben.\n\n\n---\n\nMicrosoft Teams live event: https://www.globalazurebootcamp.at/sessions/die-wahrheit-ueber-micro-frontends-und-angular
+DTSTAMP;VALUE=DATE-TIME:20200414T140256
+DTSTART;VALUE=DATE-TIME:20200424T090000
+DTEND;VALUE=DATE-TIME:20200424T095000
+LOCATION:Microsoft Teams Live Event
+SUMMARY;LANGUAGE=en-us:Die Wahrheit über Micro Frontends und Angular
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

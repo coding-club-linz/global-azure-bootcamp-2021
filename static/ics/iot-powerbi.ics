@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gabaustria2020
+CLASS:PUBLIC
+DESCRIPTION:IoT hands on - von der Maschine zum PowerBI Dashboard\n\n---\n\nIn diesem Vortrag wird der Weg der Daten von der Datenquelle - in diesem Fall ein 3D Drucker - über ein Edge Device via IoT Hub und StreamAnalytics in PowerBI anhand eines konkreten Beispiels präsentiert. En route gibt‘s noch einen kleinen Abstecher zur Bilderkennung mit Custom Vision. Am Ende des Vortrags sollte man einen Überblick über die verwendeten Technologien haben und wissen wo man was einsetzen kann.\nDie Session richtet sich an alle die mehr den praktischen Teil von IoT Szenarien mit Microsoft Azure sehen wollen. Der Schwestervortrag "Warum die Dinge nicht so sind wie sie sein sollten? Wie IOT und ML in Produktionsumgebungen hilft" beleuchtet den theoretischen Hintergrund dazu.\n\n---\n\nMicrosoft Teams live event: https://www.globalazurebootcamp.at/sessions/iot-powerbi
+DTSTAMP;VALUE=DATE-TIME:20200414T140256
+DTSTART;VALUE=DATE-TIME:20200424T090000
+DTEND;VALUE=DATE-TIME:20200424T095000
+LOCATION:Microsoft Teams Live Event
+SUMMARY;LANGUAGE=en-us:IoT hands on - von der Maschine zum PowerBI Dashboard
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

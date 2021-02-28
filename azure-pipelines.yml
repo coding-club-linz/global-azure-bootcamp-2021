@@ -1,0 +1,73 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  hugo_version: '0.62.2'
+  target_branch: 'gh-pages'
+
+steps:
+- checkout: self
+  persistCredentials: true
+  clean: true
+  displayName: 'Checkout'
+
+- script: |
+    git config --global user.email "rainer@software-architects.at"
+    git config --global user.name "Rainer"
+  displayName: 'Git Settings'
+
+- script: |
+    wget https://github.com/gohugoio/hugo/releases/download/v$(hugo_version)/hugo_$(hugo_version)_Linux-64bit.deb \
+        -O '$(Pipeline.Workspace)/hugo_$(hugo_version)_Linux-64bit.deb'
+    sudo dpkg -i $(Pipeline.Workspace)/hugo*.deb
+  displayName: 'Install Hugo'
+
+- script: |
+    curl https://sessionize.com/api/v2/pt2tdmzs/view/All > $(Build.SourcesDirectory)/data/sessionize.json
+  displayName: 'Download sessionize data'
+
+- script: |
+    rm ./static/ics/*.ics
+    node ./utils/generate-ics.js
+  displayName: 'Generate ICS files'
+
+- script: |
+    hugo
+  displayName: 'Build'
+
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: public
+    targetFolder: $(Agent.TempDirectory)/public
+    cleanTargetFolder: true
+    overWrite: true
+  displayName: 'Copy build result to temp'
+
+- script: |
+    git reset --hard
+    git checkout $(target_branch)
+    rm -rf *
+  displayName: 'Switch to $(target_branch) branch'
+
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: $(Agent.TempDirectory)/public
+    targetFolder: .
+    overWrite: true
+  displayName: 'Copy build results to $(target_branch) branch'
+  
+- script: |
+    echo -e www.globalazurebootcamp.at'\n' > CNAME
+  displayName: 'Create CNAME file for GitHub Pages'
+
+- script: |
+    ls -la
+    git status
+    cat .gitignore
+    git add --all .
+    git commit -m 'Update website'
+    git push origin $(target_branch)
+  displayName: 'Git push $(target_branch) branch'
