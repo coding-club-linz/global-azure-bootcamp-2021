@@ -1,6 +1,6 @@
-# Global Azure Bootcamp Linz 2020
+# Global Azure Bootcamp Linz 2021
 
-The [Global Azure Bootcamp Linz 2020](https://www.globalazurebootcamp.at/) website is based on the [Hugo Creative Theme](https://github.com/digitalcraftsman/hugo-creative-theme/).
+The *Global Azure Bootcamp Linz 2021* website is based on the [Hugo Creative Theme](https://github.com/digitalcraftsman/hugo-creative-theme/).
 
 
 ## Contributing
@@ -10,7 +10,7 @@ Did you find a bug? Feel free to make a [pull request](//github.com/coding-club-
 
 ## License
 
-This website is released under the MIT License License. For more information read the [license](//github.com/coding-club-linz/global-azure-bootcamp-2020/blob/master/LICENSE).
+This website is released under the MIT License License. For more information read the [license](https://github.com/coding-club-linz/global-azure-bootcamp-2021/blob/master/LICENSE).
 
 
 ## Acknowledgements
