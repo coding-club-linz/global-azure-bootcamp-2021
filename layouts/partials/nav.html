@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand page-scroll" href="{{ cond (eq .Page.Dir "") "" "/" }}#page-top"><img
-                    src="/img/gab2020-virtual.png" height="100%"></a>
+                    src="/img/gab2021.png" height="100%"></a>
         </div>
         {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -41,7 +41,7 @@
                 <li class="{{ cond (eq .Page.Dir "sponsors\\") "active" "" }}">
                     <a href="/sponsors">{{ .Site.Params.navigation.links.sponsors }}</a>
                 </li>
-                <li class="{{ cond (eq .Page.Dir "code-of-conduct\\") "active" "" }}">
+                <li class="{{ cond (eq .Page.Title "Code of Conduct") "active" "" }}">
                     <a href="/code-of-conduct">Code of Conduct</a>
                 </li>
             </ul>

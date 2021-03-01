@@ -8,13 +8,13 @@
 <body id="page">
     {{ partial "nav.html" . }}
 
-    <section id="junior-bootcamp" class="bg-primary junior-bootcamp">
+    <section id="junior-bootcamp" class="bg-secondary junior-bootcamp">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Junior Bootcamp</h2>
 
-                    <hr class="light">
+                    <hr>
 
                     <h3>Für Kinder und Jugendliche</h3>
 
@@ -46,15 +46,15 @@
                         Die Teilnahme am Event ist dank der Sponsoren kostenlos.
                     </p>
 
-                    <hr class="light">
-
-                    <h3>Sei dabei am 16. April 16 2021!</h3>
+                    <h3 class="join-us">Sei dabei am 16. April 2021!</h3>
                 </div>
             </div>
         </div>
     </section>
 
     {{ partial "newsletter.html" . }}
+
+    {{ partial "call-for-speakers.html" . }}
 
     <!-- {{ partial "tickets-junior.html" . }} -->
 
