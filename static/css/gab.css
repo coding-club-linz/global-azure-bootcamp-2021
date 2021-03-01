@@ -666,14 +666,14 @@ body {
 #mce-error-response {
     margin-top: 20px;
     padding: 12px;
-    background-color: #ffc107;
+    background-color: var(--primary-button);
     color: #555;
 }
 
 #mce-success-response {
     margin-top: 20px;
     padding: 12px;
-    background-color: #cddc39;
+    background-color: #82d10a;
     color: #555;
 }
 

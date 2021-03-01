@@ -1,6 +1,6 @@
 baseurl = "https://globalazure.at/"
 languageCode = "en-us"
-title = "Global Azure Austria 2020"
+title = "Global Azure Austria 2021"
 googleAnalytics = ""
 
 [markup]
@@ -24,7 +24,7 @@ googleAnalytics = ""
 
 	# To provide some metadata for search engines feel free to add some
 	# information about you and your website.
-	name = "Global Azure Bootcamp 2020 Austria"
+	name = "Global Azure Austria 2021 "
 	description = "All around the world user groups and communities will come together from April 23 - April 25, 2020 once again in the seventh Global Azure Bootcamp event. Join us on Friday, April 24, 2020 in Linz."
 
 	# The path must be relative to the static folder
@@ -33,7 +33,7 @@ googleAnalytics = ""
 
 	# Navigation
 	[params.navigation]
-		brand = "Global Azure Bootcamp 2020"
+		brand = "Global Azure Bootcamp 2021"
 
 		[params.navigation.links]
 			about     = "About"
@@ -53,8 +53,8 @@ googleAnalytics = ""
 	# Hero section
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "Global Azure Bootcamp 2020"
-		subtitle   = "Friday, April 24, 2020 - Hollywood Megaplex Pasching"
+		slogan     = "Global Azure Bootcamp 2021"
+		subtitle   = "Friday, April 24, 2021 - Hollywood Megaplex Pasching"
 		buttonText = "Find out more"
 
 	# Sessions section
