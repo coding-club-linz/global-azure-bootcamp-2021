@@ -5,9 +5,9 @@ logo: "coding-club-linz.png"
 priority: 5
 ---
 
-Time cockpit ist eine Projektzeiterfassung für Knowledge Worker. Grafischer Zeitbuchungskalender, automatische Tätigkeitsaufzeichnung über Signal Tracker, umfassende Erweiterbarkeit und Anpassbarkeit inkl. Web APIs, volle Offlinefähigkeit und einfachste Verwendung durch SaaS machen es zur optimalen Lösung speziell im IT-Umfeld.
+Der Coding Club Linz e.V. ist ein gemeinnütziger Verein mit dem Ziel, die Kenntnisse der Allgemeinheit über Computer im Allgemeinen und Softwareentwicklung im Speziellen zu fördern. Der Verein ist unter anderem Trägerorganisation des [CoderDojo Linz](https://linz.coderdojo.net), einem kostenlosen Programmierclub für Kinder und Jugendliche. Neben dem CoderDojo veranstaltet der Coding Club Linz regelmäßig kostenlose Konferenzen und Meetups wie zum Beispiel das jährliche [*Global Azure Austria*-Event](https://globalazure.at) sowie das [*Rust Meetup* Linz](https://rust-linz.at).
 
-Coding Club Linz e.V.   
+Coding Club Linz e.V.
 Birkenweg 16  
 A-4060 Leonding  
 [linz.coderdojo.net](https://linz.coderdojo.net)
