@@ -28,18 +28,21 @@
                     <li>
                         <a class="{{ cond (eq .Page.Dir "junior-bootcamp\\") "active" "" }}" href="/junior-bootcamp">{{ .Site.Params.navigation.links.juniorBootcamp }}</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="{{ cond (eq .Page.Dir "junior-bootcamp\\") "active" "" }}" href="/junior-bootcamp#schedule">{{ .Site.Params.navigation.links.juniorBootcampSchedule }}</a>
-                    </li>
+                    </li> -->
                     <li class="{{ cond (eq .Page.Dir "sponsors\\") "active" "" }}">
                         <a href="/sponsors">{{ .Site.Params.navigation.links.sponsors }}</a>
+                    </li>
+                    <li class="{{ cond (eq .Page.Dir "code-of-conduct\\") "active" "" }}">
+                        <a href="/code-of-conduct">{{ .Site.Params.navigation.links.codeOfConduct }}</a>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-4 col-lg-offset-0 col-sm-8 col-sm-offset-2 text-center">
                 <hr class="light visible-sm-block visible-md-block visible-sm-block visible-xs-block">
                 <h3 class="section-heading">Contact</h3>
-                <p class="text-muted">
+                <p class="text-faded">
                     The Global Azure Bootcamp Linz is organized by the Coding Club Linz e.V., Birkenweg 16, A-4060
                     Leonding. Contact us to get more information on sponsorship and speaking opportunities.
                 </p>
@@ -61,7 +64,7 @@
                 <form action="https://timecockpit.us5.list-manage.com/subscribe/post?u=f628a14a6f934bf75e14ef1c3&amp;id=8137ea1fb7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <hr class="light visible-sm-block visible-md-block visible-sm-block visible-xs-block">
                     <h3 class="section-heading">Join Our Mailing List</h3>
-                    <p class="text-muted">Sign up to receive updates about Global Azure Bootcamp Linz, including speaker previews, Call
+                    <p class="text-faded">Sign up to receive updates about Global Azure Bootcamp Linz, including speaker previews, Call
                         for Proposal details and other exclusive content. We won’t spam you and you can unsubscribe at
                         any time.</p>
 

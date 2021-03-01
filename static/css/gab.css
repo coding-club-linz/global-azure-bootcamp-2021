@@ -4,10 +4,11 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 :root {
+    --font-color: #222;
     --primary: #001344;
     --primary-button: #e3c038;
     --primary-button-dark: #ad8f18;
-    --secondary: #f5f5f5;
+    --secondary: #f0f0f0;
 }
 
 html,
@@ -17,7 +18,8 @@ body {
 }
 
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Nunito Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--font-color);
 }
 
 hr {
@@ -36,15 +38,17 @@ hr.full {
 }
 
 a {
-    color: var(--primary);
+    /* color: var(--primary); */
+    color: inherit;
     -webkit-transition: all 0.35s;
     -moz-transition: all 0.35s;
     transition: all 0.35s;
+    text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-    color: #0288d1;
+    color: var(--primary-button-dark);
 }
 
 h1,
@@ -53,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Nunito Sans", "Helvetica Neue", Arial, sans-serif;
     line-height: 1.4em;
 }
 
@@ -71,6 +75,16 @@ p {
     line-height: 1.5;
 }
 
+.text-muted {
+    opacity: 0.55;
+    color: inherit;
+}
+
+.text-faded {
+    color: var(--font-color) !important;
+    opacity: 0.75;
+}
+
 /* primary */
 .bg-primary {
     background-color: var(--primary);
@@ -85,18 +99,24 @@ p {
     color: var(--primary-button);
 }
 
+.bg-primary .text-muted,
+.bg-primary .text-faded {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.bg-primary .text-faded {
+    opacity: 0.9;
+}
+
 .bg-primary .text-muted {
-    color: rgba(255, 255, 255, 0.75);
+    opacity: 0.8;
 }
 
 /* secondary */
 .bg-secondary {
     background-color: var(--secondary);
-    color: #000;
-}
-
-.bg-secondary .text-faded {
-    color: rgba(0, 0, 0, 0.9);
+    /* color: #000; */
+    color: var(--font-color);
 }
 
 .bg-secondary a:not(.btn) {
@@ -184,6 +204,7 @@ aside {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
+    text-decoration: none;
     /* color: #222; */
 }
 
@@ -194,7 +215,7 @@ aside {
 
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-    color:var(--primary-button) !important;
+    color: var(--primary-button) !important;
     background-color: transparent;
 }
 
@@ -424,7 +445,7 @@ header .subtitle {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Nunito Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -467,6 +488,7 @@ header .subtitle {
 .btn {
     padding-left: 25px;
     padding-right: 25px;
+    text-decoration: none;
 }
 
 .btn-default {
@@ -580,7 +602,7 @@ fieldset[disabled] .btn-primary.active {
     border: 0;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Nunito Sans", "Helvetica Neue", Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -673,6 +695,13 @@ body {
 .hero-image {
     max-height: 25vh;
     max-width: 90vw;
+}
+
+/* About */
+.join-us {
+    color: var(--primary-button);
+    font-weight: bold;
+    font-size: 30px;
 }
 
 /* Sponors */
@@ -893,16 +922,6 @@ body {
     margin-right: 10px;
 }
 
-#junior-bootcamp {
-    background-image: url("../img/hero-bkg.png");
-    backdrop-filter: grayscale(30%);
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
 @media (max-width: 767px) {
     .schedule:not(.schedule-junior) tr td:first-of-type {
         font-weight: bold;
@@ -955,7 +974,7 @@ body {
     content: "";
     width: 50px;
     height: 3px;
-    background-color: var(--primary-button);
+    background-color: var(--primary);
     display: block;
     text-align: center;
     margin-left: auto;

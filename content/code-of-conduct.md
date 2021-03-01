@@ -5,7 +5,7 @@ layout: single
 
 ## Code of Conduct
 
-Global Azure Virtual Austria uses the [Berlin Code of Conduct](https://berlincodeofconduct.org/).
+Global Azure Austria uses the [Berlin Code of Conduct](https://berlincodeofconduct.org/).
 
 ### Purpose
 
