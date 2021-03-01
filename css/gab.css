@@ -303,7 +303,7 @@ aside {
 header {
     position: relative;
     width: 100%;
-    min-height: 100%;
+    min-height: 500px;
     /* min-height: auto; */
     text-align: center;
     color: #fff;
