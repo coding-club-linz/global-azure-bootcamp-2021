@@ -34,7 +34,7 @@
                 </div> -->
             </div>
 
-            {{ range $index, $element := sort (where $.Site.Data.sessionize.sessions "isServiceSession" false) ".title" }}
+            <!-- {{ range $index, $element := sort (where $.Site.Data.sessionize.sessions "isServiceSession" false) ".title" }}
             <div class="row" id="{{ .id }}">
                 {{ if ne $index 0 }}
                 <hr class="primary full">
@@ -91,11 +91,11 @@
                     {{ end }}
                 </div>
             </div>
-            {{ end }}
+            {{ end }} -->
         </div>
     </section>
 
-    {{ partial "tickets.html" . }}
+    <!-- {{ partial "tickets.html" . }} -->
 
     {{ partial "sponsors.html" . }}
 
