@@ -1,23 +1,663 @@
 {
   "sessions": [
+    {
+      "id": "246345",
+      "title": "A full Journey to Azure Kubernetes Service (AKS)",
+      "description": "Docker-basierte Dienste sind heutzutage unverzichtbar und Kubernetes ist zur Nummer eins der Containerorchestratoren geworden. Neben einer kurzen Einführung in den Azure Kubernetes Service (AKS) werden wir einen kompletten Cluster von 0 auf 100 bauen und in eine Azure Umgebung integrieren. Die behandelten Themen umfassen: AKS Deployment (ARM/CLI), AAD-Integration, öffentliche Endpunkte mit Application Gateway/WAF, Zertifikatsmanagement, Skalierung und Zero-Downtime Deployment.",
+      "startsAt": null,
+      "endsAt": null,
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "3c55cfbb-36de-4d10-a164-fbfc76d7d3a7"
+      ],
+      "categoryItems": [
+        77272,
+        77275
+      ],
+      "questionAnswers": [],
+      "roomId": null
+    },
+    {
+      "id": "246003",
+      "title": "Azure AI in Power BI integrieren",
+      "description": "Power BI Desktop ist Microsoft’s kostenloses Werkzeug um Self-Service BI zu betreiben. Es liefert jeden Monat spannende neue Features und Gartner hat es seit 2019 zu dem führenden BI-Tool erklärt (das Tableau und Qlik hinter sich gelassen hat). In diesem Vortrag wollen wir ansehen, wie Azure's AI Dienste in Power BI Desktop verwendet werden können um Daten anzureichern: Cognitive Services, Azure Machine Learning Services und AI Insights. \r\n\r\n",
+      "startsAt": null,
+      "endsAt": null,
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "0b456caf-b754-47c8-bfab-e8a34bda8efb"
+      ],
+      "categoryItems": [
+        77272,
+        77274
+      ],
+      "questionAnswers": [],
+      "roomId": null
+    },
+    {
+      "id": "245977",
+      "title": "Azure Sentinel das moderne SIEM system",
+      "description": "Ein jeder spricht davon, ein jeder würde es gerne implementieren, aber es scheitert oft an den Kosten/Sizing und der Angst, dass das System mit den Jahren nicht mehr ausreichend performt. \r\nMicrosoft hat die Antwort auf diese Probleme, mit Azure Sentinel bekommen Sie ein modernes SIEM System basierend auf einer PaaS Architektur und nach den Pay-as-you-Go Prinzip.",
+      "startsAt": null,
+      "endsAt": null,
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "1d18ea23-d6dc-4600-bbae-2916afebb0d7"
+      ],
+      "categoryItems": [
+        77272,
+        77274
+      ],
+      "questionAnswers": [],
+      "roomId": null
+    },
+    {
+      "id": "247120",
+      "title": "Become a Contributor to Microsoft Docs",
+      "description": "Microsoft Docs are open source on Github! Join content developers from a MSFT content team for a discussion on modern Microsoft documentation (regardless of technology). Learn about the content publishing engines behind Docs, and the best ways to add your content and fixes to Docs that are read by the entire customer community. There are hundreds of thousands of GitHub issues and PR’s submitted to Docs every month, how can you be an effective part of that process and get your face on the top of an article? ",
+      "startsAt": null,
+      "endsAt": null,
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "136bda4f-d1f3-47e2-83b3-8683ec888fb4"
+      ],
+      "categoryItems": [
+        77272,
+        77275
+      ],
+      "questionAnswers": [],
+      "roomId": null
+    },
+    {
+      "id": "245991",
+      "title": "Connect your data artifacts with Azure Synapse Analytics and Azure Purview",
+      "description": "In human brains, synapses are responsible to connect information pieces together. Over time, our knowledge increases when more and more synapses are connected together. Following that analogy, Azure Synapse Analytics wants to connect (all) information silos together and provide a single point of analytics. For a complete overview over your company's data estate, Azure Purview - the data catalog and governance solution - can be used. \r\nJoin this session, if you want to hear about the building blocks of Azure Synapse Analytics, how Data Engineers and Data Scientists and even BI developer can work together and see how easy it is to start with Synapse Analytics!",
+      "startsAt": null,
+      "endsAt": null,
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "7db10e99-f0e1-40f6-af98-1f9466502615"
+      ],
+      "categoryItems": [
+        77272,
+        77275
+      ],
+      "questionAnswers": [],
+      "roomId": null
+    },
+    {
+      "id": "246819",
+      "title": "Infrastructure as Code for Azure with Terraform",
+      "description": "Modern and distributed application architectures often require a large set of services and systems with a rather complex configuration to work as expected. You and your team can create and manage such infrastructures professionally by adopting Infrastructure as Code (IaC) and relying on Terraform. In this talk, Azure MVP Thorsten Hans demonstrates how to create reliable and predictable Azure infrastructures with Terraform. You will learn how to structure your project, create and mutate your services and manage multiple environments in no time.",
+      "startsAt": null,
+      "endsAt": null,
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "5fe6d127-e8f9-463a-8ca8-3109cbaddb2b"
+      ],
+      "categoryItems": [
+        77272,
+        77275
+      ],
+      "questionAnswers": [],
+      "roomId": null
+    },
+    {
+      "id": "246847",
+      "title": "Konfigurationseinstellungen für Anwendungen in Azure absichern",
+      "description": "Das geheime Schlüssel und andere sensitive Konfigurationseinstellungen nicht in den Quellcode gehören ist heutzutage wohl jeder Person bekannt. Auch andere Konfigurationseinstellungen sollten sicher und gut verwaltet werden, denn auch durch Fehlkonfigurationen können Sicherheitslücken entstehen. In dieser Demo-Only Session sehen wir uns an wie wir Managed Identities, Azure KeyVault und Azure App Configuration einsetzen können, um unsere Konfigurationseinstellungen möglichst sicher zu verwalten und den Zugriff darauf auf das Notwendigste zu beschränken. Zudem zeige ich ihnen, wie sie die in Azure App Configuration integrierte Features-Flags Funktionalität nutzen können.",
+      "startsAt": null,
+      "endsAt": null,
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "6b3a5dfb-fd19-4b8d-82c8-67775d6acbef"
+      ],
+      "categoryItems": [
+        77272,
+        77274
+      ],
+      "questionAnswers": [],
+      "roomId": null
+    },
+    {
+      "id": "246605",
+      "title": "Pentesting Azure Container Services",
+      "description": "Containers are playing their role in the digital transformation by providing a fast deployment of cloud-native applications. Containers are also often viewed as secure, which is true. But how are they really well configured?\r\n\r\nA demo-based session.\r\n\r\nThe session includes:\r\n- Containers 101\r\n- Backdooring Docker containers images\r\n- Poisoning images on Azure Container Registry\r\n- Compromise containers on Azure Container Instance\r\n- Compromise containers on Azure Kubernetes Services\r\n- Vulnerability Assessment",
+      "startsAt": null,
+      "endsAt": null,
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "a292c14b-e84f-4024-92c6-32bf91e5cf73"
+      ],
+      "categoryItems": [
+        77272,
+        77275
+      ],
+      "questionAnswers": [],
+      "roomId": null
+    },
+    {
+      "id": "246675",
+      "title": "Serverless Rendering with Azure Functions and TypeScript",
+      "description": "Oh, the pendulum swings! \r\n\r\nRender everything on the server! No, render everything on the client! Render everything ... on the server again, except that there are no servers?\r\n\r\nIf all those pendulum swings make your head dizzy, don't worry! Pendulums have the tendency to stop right in the middle. And this is where we are going with the big question: Where, and when, should we render our HTML?\r\n\r\nIn this talk, we explore rendering strategies with the help of Azure Functions. \r\n\r\nWe look into\r\n- lesser-known TypeScript features like JSX factories\r\n- concepts like Hydration\r\n- an architecture for highly dynamic and performant web sites\r\n\r\nJoin us and see where the pendulum stops. And find out if we give it another swing!",
+      "startsAt": null,
+      "endsAt": null,
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "f62f9691-37cd-4ca6-81f1-14c7234ab46e"
+      ],
+      "categoryItems": [
+        77272,
+        77275
+      ],
+      "questionAnswers": [],
+      "roomId": null
+    },
+    {
+      "id": "246570",
+      "title": "SPAs mit Blazor 5.0/6.0: Stand der Dinge und Ausblick",
+      "description": "Blazor ist noch ein junges Webframework, wird aber in der .NET-Entwicklergemeinde gut angenommen, weil es ermöglicht, Single-Page-Web-Apps für alle modernen Browser mit .NET und C# zu programmieren. \r\n\r\nDieser Vortrag von DOTNET-DOKTOR Holger Schwichtenberg beschäftigt sich mit den vielen Neuerungen, die Microsoft in .NET 5 für Blazor eingebaut hat. Er zeigt anhand eines in Azure DevOps gebauten und SQL Azure/Azure Web App gehosteten Praxisbeispiels die wichtigsten neuen Funktionen. Dabei benennt er auch deutlich die verbliebenen Schwächen und die resultierenden Einsatzbeschränkungen für Blazor. \r\n\r\nZudem gibt behandelt er die Blazor-Neuerungen, die in der aktuellen Preview-Version von .NET 6 stecken und gibt einen Ausblick, woran Microsoft bis zum Erscheinen von Blazor 6 in .NET 6.0 noch arbeitet.\r\n",
+      "startsAt": null,
+      "endsAt": null,
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "44c0ae91-e75d-468f-ad3c-d6c60cc9978a"
+      ],
+      "categoryItems": [
+        77272,
+        77274
+      ],
+      "questionAnswers": [],
+      "roomId": null
+    },
+    {
+      "id": "247484",
+      "title": "Was ist Governance und warum Power Automate hier helfen kann?!",
+      "description": "In meiner Session geht nicht um Datenkonnektivität, DAX oder Power Query: Es geht um Governance. Dieses Thema wird sehr oft ignoriert oder sogar vergessen. Aber wenn Sie keine Governance haben, kann es sein, dass Ihre Organisation in ernsthafte Gefahr gerät. Vielleicht denken Sie, dass ich ein wenig übertreibe? Nicht, wenn ich Ihnen in meinem Vortrag zeige, wie schnell sensible Daten Ihres Unternehmens bei Google gefunden werden können. Und das alles, nur weil es keine Prozesse gibt, die dies hätten verhindern können. In meinem Vortrag zeige ich Ihnen einen einfachen Weg, wie Sie einen solchen Benachrichtigungsprozess schnell und automatisiert mit Power Automate und dem Protection Office erstellen können.",
+      "startsAt": null,
+      "endsAt": null,
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "57d61f5e-9ccd-4f7e-931f-79e8edbdaa54"
+      ],
+      "categoryItems": [
+        77272,
+        77274
+      ],
+      "questionAnswers": [],
+      "roomId": null
+    },
+    {
+      "id": "246656",
+      "title": "Welcoming the Quantum Era with Azure Quantum",
+      "description": "Harnessing the unique behaviour of quantum physics and applying it to computing, quantum computers introduce new concepts to traditional programming methods such as superposition, entanglement, and quantum interference.\r\n\r\nMicrosoft, having a clear mindset towards the coming quantum era, is partnering with quantum hardware companies to provide developers with cloud access to quantum hardware. \r\n\r\nLeveraging the Azure Quantum platform and the Q# language, developers are now able to explore quantum algorithms and run their quantum programs on different types of quantum hardware.\r\n\r\nIn this session, we will explore Azure Quantum’s capabilities and run a Q# quantum application on a real quantum computer.",
+      "startsAt": null,
+      "endsAt": null,
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "242e3255-6458-4c50-b715-6903a36467a8"
+      ],
+      "categoryItems": [
+        77272,
+        77275
+      ],
+      "questionAnswers": [],
+      "roomId": null
+    }
   ],
   "speakers": [
+    {
+      "id": "6b3a5dfb-fd19-4b8d-82c8-67775d6acbef",
+      "firstName": "Andreas",
+      "lastName": "Pollak",
+      "bio": "Andreas is an Azure Enthusiast, founder of SpectoLogic® and supports customers developing solutions on Microsoft Azure. Passionate about CosmosDB, Serverless Computing, IoT and loves to work with Visual Studio & DevOps and regular explores new exciting Azure Services.\r\n\r\nSpectoLogic® - www.spectologic.com",
+      "tagLine": "Azure Enthusiast",
+      "profilePicture": "https://sessionize.com/image/540a-400o400o2-fb-fd19-4b8d-82c8-67775d6acbef.4c9a3101-ee05-46f2-bf5c-30a002dc1cbc.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/SpectoLogic",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/andipollak",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "http://blog.spectologic.com",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "http://www.spectologic.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        246847
+      ],
+      "fullName": "Andreas Pollak",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "44c0ae91-e75d-468f-ad3c-d6c60cc9978a",
+      "firstName": "Dr. Holger",
+      "lastName": "Schwichtenberg",
+      "bio": "Dr. Holger Schwichtenberg ist Chief Technology Expert bei der MAXIMAGO GmbH [https://www.maximago.de], die Innovations- und Experience-getriebene Software-Entwicklung, u.a. in hochkritischen sicherheitstechnischen Bereichen, anbietet. Zudem ist er technischer Leiter des Expertennetzwerks IT-Visions [https://www.IT-Visions.de], das zahlreiche mittlere und große Unternehmen durch Beratung und Schulung bei der Entwicklung sowie dem Betrieb von Software unterstützt. \r\n\r\nSeine persönlichen Tätigkeitsschwerpunkte sind Webanwendungen, verteilte Systeme, systemnaher Programmierung und Datenbankzugriffe. Er programmiert in C# und JavaScript/TypeScript sowie PowerShell.\r\n\r\nDurch seine Auftritte auf zahlreichen nationalen und internationalen Fachkonferenzen sowie mehr als 70 Fachbücher für O'Reilly, APress, Addison-Wesley, Microsoft Press und den Carl Hanser-Verlag gehört er zu den bekanntesten Experten für .NET und Webtechniken in Deutschland. Darüber hinaus ist er ständiger Mitarbeiter der Fachzeitschriften windows developer, dotnetpro und iX sowie bei heise.de. Er hat in seiner Karriere bereits über 1000 Fachartikel veröffentlicht. \r\n\r\nDurch seine Vermittlungskompetenz hat er sich den Spitznamen \"DOTNET-DOKTOR\" verdient. Von Microsoft wird er für sein .NET-Fachwissen seit nunmehr 17 Jahren ausgezeichnet als Microsoft Most Valuable Professional (MVP) für .NET/Visual Studio. \r\n\r\nSein Weblog finden Sie unter https://www.dotnet-doktor.de [LINK: https://www.dotnet-doktor.de]. Bei Twitter folgen Sie ihm unter @DOTNETDOKTOR [https://twitter.com/dotnetdoktor].",
+      "tagLine": "www.IT-Visions.de / MAXIMAGO GmbH",
+      "profilePicture": "https://sessionize.com/image/774c-400o400o2-seR57YYU3VbHwKAkte2L3c.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/dotnetdoktor",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.IT-Visions.de",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        246570
+      ],
+      "fullName": "Dr. Holger Schwichtenberg",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "1d18ea23-d6dc-4600-bbae-2916afebb0d7",
+      "firstName": "Hannes",
+      "lastName": "Lagler-Gruener",
+      "bio": "Hannes Lagler-Gruener is a senior cloud architect with consulting experience of more than 5 years.\r\nThe last years Hannes focused on multi cloud architecture with mainly Azure, AWS and GCP.\r\nHannes had deep experience in IaaS, Security, Networking, Governance and IasC. He started his carrier at one of Austrians biggest banks and changed to Microsoft Austria after a few years.\r\nAt the moment Hannes is working at ACP IT Solutions GMBH as Multi Cloud Solutions Architect mainly focused on Azure (deep dive), AWS and GCP.\r\nBlog: http://cloudblogger.at \r\nTwitter: @HannesLagler",
+      "tagLine": "ACP IT Solutions GMBH, Multi Cloud Architect ",
+      "profilePicture": "https://sessionize.com/image/bd0d-400o400o2-23-d6dc-4600-bbae-2916afebb0d7.bf60c4a5-d841-41cc-bb84-e8254f0308e6.jpeg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://www.twitter.com/HannesLagler",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://at.linkedin.com/in/hannesl1",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://cloudblogger.at",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "http://www.acp.at",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        245977
+      ],
+      "fullName": "Hannes Lagler-Gruener",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "57d61f5e-9ccd-4f7e-931f-79e8edbdaa54",
+      "firstName": "Kathrin",
+      "lastName": "Borchert",
+      "bio": "Microsoft Data Platform #MVP, Power BI Enthusiast; Logo creator/ organizer for #PowerBIDays germany and #PowerBreak; BI Consultant and Power BI Trainer bei drjve",
+      "tagLine": "Senior Consultant, Trainerin, MVP and Power BI Enthusiast",
+      "profilePicture": "https://sessionize.com/image/97af-400o400o2-0591146f-5433-473e-b15f-2236b4b50dc3.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/Mirrortears",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/kathrin-borchert-445807159/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "http://www.yodabi.com",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "http://www.pmone.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        247484
+      ],
+      "fullName": "Kathrin Borchert",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "3c55cfbb-36de-4d10-a164-fbfc76d7d3a7",
+      "firstName": "Marc",
+      "lastName": "Müller",
+      "bio": "Marc Müller is a principal consultant for DevOps and .NET / Azure solutions at 4tecture GmbH and has been recognized by Microsoft as a Most Valuable Professional (MVP) for Developer Technologies (Azure DevOps). He has been able to bring his DevOps expertise and know-how for enterprise architectures and component-based distributed systems to many projects over the past few years. As a trainer and speaker, he focuses on the training and coaching of DevOps and .NET project teams.",
+      "tagLine": "Principal Consultant @ 4tecture GmbH",
+      "profilePicture": "https://sessionize.com/image/9117-400o400o2-bb-36de-4d10-a164-fbfc76d7d3a7.6acee3ce-47b9-45f5-a7b3-d19880a8eb00.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/muellermarc",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/marcromanmueller/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://www.4tecture.ch/blog",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.4tecture.ch",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        246345
+      ],
+      "fullName": "Marc Müller",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "0b456caf-b754-47c8-bfab-e8a34bda8efb",
+      "firstName": "Markus",
+      "lastName": "Ehrenmüller-Jensen",
+      "bio": "Markus Ehrenmüller-Jensen is the founder of Savory Data and works as a project leader, data engineer and BI architect since 1994. He is an educated software-engineer, graduated business educator and professor for databases and project engineering at HTL Leonding (technical college) and certified as MCSE Data Platform and MCSE Business Intelligence. Markus speaks regularly on international conferences (eg. SQL PASS Summit, SQLBits London, Power Platform Worldtour, SQL Saturdays, SQL Days, SQL PASS Austria, ...) and writes articles for well-known journals. In 2013 he co-founded SQL PASS Austria and in 2016 Power Platform Usergroup Austria and organizes SQL Saturdays in Vienna since 2014. For his technical leadership in the community he was awarded repeatedly as a Microsoft Data Platform MVP since 2017.",
+      "tagLine": "BI Architect",
+      "profilePicture": "https://sessionize.com/image/0fa4-400o400o2-af-b754-47c8-bfab-e8a34bda8efb.378bbe5f-f845-4293-b17d-0b1ed1dd96f5.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "http://twitter.com/MEhrenmueller",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "http://at.linkedin.com/pub/markus-ehrenmueller/40/382/5b9",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "http://SavoryData.wordpress.com",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "http://www.SavoryData.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        246003
+      ],
+      "fullName": "Markus Ehrenmüller-Jensen",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "a292c14b-e84f-4024-92c6-32bf91e5cf73",
+      "firstName": "Sergey",
+      "lastName": "Chubarov",
+      "bio": "Sergey Chubarov is a Security and Cloud Expert, Instructor with 15+ years’ experience on Microsoft technologies.\r\n\r\nHis day-to-day job is to help companies securely embrace cloud technologies.\r\n\r\nHe has certifications and recognitions such as Microsoft MVP: Microsoft Azure, Offensive Security Certified Professional (OSCP), Microsoft Certified Trainer, MCT Regional Lead, EC Council Instructor (CEI) and more.\r\n\r\nFrequent speaker on local and international conferences.\r\n\r\nPrefers live demos and cyberattacks simulations.",
+      "tagLine": "Ethical Hacker",
+      "profilePicture": "https://sessionize.com/image/918e-400o400o2-4b-e84f-4024-92c6-32bf91e5cf73.1f82d05d-52d9-476a-9205-084d2a62abdb.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/schubarov/",
+          "linkType": "LinkedIn"
+        }
+      ],
+      "sessions": [
+        246605
+      ],
+      "fullName": "Sergey Chubarov",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "f62f9691-37cd-4ca6-81f1-14c7234ab46e",
+      "firstName": "Stefan",
+      "lastName": "Baumgartner",
+      "bio": "Stefan Baumgartner works at Dynatrace. He writes for Manning,  and A List Apart and made the Kessel run in less than 12 parsecs. Recently, he has published his second book \"TypeScript in 50 Lessons\" with Smashing Magazine.\r\n\r\nIn his spare time, he co-organizes ScriptConf, DevOne, and the local Rust meetup in Linz, and co-hosts the German language Working Draft podcast. Stefan enjoys Italian food, Belgian beer, and British vinyl records.",
+      "tagLine": "Internet Batman",
+      "profilePicture": "https://sessionize.com/image/10a0-400o400o2-P8StJgktpaUFdwKNgCkxEj.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/ddprrt",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/stefan-baumgartner-bb621564/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://fettblog.eu",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://oida.dev",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        246675
+      ],
+      "fullName": "Stefan Baumgartner",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "5fe6d127-e8f9-463a-8ca8-3109cbaddb2b",
+      "firstName": "Thorsten",
+      "lastName": "Hans",
+      "bio": "Thorsten works as a consultant at Thinktecture AG in Germany. He’s engaged in the design and implementation of Cloud-Native Applications based on Kubernetes, teaching and coaching enterprise developers to craft modern business applications for all different platforms. He shares many of his experiments and experiences on his blog at https://thorsten-hans.com. Because of his strong community contributions, Thorsten has been repeatedly awarded as Azure MVP by Microsoft. ",
+      "tagLine": "Consultant at Thinktecture",
+      "profilePicture": "https://sessionize.com/image/22ad-400o400o2-27-e8f9-463a-8ca8-3109cbaddb2b.7ebd07b3-f817-4af9-b362-e9f9c25b8f59.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/thorstenhans",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/thorstenhans/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://thorsten-hans.com",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "http://thinktecture.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        246819
+      ],
+      "fullName": "Thorsten Hans",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "242e3255-6458-4c50-b715-6903a36467a8",
+      "firstName": "Vyron",
+      "lastName": "Vasileiadis",
+      "bio": "Vyron Vasileiadis holds an MSc in Space Science and a BSc in Computer Science. He is a software engineer, with 8+ years of experience, specialized in web technologies, machine & deep learning and Microsoft Azure. He is a Microsoft Certified Trainer adept at planning and implementing onsite and remote training programs. He is passionate about education and the ecosystem and has taken over the role of mentor in several hackathons and incubators.",
+      "tagLine": "Software Engineer & Microsoft Certified Trainer",
+      "profilePicture": "https://sessionize.com/image/6e40-400o400o2-55-6458-4c50-b715-6903a36467a8.bf25a4d2-b3d5-48e4-be84-0f8e905c88a1.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/fedonman",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://linkedin.com/in/fedonman",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Instagram",
+          "url": "https://instagram.com/fedonman",
+          "linkType": "Instagram"
+        },
+        {
+          "title": "Blog",
+          "url": "https://fedonman.medium.com",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://atcom.gr",
+          "linkType": "Company_Website"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com/fedonman",
+          "linkType": "Other"
+        }
+      ],
+      "sessions": [
+        246656
+      ],
+      "fullName": "Vyron Vasileiadis",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "136bda4f-d1f3-47e2-83b3-8683ec888fb4",
+      "firstName": "William",
+      "lastName": "Assaf",
+      "bio": "William Assaf is a senior content developer on the SQL-Docs team at Microsoft. Formerly a Data Platform MVP and a consultant, and before that a .NET developer, William currently works with Microsoft product groups on content related to Microsoft SQL offerings, specifically over SQL performance, and Azure SQL DB, Big Data Clusters, and Azure Synapse. As a consultant for 13 years he worked with clients on SQL Server and Azure SQL platform optimization, management, disaster recovery, and high availability, and led a multi-city team of senior consulting SQL DBA's. William has written for Microsoft SQL certification exams since 2011 and was the team lead author of the 2017 and 2019 editions of \"SQL Server Administration Inside Out\" by Microsoft Press. William is a past lead of the annual SQLSaturday Baton Rouge Planning Committee and is a big fan of data platform communities far and wide.",
+      "tagLine": "Senior Content Developer, Microsoft",
+      "profilePicture": "https://sessionize.com/image/2471-400o400o2-4f-d1f3-47e2-83b3-8683ec888fb4.02df7d92-4869-4a09-97ab-c12bd45d2eb2.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "http://www.twitter.com/william_a_dba",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/williamdassaf/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "http://www.sqltact.com",
+          "linkType": "Blog"
+        }
+      ],
+      "sessions": [
+        247120
+      ],
+      "fullName": "William Assaf",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "7db10e99-f0e1-40f6-af98-1f9466502615",
+      "firstName": "Wolfgang",
+      "lastName": "Strasser",
+      "bio": "Wolfgang Strasser creates solutions based on the Microsoft Data Platform tools in his day-to-day job as Business Intelligence consultant. Either using SQL Server Database Engine, SSIS, reporting with SSAS and SSRS, implementing Power BI solutions or cloud tools for data analysis - the data-tools-landscape is broadening every day! Based on his professional careers as a software developer he likes to work on structured development processes.\r\nWolfgang shares his knowledge with the community at many national and international events. For his community work, Wolfgang has been awarded with the Microsoft MVP Award for Data Platform in October 2015.",
+      "tagLine": "data juggler",
+      "profilePicture": "https://sessionize.com/image/7708-400o400o2-KBntNqgUG6w2anf21HTbYC.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "http://twitter.com/wstrasser",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/wolfgang-strasser/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "http://www.workingondata.com",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "http://www.cubido.at",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        245991
+      ],
+      "fullName": "Wolfgang Strasser",
+      "categoryItems": [],
+      "questionAnswers": []
+    }
   ],
   "questions": [
     {
-      "id": 21789,
+      "id": 28453,
       "question": "Streaming URL",
       "questionType": "Web_address",
       "sort": 13
     },
     {
-      "id": 21790,
+      "id": 28454,
       "question": "Short Link",
       "questionType": "Short_Text",
       "sort": 20
     },
     {
-      "id": 22100,
+      "id": 28455,
       "question": "YouTube Video",
       "questionType": "Short_Text",
       "sort": 21
@@ -25,16 +665,16 @@
   ],
   "categories": [
     {
-      "id": 18583,
+      "id": 28451,
       "title": "Track",
       "items": [
         {
-          "id": 35850,
+          "id": 77272,
           "name": "Main Conference",
           "sort": 1
         },
         {
-          "id": 35851,
+          "id": 77273,
           "name": "Junior Bootcamp",
           "sort": 2
         }
@@ -43,16 +683,16 @@
       "type": "session"
     },
     {
-      "id": 18584,
+      "id": 28452,
       "title": "Language",
       "items": [
         {
-          "id": 35852,
+          "id": 77274,
           "name": "German",
           "sort": 1
         },
         {
-          "id": 43221,
+          "id": 77275,
           "name": "English",
           "sort": 2
         }
@@ -61,36 +701,5 @@
       "type": "session"
     }
   ],
-  "rooms": [
-    {
-      "id": 11855,
-      "name": "Saal 8",
-      "sort": 0
-    },
-    {
-      "id": 11856,
-      "name": "Saal 11 (108)",
-      "sort": 1
-    },
-    {
-      "id": 11857,
-      "name": "Saal 12 (91)",
-      "sort": 2
-    },
-    {
-      "id": 11858,
-      "name": "Saal 13 (86)",
-      "sort": 3
-    },
-    {
-      "id": 11859,
-      "name": "Saal 14 (108)",
-      "sort": 4
-    },
-    {
-      "id": 11860,
-      "name": "Saal 3 (86)",
-      "sort": 5
-    }
-  ]
+  "rooms": []
 }

@@ -16,25 +16,25 @@
 
                     <hr class="primary">
 
-                    <!-- <p class="text-muted"><b>More sessions will be announced soon.</b>
+                    <p class="text-muted"><b>More sessions will be announced soon.</b>
                     </p>
 
                     <p class="text-muted">If you’re
                         passionate about Azure and want to share your expertise with the community then we'd love to
                         hear
                         from you.
-                    </p> -->
+                    </p>
                 </div>
 
-                <!-- <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
-                    <a href="https://sessionize.com/gab-at-2020" target="_blank"><i
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
+                    <a href="https://sessionize.com/global-azure-austria-2021/" target="_blank"><i
                             class="fa fa-microphone fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                         <p>Submit session</p>
                     </a>
-                </div> -->
+                </div>
             </div>
 
-            <!-- {{ range $index, $element := sort (where $.Site.Data.sessionize.sessions "isServiceSession" false) ".title" }}
+            {{ range $index, $element := sort (where $.Site.Data.sessionize.sessions "isServiceSession" false) ".title" }}
             <div class="row" id="{{ .id }}">
                 {{ if ne $index 0 }}
                 <hr class="primary full">
@@ -53,11 +53,11 @@
                         {{ end }}
                         {{ end }}
                     </p>
-                    <p>
+                    <!-- <p>
                         <div class="text-muted timeslot">
-                            {{ dateFormat "15:04" .startsAt }} - {{ dateFormat "15:04" .endsAt }}
+                            {{/* dateFormat "15:04" .startsAt */}} - {{/* dateFormat "15:04" .endsAt */}}
                         </div>
-                    </p>
+                    </p> -->
                     <p class="text-muted">{{ safeHTML  (replace .description "\r\n" "<br/>") }}</p>
 
                     {{ range where $.Site.Data.sessionize.speakers "id" "in" .speakers }}
@@ -85,17 +85,20 @@
                         <h5>{{ .tagLine }}</h5>
 
                         {{ range .links }}
-                        <div><a href="{{ .url }}" target="_blank">{{ .title }}</a></div>
+                            <div class="link"><a href="{{ .url }}" target="_blank">
+                            {{ with eq .linkType "LinkedIn"}}<i class="fa fa-linkedin" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Blog"}}<i class="fa fa-rss" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Company_Website"}}<i class="fa fa-home" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Other"}}<i class="fa fa-link" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Twitter"}}<i class="fa fa-twitter" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Instagram"}}<i class="fa fa-instagram" aria-hidden="true"></i>{{ end }}{{ .url }}</a></div>
                         {{ end }}
                     </div>
                     {{ end }}
                 </div>
             </div>
-            {{ end }} -->
+            {{ end }}
         </div>
     </section>
 
     <!-- {{ partial "tickets.html" . }} -->
+
+    {{ partial "newsletter.html" . }}
 
     {{ partial "sponsors.html" . }}
 
