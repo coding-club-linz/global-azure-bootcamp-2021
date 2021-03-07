@@ -1,3 +1,5 @@
+[![Build Hugo website](https://github.com/coding-club-linz/global-azure-bootcamp-2021/actions/workflows/ci-cd.yaml/badge.svg)](https://github.com/coding-club-linz/global-azure-bootcamp-2021/actions/workflows/ci-cd.yaml)
+
 # Global Azure Bootcamp Linz 2021
 
 The *Global Azure Bootcamp Linz 2021* website is based on the [Hugo Creative Theme](https://github.com/digitalcraftsman/hugo-creative-theme/).
