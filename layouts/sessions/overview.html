@@ -63,6 +63,12 @@
                     {{ range where $.Site.Data.sessionize.speakers "id" "in" .speakers }}
                     <h4>About {{ .firstName }} {{ .lastName }}</h4>
                     <p class="text-muted bio">{{ .bio }}</p>
+                    <div class="speaker">
+                    {{ range .links }}
+                    <div class="link"><a href="{{ .url }}" target="_blank">
+                        {{ with eq .linkType "LinkedIn"}}<i class="fa fa-linkedin" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Blog"}}<i class="fa fa-rss" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Company_Website"}}<i class="fa fa-home" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Other"}}<i class="fa fa-link" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Twitter"}}<i class="fa fa-twitter" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Instagram"}}<i class="fa fa-instagram" aria-hidden="true"></i>{{ end }}{{ .url }}</a></div>
+                    {{ end }}
+                    </div>
                     {{ end }}
 
                     {{ $shortLinkQuestionId := (index (where $.Site.Data.sessionize.questions "question" "Short Link") 0).id }}
@@ -83,11 +89,6 @@
                         </figure>
                         <h4>{{ .firstName }} {{ .lastName }}</h4>
                         <h5>{{ .tagLine }}</h5>
-
-                        {{ range .links }}
-                            <div class="link"><a href="{{ .url }}" target="_blank">
-                            {{ with eq .linkType "LinkedIn"}}<i class="fa fa-linkedin" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Blog"}}<i class="fa fa-rss" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Company_Website"}}<i class="fa fa-home" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Other"}}<i class="fa fa-link" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Twitter"}}<i class="fa fa-twitter" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Instagram"}}<i class="fa fa-instagram" aria-hidden="true"></i>{{ end }}{{ .url }}</a></div>
-                        {{ end }}
                     </div>
                     {{ end }}
                 </div>

@@ -24,6 +24,10 @@
                     <a class="page-scroll"
                         href="{{ cond (eq .Page.Dir "") "" "/" }}#newsletter">{{ .Site.Params.navigation.links.newsletter }}</a>
                 </li>
+                <li>
+                    <a class="page-scroll"
+                        href="{{ cond (eq .Page.Dir "") "" "/" }}#speakers">Speakers</a>
+                </li>
                 <!-- <li>
                     <a class="page-scroll"
                         href="{{ cond (eq .Page.Dir "") "" "/" }}#schedule">{{ .Site.Params.navigation.links.schedule }}</a>
