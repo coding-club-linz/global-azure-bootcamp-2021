@@ -303,7 +303,7 @@ aside {
 header {
     position: relative;
     width: 100%;
-    min-height: 500px;
+    min-height: 650px;
     /* min-height: auto; */
     text-align: center;
     color: #fff;
@@ -771,6 +771,11 @@ body {
 }
 
 /* Speakers */
+.sessions .row {
+    padding-top: 30px; 
+    margin-top: -30px
+}
+
 .sessions p.text-muted,
 .speakers p.text-muted {
     font-size: 16px;
