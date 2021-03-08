@@ -70,8 +70,8 @@ strong {
 }
 
 p {
-    margin-bottom: 40px;
-    font-size: 18px;
+    margin-bottom: 20px;
+    font-size: 17px;
     line-height: 1.5;
 }
 
@@ -303,7 +303,7 @@ aside {
 header {
     position: relative;
     width: 100%;
-    min-height: 500px;
+    min-height: 650px;
     /* min-height: auto; */
     text-align: center;
     color: #fff;
@@ -698,6 +698,10 @@ body {
 }
 
 /* About */
+#about p {
+    margin-bottom: 40px;
+}
+
 .join-us {
     color: var(--primary-button);
     font-weight: bold;
@@ -767,6 +771,11 @@ body {
 }
 
 /* Speakers */
+.sessions .row {
+    padding-top: 30px; 
+    margin-top: -30px
+}
+
 .sessions p.text-muted,
 .speakers p.text-muted {
     font-size: 16px;
@@ -784,12 +793,24 @@ body {
 
 .sessions .avatar img,
 .speakers .avatar img,
+.speaker .avatar img,
 .schedule-speaker .avatar img {
     width: 100%;
     max-width: 160px;
     border-radius: 50%;
     margin-top: 20px;
     box-shadow: 2px 2px 15px 7px rgba(0, 0, 0, 0.05);
+}
+
+.modal-dialog .speaker .avatar img {
+    float: right;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.modal-dialog .bio, .modal-dialog .bio p {
+    font-size: 15px;
 }
 
 .schedule-speaker .avatar img {
@@ -807,8 +828,16 @@ body {
     margin-bottom: 20px;
 }
 
+.speaker .link {
+    margin-bottom: 2px;
+}
+
+.speaker .link i {
+    margin-right: 10px;
+}
+
 .speaker .sessions a {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /* Contact */
