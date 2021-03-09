@@ -697,15 +697,22 @@ body {
     max-width: 90vw;
 }
 
-/* About */
-#about p {
-    margin-bottom: 40px;
-}
-
 .join-us {
     color: var(--primary-button);
     font-weight: bold;
     font-size: 30px;
+    margin-top: 40px;
+}
+
+/* About */
+#about hr, #junior-bootcamp hr {
+    border-color: var(--primary-button);
+    border-width: 2px;
+}
+
+#about hr:first-of-type, #junior-bootcamp hr:first-of-type {
+    border-color: #000;
+    border-width: 3px;
 }
 
 /* Sponors */
