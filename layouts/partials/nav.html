@@ -20,18 +20,18 @@
                     <a class="page-scroll"
                         href="{{ cond (eq .Page.Dir "") "" "/" }}#about">{{ .Site.Params.navigation.links.about }}</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a class="page-scroll"
                         href="{{ cond (eq .Page.Dir "") "" "/" }}#newsletter">{{ .Site.Params.navigation.links.newsletter }}</a>
+                </li> -->
+                <li>
+                    <a class="page-scroll"
+                        href="{{ cond (eq .Page.Dir "") "" "/" }}#schedule">{{ .Site.Params.navigation.links.schedule }}</a>
                 </li>
                 <li>
                     <a class="page-scroll"
                         href="{{ cond (eq .Page.Dir "") "" "/" }}#speakers">Speakers</a>
                 </li>
-                <!-- <li>
-                    <a class="page-scroll"
-                        href="{{ cond (eq .Page.Dir "") "" "/" }}#schedule">{{ .Site.Params.navigation.links.schedule }}</a>
-                </li>-->
                 <li class="{{ cond (eq .Page.Dir "sessions\\") "active" "" }}">
                     <a href="/sessions">{{ .Site.Params.navigation.links.sessions }}</a>
                 </li>
@@ -46,7 +46,7 @@
                     <a href="/sponsors">{{ .Site.Params.navigation.links.sponsors }}</a>
                 </li>
                 <li class="{{ cond (eq .Page.Title "Code of Conduct") "active" "" }}">
-                    <a href="/code-of-conduct">Code of Conduct</a>
+                    <a href="/code-of-conduct">COC</a>
                 </li>
             </ul>
         </div>

@@ -8,8 +8,8 @@
                 <h2 class="section-heading">Schedule</h2>
                 <hr class="light">
                 <p>
-                    Below is a listing of the preliminary conference schedule. Until mid April we will provide a new
-                    schedule for the virtual event with links to join the <a href="https://products.office.com/de-at/microsoft-teams/group-chat-software" target="_blank">Microsoft Teams Live Events</a>.
+                    Below is a listing of the preliminary conference schedule. Until early April we will provide the final
+                    schedule for the virtual event with links to join the sessions. <a class="page-scroll" href="#newsletter">Join our mailing list</a> to receive updates.
                 </p>
                 <p>Browse the <a href="/sessions">session catalog</a>.</p>
                 <p><a class="btn btn-success discord-button" href="https://discord.gg/CVGFZFy" target="_blank">
@@ -25,7 +25,6 @@
                     </tr> -->
                     {{ range $timeslot := $.Site.Data.timeslots.timeslots }}
                     <tr class="{{ if eq $timeslot.isServiceTimeslot true }}service-session{{ end }}">
-
                         {{ if eq $timeslot.isServiceTimeslot true }}
                         <td colspan="5" class="service-session">
                             {{ range (where (where $.Site.Data.sessionize.sessions "isServiceSession" true ) "startsAt" $timeslot.startsAt) }}
@@ -41,7 +40,7 @@
                         {{ range $room := $.Site.Data.rooms.rooms }}
                         <td class="session">
                             {{ range (where (where (where $.Site.Data.sessionize.sessions "isServiceSession" false ) "roomId" .id ) "startsAt" $timeslot.startsAt) }}
-                            {{ if in .categoryItems 35850 }}
+                            {{ if in .categoryItems 77272 }}
                             <div class="timeslot">
                                 <!--Theater {{ $room.roomNumber }}, -->
                                 {{ dateFormat "15:04" $timeslot.startsAt }} - {{ dateFormat "15:04" .endsAt }}</div>

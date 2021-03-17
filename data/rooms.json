@@ -1,27 +1,27 @@
 {
     "rooms": [
         {
-          "id": 11856,
-          "name": "Saal 11 (108)",
-          "roomNumber": 11,
+          "id": 18083,
+          "name": "DEV",
+          "roomNumber": 1,
           "sort": 1
         },
         {
-          "id": 11857,
-          "name": "Saal 12 (91)",
-          "roomNumber": 12,
+          "id": 18084,
+          "name": "Cloud Native, DevOps",
+          "roomNumber": 2,
           "sort": 2
         },
         {
-          "id": 11858,
-          "name": "Saal 13 (86)",
-          "roomNumber": 13,
+          "id": 18085,
+          "name": "Security",
+          "roomNumber": 3,
           "sort": 3
         },
         {
-          "id": 11859,
-          "name": "Saal 14 (108)",
-          "roomNumber": 14,
+          "id": 18086,
+          "name": "IoT, Data, ML",
+          "roomNumber": 4,
           "sort": 4
         }
       ]
