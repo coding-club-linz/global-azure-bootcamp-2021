@@ -22,8 +22,8 @@
         },
         {
             "startsAt": "2021-04-16T12:00:00",
-            "endsAt": "2021-04-16T13:00:00",
-            "isServiceTimeslot": true
+            "endsAt": "2021-04-16T12:50:00",
+            "isServiceTimeslot": false
         },
         {
             "startsAt": "2021-04-16T13:00:00",
