@@ -28,7 +28,7 @@ fs.readFile(path.join('.', 'data', 'sessionize.json'), 'utf8', function (err, se
                 .replace('[DESCRIPTION]', session.description)
                 .replace('[DTSTART]', session.startsAt.split('-').join('').split(':').join(''))
                 .replace('[DTEND]', session.endsAt.split('-').join('').split(':').join(''))
-                .replace('[URL]', 'https://www.globalazure.at/sessions/' + shortTitle);
+                .replace('[URL]', 'https://globalazure.at/sessions/' + shortTitle);
 
             fs.writeFileSync(path.join('.', 'static', 'ics', shortTitle + '.ics'), ics);
 
