@@ -18,7 +18,12 @@
         77272,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "azure-ama"
+        }
+      ],
       "roomId": 18083
     },
     {
@@ -36,7 +41,12 @@
         77272,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "blazor-news"
+        }
+      ],
       "roomId": 18083
     },
     {
@@ -54,7 +64,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "multi-cloud-magic"
+        }
+      ],
       "roomId": 18084
     },
     {
@@ -72,7 +87,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "inside-aad"
+        }
+      ],
       "roomId": 18085
     },
     {
@@ -90,7 +110,12 @@
         77272,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "iot-data"
+        }
+      ],
       "roomId": 18086
     },
     {
@@ -108,7 +133,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "monitoring"
+        }
+      ],
       "roomId": 18083
     },
     {
@@ -126,7 +156,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "k8s-journey"
+        }
+      ],
       "roomId": 18084
     },
     {
@@ -144,7 +179,12 @@
         77272,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "conditional-access"
+        }
+      ],
       "roomId": 18085
     },
     {
@@ -162,7 +202,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "synapse-purview"
+        }
+      ],
       "roomId": 18086
     },
     {
@@ -180,7 +225,12 @@
         77272,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "azure-config"
+        }
+      ],
       "roomId": 18083
     },
     {
@@ -198,7 +248,12 @@
         77272,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "aks-bawag"
+        }
+      ],
       "roomId": 18084
     },
     {
@@ -216,7 +271,12 @@
         77272,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "cyber-threats"
+        }
+      ],
       "roomId": 18085
     },
     {
@@ -234,7 +294,12 @@
         77272,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "iot-central"
+        }
+      ],
       "roomId": 18086
     },
     {
@@ -252,7 +317,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "ci-cd-aks"
+        }
+      ],
       "roomId": 18084
     },
     {
@@ -270,7 +340,12 @@
         77272,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "ng-static-web-apps"
+        }
+      ],
       "roomId": 18083
     },
     {
@@ -288,7 +363,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "kafka"
+        }
+      ],
       "roomId": 18084
     },
     {
@@ -306,7 +386,12 @@
         77272,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "sentinel"
+        }
+      ],
       "roomId": 18085
     },
     {
@@ -324,7 +409,12 @@
         77272,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "governance-automate"
+        }
+      ],
       "roomId": 18086
     },
     {
@@ -342,7 +432,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "serverless-rendering"
+        }
+      ],
       "roomId": 18083
     },
     {
@@ -360,7 +455,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "iac-terraform"
+        }
+      ],
       "roomId": 18084
     },
     {
@@ -378,7 +478,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "ms-info-protection"
+        }
+      ],
       "roomId": 18085
     },
     {
@@ -396,7 +501,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "dwh-porsche"
+        }
+      ],
       "roomId": 18086
     },
     {
@@ -414,7 +524,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "quantum"
+        }
+      ],
       "roomId": 18083
     },
     {
@@ -432,7 +547,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "bicep"
+        }
+      ],
       "roomId": 18084
     },
     {
@@ -450,7 +570,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "container-pentesting"
+        }
+      ],
       "roomId": 18085
     },
     {
@@ -468,7 +593,12 @@
         77272,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "anomaly-detection"
+        }
+      ],
       "roomId": 18086
     },
     {
@@ -486,7 +616,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "azure-docs"
+        }
+      ],
       "roomId": 18083
     },
     {
@@ -504,7 +639,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "azure-hybrid"
+        }
+      ],
       "roomId": 18084
     },
     {
@@ -522,7 +662,12 @@
         77272,
         77275
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "azure-rust"
+        }
+      ],
       "roomId": 18085
     },
     {
@@ -540,7 +685,12 @@
         77272,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "ai-power-bi"
+        }
+      ],
       "roomId": 18086
     }
   ],

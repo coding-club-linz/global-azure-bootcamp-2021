@@ -47,12 +47,23 @@
                     <p class="text-muted bio">{{ .bio }}</p>
                     {{ end }}
 
-                    {{ $shortLinkQuestionId := (index (where $.Site.Data.sessionize.questions "question" "Short Link") 0).id }}
+                    <!-- {{ $shortLinkQuestionId := (index (where $.Site.Data.sessionize.questions "question" "Short Link") 0).id }}
                     {{ $youTubeVideoQuestionId := (index (where $.Site.Data.sessionize.questions "question" "YouTube Video") 0).id }}
                     <div class="links">
                         {{ range $question := $session.questionAnswers }}
                         {{ if eq (int $question.questionId) (int $youTubeVideoQuestionId) }}
                         <a href="{{$question.answerValue}}" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i>Open in YouTube</a>
+                        {{ end }}
+                        {{ end }}
+                    </div> -->
+
+                    {{ $shortLinkQuestionId := (index (where $.Site.Data.sessionize.questions "question" "Short Link") 0).id }}
+                    <div class="links">
+                        {{ range $question := $session.questionAnswers }}
+                        {{ if eq (int $question.questionId) (int $shortLinkQuestionId) }}
+                        <a href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar"
+                                aria-hidden="true"></i>Add
+                            to calendar</a><br/>
                         {{ end }}
                         {{ end }}
                     </div>

@@ -60,6 +60,20 @@
                     </p>
                     <p class="text-muted">{{ safeHTML  (replace .description "\r\n" "<br/>") }}</p>
 
+                    {{ $shortLinkQuestionId := (index (where $.Site.Data.sessionize.questions "question" "Short Link") 0).id }}
+                    <div class="calendar-link">
+                        {{ range $question := .questionAnswers }}
+                        {{ if eq (int $question.questionId) (int $shortLinkQuestionId) }}
+                        <a class="btn btn-primary btn-xs" href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar"
+                                aria-hidden="true"></i>Add
+                            to calendar</a><br/>
+                        <!-- <a href="/sessions/{{$question.answerValue}}" target="_blank"><i
+                                class="fa fa-video-camera" aria-hidden="true"></i>Open Microsoft Teams
+                            live event</a> -->
+                        {{ end }}
+                        {{ end }}
+                    </div>
+
                     {{ range where $.Site.Data.sessionize.speakers "id" "in" .speakers }}
                     <h4>About {{ .firstName }} {{ .lastName }}</h4>
                     <p class="text-muted bio">{{ .bio }}</p>
@@ -71,7 +85,7 @@
                     </div>
                     {{ end }}
 
-                    {{ $shortLinkQuestionId := (index (where $.Site.Data.sessionize.questions "question" "Short Link") 0).id }}
+                    <!-- {{ $shortLinkQuestionId := (index (where $.Site.Data.sessionize.questions "question" "Short Link") 0).id }}
                     {{ $youTubeVideoQuestionId := (index (where $.Site.Data.sessionize.questions "question" "YouTube Video") 0).id }}
                     <div class="links">
                         {{ range $question := .questionAnswers }}
@@ -79,7 +93,7 @@
                         <a href="{{$question.answerValue}}" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i>Open in YouTube</a>
                         {{ end }}
                         {{ end }}
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="col-md-4 text-center">
