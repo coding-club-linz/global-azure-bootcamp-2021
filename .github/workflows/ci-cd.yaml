@@ -25,6 +25,9 @@ jobs:
       - name: 👩‍🏭 Build
         run: hugo --minify
 
+      - name: 📆 Generate ICS files
+        run: node utils/generate-ics.js
+
       - name: 🚀 Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
