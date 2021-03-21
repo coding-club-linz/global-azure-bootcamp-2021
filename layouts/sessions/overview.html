@@ -53,11 +53,11 @@
                         {{ end }}
                         {{ end }}
                     </p>
-                    <!-- <p>
+                    <p>
                         <div class="text-muted timeslot">
-                            {{/* dateFormat "15:04" .startsAt */}} - {{/* dateFormat "15:04" .endsAt */}}
+                            {{ dateFormat "15:04" .startsAt }} - {{ dateFormat "15:04" .endsAt }}
                         </div>
-                    </p> -->
+                    </p>
                     <p class="text-muted">{{ safeHTML  (replace .description "\r\n" "<br/>") }}</p>
 
                     {{ range where $.Site.Data.sessionize.speakers "id" "in" .speakers }}

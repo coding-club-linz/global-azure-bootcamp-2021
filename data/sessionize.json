@@ -40,15 +40,15 @@
       "roomId": 18083
     },
     {
-      "id": "246345",
-      "title": "A full Journey to Azure Kubernetes Service (AKS)",
-      "description": "Docker-basierte Dienste sind heutzutage unverzichtbar und Kubernetes ist zur Nummer eins der Containerorchestratoren geworden. Neben einer kurzen Einführung in den Azure Kubernetes Service (AKS) werden wir einen kompletten Cluster von 0 auf 100 bauen und in eine Azure Umgebung integrieren. Die behandelten Themen umfassen: AKS Deployment (ARM/CLI), AAD-Integration, öffentliche Endpunkte mit Application Gateway/WAF, Zertifikatsmanagement, Skalierung und Zero-Downtime Deployment.",
+      "id": "247800",
+      "title": "Multi-Cloud Magic: Leveraging Multi-Cloud Clusters in Real-World Scenarios",
+      "description": "Public, Private, Hybrid...Multi-Cloud?\r\n\r\nAs the cloud development options and architectures continue to evolve, we've finally found ourselves at the next new thing: Multi-Cloud. What is it? Do we really need it? How would you take advantage of a multi-cloud solution? \r\n\r\nIn this talk, I'd like to describe a few real-world use cases where a multi-cloud solution is currently in production, specifically when it comes to data. These include:\r\n\r\n- Data Sovereignty & Data Residency\r\n- Varied Client Requirements\r\n- Developer / Client Choice\r\n\r\nA demo on how to setup a multi-cloud cluster will also be shown.\r\n\r\nThe audience will leave with a more confident understanding of real-world, multi-cloud use cases and see how to create their own!",
       "startsAt": "2021-04-16T09:00:00",
       "endsAt": "2021-04-16T09:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "3c55cfbb-36de-4d10-a164-fbfc76d7d3a7"
+        "a378b580-baef-4c58-a9b3-589139c88159"
       ],
       "categoryItems": [
         77272,
@@ -60,7 +60,7 @@
     {
       "id": "247854",
       "title": "Inside Azure AD Authentication",
-      "description": "This session brings you deep into the world of Azure Active Directory Authentication - definitely a must-know for everyone that works with AAD! Marcel, a Microsoft Regional Director and Azure MVP from Switzerland will be your guide that shows you the light at the end of the tunnel. Don't miss this session!",
+      "description": "This session brings you deep into the world of Azure Active Directory Authentication - definitely a must-know for everyone who works with AAD! Marcel, a Microsoft Regional Director and Azure MVP from Switzerland will be your guide on the bumpy roads to authentication procedures, App registrations, OAuth, Access Tokens and much more. Don't miss this essential session!",
       "startsAt": "2021-04-16T09:00:00",
       "endsAt": "2021-04-16T09:50:00",
       "isServiceSession": false,
@@ -112,19 +112,19 @@
       "roomId": 18083
     },
     {
-      "id": "249535",
-      "title": "BAWAGs Reise zur Cloud Container Plattform mit Microsoft Azure",
-      "description": "Wie viele andere Unternehmen betreibt die BAWAG Group seit einigen Jahren eine Microservice Architektur. Um die Vorteile einer solchen Architektur voll ausnützen zu können wurde Ende 2019 beschlossen die aktuelle on-prem Infrastruktur in die Cloud zu bringen. Mit Azure & Microsoft als strategischem Partner ist daher im letzten Jahr eine der größten AKS (Azure Kubernetes Service) Umgebungen Österreichs entstanden die mehrere kundennahe Applikationen beheimatet. In dieser Session wollen wir einen Einblick in die Reise & Ziele geben: die Auswahl der Container Plattform, Effizienz- und Verbesserungspotentiale gegenüber der Bestandsplattform, Architekturüberlegungen, der Weg von der Entwicklungs-, Test- bis zur Produktiv-Umgebung & schlussendlich die erfolgreiche Migration der Applikationen. \r\n",
+      "id": "246345",
+      "title": "A full Journey to Azure Kubernetes Service (AKS)",
+      "description": "Docker-basierte Dienste sind heutzutage unverzichtbar und Kubernetes ist zur Nummer eins der Containerorchestratoren geworden. Neben einer kurzen Einführung in den Azure Kubernetes Service (AKS) werden wir einen kompletten Cluster von 0 auf 100 bauen und in eine Azure Umgebung integrieren. Die behandelten Themen umfassen: AKS Deployment (ARM/CLI), AAD-Integration, öffentliche Endpunkte mit Application Gateway/WAF, Zertifikatsmanagement, Skalierung und Zero-Downtime Deployment.",
       "startsAt": "2021-04-16T10:00:00",
       "endsAt": "2021-04-16T10:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "fc1eabb6-63ee-4b6c-ab8e-f78b10481265"
+        "3c55cfbb-36de-4d10-a164-fbfc76d7d3a7"
       ],
       "categoryItems": [
         77272,
-        77274
+        77275
       ],
       "questionAnswers": [],
       "roomId": 18084
@@ -184,19 +184,19 @@
       "roomId": 18083
     },
     {
-      "id": "247831",
-      "title": "Four Different Ways of Working with Kafka on Azure",
-      "description": "Life doesn't happen in batch mode, which is why for several years now, we see a very strong tendency towards stream processing throughout various industries. Companies need, or least partially have to rethink their existing data architectures in order to enable near real-time business cases. Besides traditional database systems and batch-driven tooling, many companies put Apache Kafka® - the de facto standard for robust and scalable event streaming - to good use.\r\n\r\nThis talk explores the following four different ways to run Kafka on Azure:\r\n\r\n* Kafka on HDInsight (open-source core Kafka)\r\n* EventHubs (Microsoft's very own \"Kafka look-alike\")\r\n* Confluent Cloud (a vendor-backed Kafka distribution)\r\n* Kafka in Azure Kubernetes Service\r\n\r\nYou will walk away with a better understanding about the most important benefits, drawbacks and implications for each of the discussed alternatives. ",
+      "id": "249535",
+      "title": "BAWAGs Reise zur Cloud Container Plattform mit Microsoft Azure",
+      "description": "Wie viele andere Unternehmen betreibt die BAWAG Group seit einigen Jahren eine Microservice Architektur. Um die Vorteile einer solchen Architektur voll ausnützen zu können wurde Ende 2019 beschlossen die aktuelle on-prem Infrastruktur in die Cloud zu bringen. Mit Azure & Microsoft als strategischem Partner ist daher im letzten Jahr eine der größten AKS (Azure Kubernetes Service) Umgebungen Österreichs entstanden die mehrere kundennahe Applikationen beheimatet. In dieser Session wollen wir einen Einblick in die Reise & Ziele geben: die Auswahl der Container Plattform, Effizienz- und Verbesserungspotentiale gegenüber der Bestandsplattform, Architekturüberlegungen, der Weg von der Entwicklungs-, Test- bis zur Produktiv-Umgebung & schlussendlich die erfolgreiche Migration der Applikationen. \r\n",
       "startsAt": "2021-04-16T11:00:00",
       "endsAt": "2021-04-16T11:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "24ac62e3-9f98-41e6-bf7e-d4852c642e8b"
+        "fc1eabb6-63ee-4b6c-ab8e-f78b10481265"
       ],
       "categoryItems": [
         77272,
-        77275
+        77274
       ],
       "questionAnswers": [],
       "roomId": 18084
@@ -238,6 +238,24 @@
       "roomId": 18086
     },
     {
+      "id": "250183",
+      "title": "Modern continous delivery on Azure Kubernetes Service",
+      "description": "Continuous delivery (CD) might be a challenging and daunting task to set up and maintain based on 1000+ lines of pipeline code - but it doesn’t have to be this way. Modern tools can make your application deployment and delivery process an efficient, quick, and sustainable commodity without requiring a lot of configuration.\r\n\r\nIn this talk you will learn 1) how to employ new delivery models such as blue/green deployments, and 2) how to integrate quality gates into pipelines to ensure no bad code changes can make it to production. We are going to use the open-source tool Keptn that is based on SRE principles to define delivery and operation workflows and will be doing a live deployment with quality gates on Azure Kubernetes Service (AKS). \r\n",
+      "startsAt": "2021-04-16T12:00:00",
+      "endsAt": "2021-04-16T12:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "657a5782-97e3-4c5f-ab08-049487a91d5d"
+      ],
+      "categoryItems": [
+        77272,
+        77275
+      ],
+      "questionAnswers": [],
+      "roomId": 18084
+    },
+    {
       "id": "248217",
       "title": "Micro Frontends mit Module Federation, Angular und Azure Static Web Apps",
       "description": "Die Umsetzung von Microfrontends war bis jetzt alles andere als einfach. Da gängige Frameworks und Build-Werkzeuge diese Idee nicht einmal ansatzweise kannten, musste man ordentlich in die Trickkiste greifen. \r\n\r\nDie von Webpack 5 gebotene Module Federation leitet hier einen entscheidenden Richtungswechsel ein. Sie erlaubt es, separat kompilierte Anwendungsteile zur Laufzeit zu laden und Bibliotheken zwischen diesen zu teilen. \r\nIn dieser Session erfahren Sie von Microfrontend-Pionier Manfred Steyer, wie Sie diesen Mechanismus zur Schaffung von Microfrontends mit Angular nutzen können. Dazu entwickeln wir ein Micro Frontend, das wir mit Azure Static Web Apps hosten und zur Laufzeit dynamisch in eine App-Shell laden.\r\n\r\nAm Ende der Session haben Sie einen Überblick über das Thema und wissen, wie Sie Module Federation in Ihren Projekten nutzen können sowie welche Konsequenzen sich darauf ergeben.",
@@ -256,15 +274,15 @@
       "roomId": 18083
     },
     {
-      "id": "246819",
-      "title": "Infrastructure as Code for Azure with Terraform",
-      "description": "Modern and distributed application architectures often require a large set of services and systems with a rather complex configuration to work as expected. You and your team can create and manage such infrastructures professionally by adopting Infrastructure as Code (IaC) and relying on Terraform. In this talk, Azure MVP Thorsten Hans demonstrates how to create reliable and predictable Azure infrastructures with Terraform. You will learn how to structure your project, create and mutate your services and manage multiple environments in no time.",
+      "id": "247831",
+      "title": "Four Different Ways of Working with Kafka on Azure",
+      "description": "Life doesn't happen in batch mode, which is why for several years now, we see a very strong tendency towards stream processing throughout various industries. Companies need, or least partially have to rethink their existing data architectures in order to enable near real-time business cases. Besides traditional database systems and batch-driven tooling, many companies put Apache Kafka® - the de facto standard for robust and scalable event streaming - to good use.\r\n\r\nThis talk explores the following four different ways to run Kafka on Azure:\r\n\r\n* Kafka on HDInsight (open-source core Kafka)\r\n* EventHubs (Microsoft's very own \"Kafka look-alike\")\r\n* Confluent Cloud (a vendor-backed Kafka distribution)\r\n* Kafka in Azure Kubernetes Service\r\n\r\nYou will walk away with a better understanding about the most important benefits, drawbacks and implications for each of the discussed alternatives. ",
       "startsAt": "2021-04-16T13:00:00",
       "endsAt": "2021-04-16T13:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "5fe6d127-e8f9-463a-8ca8-3109cbaddb2b"
+        "24ac62e3-9f98-41e6-bf7e-d4852c642e8b"
       ],
       "categoryItems": [
         77272,
@@ -328,15 +346,15 @@
       "roomId": 18083
     },
     {
-      "id": "249036",
-      "title": "Let's explore Azure Bicep! ... and compare it to Hashicorp's Terraform",
-      "description": "Recently I started to explore Azure and it's tools to implement Infrastructure as Code (IaC).  I use Terraform for years now, but sometimes it can be fun to break a habit ;-)\r\n\r\nIn this session we will take look into Azure Bicep and compare it to Hashicorp's popular IaC tool Terraform.\r\nChosing the right tool, that fits your needs is hard. So let's take a  look into both tools to see which one you can use in your next awesome project.\r\n\r\nAdditionally, we will  we discover Bicep hands-on by implementing a simple static website using Azure Storage Account.\r\n\r\nThis session requires at least basic knowledge of Infrastructure as code, Terraform and Azure Resource Manager (ARM).",
+      "id": "246819",
+      "title": "Infrastructure as Code for Azure with Terraform",
+      "description": "Modern and distributed application architectures often require a large set of services and systems with a rather complex configuration to work as expected. You and your team can create and manage such infrastructures professionally by adopting Infrastructure as Code (IaC) and relying on Terraform. In this talk, Azure MVP Thorsten Hans demonstrates how to create reliable and predictable Azure infrastructures with Terraform. You will learn how to structure your project, create and mutate your services and manage multiple environments in no time.",
       "startsAt": "2021-04-16T14:00:00",
       "endsAt": "2021-04-16T14:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "53f0b9ef-6acb-4bc3-8569-7386e974f07b"
+        "5fe6d127-e8f9-463a-8ca8-3109cbaddb2b"
       ],
       "categoryItems": [
         77272,
@@ -344,6 +362,24 @@
       ],
       "questionAnswers": [],
       "roomId": 18084
+    },
+    {
+      "id": "247388",
+      "title": "Notes from the field Microsoft Information Protection",
+      "description": "Ever thought about how the different protections play together to protect your information? In this session you will learn how Azure Information Protection, Endpoint DLP, Cloud App Security and Conditional Access can work together to protect every aspect during work. It will also be a part to monitor the solutions with Azure Log Analytics. All of this is showcased with real world examples.\r\n\r\nWhat you will learn:\r\n- Integration possibility with other systems\r\n- Benefits and Limits of the solutions in production environments\r\n- Roadmap for a successful setup",
+      "startsAt": "2021-04-16T14:00:00",
+      "endsAt": "2021-04-16T14:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "53035a6a-4dcc-41d2-9d15-673db70e7074"
+      ],
+      "categoryItems": [
+        77272,
+        77275
+      ],
+      "questionAnswers": [],
+      "roomId": 18085
     },
     {
       "id": "248654",
@@ -382,15 +418,15 @@
       "roomId": 18083
     },
     {
-      "id": "249423",
-      "title": "Azure Hybrid - Learn about Hybrid Cloud Management with Azure",
-      "description": "In this session, Microsoft Cloud Advocate Thomas Maurer shows you how you can manage and govern your Windows and Linux servers and Kubernetes clusters hosted outside of Azure on your corporate network or other cloud providers, similar to how you manage native Azure virtual machines. When a hybrid machine is connected to Azure, it becomes a connected machine and is treated as a resource in Azure. Azure Arc provides you with the familiar cloud-native Azure management experience, like RBAC, Tags, Azure Policy, Log Analytics, and more.",
+      "id": "249036",
+      "title": "Let's explore Azure Bicep! ... and compare it to Hashicorp's Terraform",
+      "description": "Recently I started to explore Azure and it's tools to implement Infrastructure as Code (IaC).  I use Terraform for years now, but sometimes it can be fun to break a habit ;-)\r\n\r\nIn this session we will take look into Azure Bicep and compare it to Hashicorp's popular IaC tool Terraform.\r\nChosing the right tool, that fits your needs is hard. So let's take a  look into both tools to see which one you can use in your next awesome project.\r\n\r\nAdditionally, we will  we discover Bicep hands-on by implementing a simple static website using Azure Storage Account.\r\n\r\nThis session requires at least basic knowledge of Infrastructure as code, Terraform and Azure Resource Manager (ARM).",
       "startsAt": "2021-04-16T15:00:00",
       "endsAt": "2021-04-16T15:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "9f2650fc-7c67-4e04-aef7-c283298d71f6"
+        "53f0b9ef-6acb-4bc3-8569-7386e974f07b"
       ],
       "categoryItems": [
         77272,
@@ -454,15 +490,15 @@
       "roomId": 18083
     },
     {
-      "id": "247800",
-      "title": "Multi-Cloud Magic: Leveraging Multi-Cloud Clusters in Real-World Scenarios",
-      "description": "Public, Private, Hybrid...Multi-Cloud?\r\n\r\nAs the cloud development options and architectures continue to evolve, we've finally found ourselves at the next new thing: Multi-Cloud. What is it? Do we really need it? How would you take advantage of a multi-cloud solution? \r\n\r\nIn this talk, I'd like to describe a few real-world use cases where a multi-cloud solution is currently in production, specifically when it comes to data. These include:\r\n\r\n- Data Sovereignty & Data Residency\r\n- Varied Client Requirements\r\n- Developer / Client Choice\r\n\r\nA demo on how to setup a multi-cloud cluster will also be shown.\r\n\r\nThe audience will leave with a more confident understanding of real-world, multi-cloud use cases and see how to create their own!",
+      "id": "249423",
+      "title": "Azure Hybrid - Learn about Hybrid Cloud Management with Azure",
+      "description": "In this session, Microsoft Cloud Advocate Thomas Maurer shows you how you can manage and govern your Windows and Linux servers and Kubernetes clusters hosted outside of Azure on your corporate network or other cloud providers, similar to how you manage native Azure virtual machines. When a hybrid machine is connected to Azure, it becomes a connected machine and is treated as a resource in Azure. Azure Arc provides you with the familiar cloud-native Azure management experience, like RBAC, Tags, Azure Policy, Log Analytics, and more.",
       "startsAt": "2021-04-16T16:00:00",
       "endsAt": "2021-04-16T16:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "a378b580-baef-4c58-a9b3-589139c88159"
+        "9f2650fc-7c67-4e04-aef7-c283298d71f6"
       ],
       "categoryItems": [
         77272,
@@ -470,6 +506,24 @@
       ],
       "questionAnswers": [],
       "roomId": 18084
+    },
+    {
+      "id": "250262",
+      "title": "Rust, Kubernetes, and the Cloud",
+      "description": "Moving to the cloud is a Big Deal™. So why would you want to throw a new language like Rust into the mix? Join us as we demonstrate how Rust can be used with Azure to simplify and bring safety to your code. We'll give a brief overview of the strengths and weaknesses of using Rust in the cloud in general before demoing how you can use Rust to connect to and leverage the Azure APIs. Kubernetes more your thing? We've got that covered too! We'll show how Rust makes interfacing with and writing tooling for Kubernetes a breeze, followed by a practical demo of a Rust project (Krustlet) in action on AKS.",
+      "startsAt": "2021-04-16T16:00:00",
+      "endsAt": "2021-04-16T16:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "47d0e9bd-3ac9-49a9-b462-996de9a18c6b"
+      ],
+      "categoryItems": [
+        77272,
+        77275
+      ],
+      "questionAnswers": [],
+      "roomId": 18085
     },
     {
       "id": "246003",
@@ -703,6 +757,43 @@
         247831
       ],
       "fullName": "Hans-Peter Grahsl",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "657a5782-97e3-4c5f-ab08-049487a91d5d",
+      "firstName": "Jürgen",
+      "lastName": "Etzlstorfer",
+      "bio": "Jürgen is a Technology Strategist at Dynatrace. He is a core contributor to the keptn Open Source project and responsible for the strategy and integration of self-healing techniques and tools into the keptn framework. Getting things done by automating them drives his daily work. He is not only passionate about developing new software, but also loves to share his experience, most recently at conferences on Kubernetes based technologies and automation.  ",
+      "tagLine": "Technology Strategist, Dynatrace",
+      "profilePicture": "https://sessionize.com/image/c5dd-400o400o2-82-97e3-4c5f-ab08-049487a91d5d.c3611516-0e34-43d0-8b8a-53513915cc40.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/jetzlstorfer",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://linkedin.com/in/juergenetzlstorfer/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://medium.com/@jetzlstorfer",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://keptn.sh ",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        250183
+      ],
+      "fullName": "Jürgen Etzlstorfer",
       "categoryItems": [],
       "questionAnswers": []
     },
@@ -1250,6 +1341,70 @@
         248343
       ],
       "fullName": "Tamara Tomanic",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "47d0e9bd-3ac9-49a9-b462-996de9a18c6b",
+      "firstName": "Taylor",
+      "lastName": "Thomas",
+      "bio": "Taylor Thomas is a Senior Software Engineer working in the DeisLabs team in Microsoft Azure. He has been involved with containers and Kubernetes platforms at Intel and Nike and is one of the core maintainers of Helm and Krustlet. He currently lives in the Utah area and enjoys hiking and camping. He has given talks at several KubeCons, Velocity Conf, and Helm Summit on a wide variety of container-related topics.",
+      "tagLine": "Senior Software Engineer",
+      "profilePicture": "https://sessionize.com/image/84e6-400o400o2-bd-3ac9-49a9-b462-996de9a18c6b.748c4c4c-d9e3-4628-b923-cecfcf562822.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/_oftaylor",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://deislabs.io",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        250262
+      ],
+      "fullName": "Taylor Thomas",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "53035a6a-4dcc-41d2-9d15-673db70e7074",
+      "firstName": "Thomas",
+      "lastName": "Kurth",
+      "bio": "I’m a Microsoft MVP, consultant, trainer and architect for workplace management and enterprise mobility projects with Microsoft Technologies in the past eight years. I love to push and design the modern workplace based on Windows 10, EM&S and O365 for my customers which is the only answer for the current security threats, agile world and the fast-changing business requirements of my customers. Important for me is to simplify and automate the operational processes, because there are the highest costs.",
+      "tagLine": "baseVISION AG, Workplace Consultant and Microsoft MVP",
+      "profilePicture": "https://sessionize.com/image/5c08-400o400o2-6a-4dcc-41d2-9d15-673db70e7074.32dd72da-0aec-4b17-85e7-c99f00746969.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/ThomasKurth_ch",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/thomas-kurth-a86b7851/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Blog",
+          "url": "https://wpninjas.ch/author/thomas/",
+          "linkType": "Blog"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.wpninjas.eu",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        247388
+      ],
+      "fullName": "Thomas Kurth",
       "categoryItems": [],
       "questionAnswers": []
     },

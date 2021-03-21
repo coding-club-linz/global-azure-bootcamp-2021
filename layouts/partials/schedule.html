@@ -41,15 +41,13 @@
                         <td class="session">
                             {{ range (where (where (where $.Site.Data.sessionize.sessions "isServiceSession" false ) "roomId" .id ) "startsAt" $timeslot.startsAt) }}
                             {{ if in .categoryItems 77272 }}
-                            <div class="timeslot">
-                                <!--Theater {{ $room.roomNumber }}, -->
-                                {{ dateFormat "15:04" $timeslot.startsAt }} - {{ dateFormat "15:04" .endsAt }}</div>
 
-                            {{ range where (index $.Site.Data.sessionize.categories 1).items "id" "in" .categoryItems }}
-                            {{ if eq .name "English" }}
-                            <span class="label label-default">{{ .name }}</span>
-                            {{ end }}
-                            {{ end }}
+                            <div class="label label-default"><span class="timeslot">{{ dateFormat "15:04" $timeslot.startsAt }} - {{ dateFormat "15:04" .endsAt }}</span>
+                                {{ range $category := where (index $.Site.Data.sessionize.categories 1).items "id" "in" .categoryItems }}
+                                <span class="language">{{ .name }}</span>
+                                {{ end }}
+                            </div>
+                           
                             <a href="/sessions#{{.id}}">{{ .title }}</a>
 
                             <div class="speaker">

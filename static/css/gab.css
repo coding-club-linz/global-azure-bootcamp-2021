@@ -913,6 +913,13 @@ body {
 
 .schedule .session .label {
     margin-right: 5px;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.schedule.table>tbody>tr>td {
+    border-top: 1px solid #777;
 }
 
 .schedule .session a {
@@ -920,9 +927,13 @@ body {
 }
 
 .schedule .timeslot {
-    padding-bottom: 10px;
     font-size: 12px;
-    opacity: 0.66;
+    /* opacity: 0.66; */
+}
+
+.schedule .language, .sessions .language {
+    float: right;
+    font-weight: 300;
 }
 
 .schedule .speaker {
