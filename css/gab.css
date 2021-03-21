@@ -802,6 +802,10 @@ body {
     font-weight: 300;
 }
 
+.sessions h4, .schedule-session h4 {
+    margin-top: 30px;
+}
+
 .sessions .avatar img,
 .speakers .avatar img,
 .speaker .avatar img,
@@ -918,6 +922,10 @@ body {
     text-align: left;
 }
 
+.schedule .session-link {
+    cursor: pointer;
+}
+
 .schedule.table>tbody>tr>td {
     border-top: 1px solid #777;
 }
@@ -969,7 +977,9 @@ body {
 }
 
 .schedule .links a i,
-.sessions .links a i {
+.sessions .links a i,
+.sessions .calendar-link a i,
+.schedule-session .links a i {
     margin-right: 10px;
 }
 
