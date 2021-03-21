@@ -4,7 +4,7 @@ VERSION:2.0
 BEGIN:VEVENT
 UID:0@gaaustria2021
 CLASS:PUBLIC
-DESCRIPTION:A full Journey to Azure Kubernetes Service (AKS)\n\n---\n\nDocker-basierte Dienste sind heutzutage unverzichtbar und Kubernetes ist zur Nummer eins der Containerorchestratoren geworden. Neben einer kurzen Einführung in den Azure Kubernetes Service (AKS) werden wir einen kompletten Cluster von 0 auf 100 bauen und in eine Azure Umgebung integrieren. Die behandelten Themen umfassen: AKS Deployment (ARM/CLI), AAD-Integration, öffentliche Endpunkte mit Application Gateway/WAF, Zertifikatsmanagement, Skalierung und Zero-Downtime Deployment.\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/k8s-journey
+DESCRIPTION:A full Journey to Azure Kubernetes Service (AKS)\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nDocker-basierte Dienste sind heutzutage unverzichtbar und Kubernetes ist zur Nummer eins der Containerorchestratoren geworden. Neben einer kurzen Einführung in den Azure Kubernetes Service (AKS) werden wir einen kompletten Cluster von 0 auf 100 bauen und in eine Azure Umgebung integrieren. Die behandelten Themen umfassen: AKS Deployment (ARM/CLI), AAD-Integration, öffentliche Endpunkte mit Application Gateway/WAF, Zertifikatsmanagement, Skalierung und Zero-Downtime Deployment.\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/k8s-journey
 DTSTAMP;VALUE=DATE-TIME:20210416T120000
 DTSTART;VALUE=DATE-TIME:20210416T100000
 DTEND;VALUE=DATE-TIME:20210416T105000

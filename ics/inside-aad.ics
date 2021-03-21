@@ -4,7 +4,7 @@ VERSION:2.0
 BEGIN:VEVENT
 UID:0@gaaustria2021
 CLASS:PUBLIC
-DESCRIPTION:Inside Azure AD Authentication\n\n---\n\nThis session brings you deep into the world of Azure Active Directory Authentication - definitely a must-know for everyone who works with AAD! Marcel, a Microsoft Regional Director and Azure MVP from Switzerland will be your guide on the bumpy roads to authentication procedures, App registrations, OAuth, Access Tokens and much more. Don't miss this essential session!\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/inside-aad
+DESCRIPTION:Inside Azure AD Authentication\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nThis session brings you deep into the world of Azure Active Directory Authentication - definitely a must-know for everyone who works with AAD! Marcel, a Microsoft Regional Director and Azure MVP from Switzerland will be your guide on the bumpy roads to authentication procedures, App registrations, OAuth, Access Tokens and much more. Don't miss this essential session!\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/inside-aad
 DTSTAMP;VALUE=DATE-TIME:20210416T120000
 DTSTART;VALUE=DATE-TIME:20210416T090000
 DTEND;VALUE=DATE-TIME:20210416T095000

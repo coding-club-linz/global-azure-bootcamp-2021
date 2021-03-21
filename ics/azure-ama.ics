@@ -4,7 +4,7 @@ VERSION:2.0
 BEGIN:VEVENT
 UID:0@gaaustria2021
 CLASS:PUBLIC
-DESCRIPTION:Azure - Ask us Anything\n\n---\n\nEine Plattform in der Ihr unvorbereitet Fragen zu Azure, Azure in Österreich, Azure Services, Azure Zertifizierungen & Lerninhalte und alles was Euch sonst einfällt stellen könnt. Wir werden versuchen die Fragen mit dem breiten Wissen von Tamara Tomanic, Thomas Vater, Philipp Weckerle, Rainer Stropek & Gerwald Oberleitner zu beantworten.\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/azure-ama
+DESCRIPTION:Azure - Ask us Anything\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nEine Plattform in der Ihr unvorbereitet Fragen zu Azure, Azure in Österreich, Azure Services, Azure Zertifizierungen & Lerninhalte und alles was Euch sonst einfällt stellen könnt. Wir werden versuchen die Fragen mit dem breiten Wissen von Tamara Tomanic, Thomas Vater, Philipp Weckerle, Rainer Stropek & Gerwald Oberleitner zu beantworten.\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/azure-ama
 DTSTAMP;VALUE=DATE-TIME:20210416T120000
 DTSTART;VALUE=DATE-TIME:20210416T080000
 DTEND;VALUE=DATE-TIME:20210416T085000

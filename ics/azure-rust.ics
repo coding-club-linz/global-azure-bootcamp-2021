@@ -4,7 +4,7 @@ VERSION:2.0
 BEGIN:VEVENT
 UID:0@gaaustria2021
 CLASS:PUBLIC
-DESCRIPTION:Rust, Kubernetes, and the Cloud\n\n---\n\nMoving to the cloud is a Big Deal™. So why would you want to throw a new language like Rust into the mix? Join us as we demonstrate how Rust can be used with Azure to simplify and bring safety to your code. We'll give a brief overview of the strengths and weaknesses of using Rust in the cloud in general before demoing how you can use Rust to connect to and leverage the Azure APIs. Kubernetes more your thing? We've got that covered too! We'll show how Rust makes interfacing with and writing tooling for Kubernetes a breeze, followed by a practical demo of a Rust project (Krustlet) in action on AKS.\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/azure-rust
+DESCRIPTION:Rust, Kubernetes, and the Cloud\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nMoving to the cloud is a Big Deal™. So why would you want to throw a new language like Rust into the mix? Join us as we demonstrate how Rust can be used with Azure to simplify and bring safety to your code. We'll give a brief overview of the strengths and weaknesses of using Rust in the cloud in general before demoing how you can use Rust to connect to and leverage the Azure APIs. Kubernetes more your thing? We've got that covered too! We'll show how Rust makes interfacing with and writing tooling for Kubernetes a breeze, followed by a practical demo of a Rust project (Krustlet) in action on AKS.\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/azure-rust
 DTSTAMP;VALUE=DATE-TIME:20210416T120000
 DTSTART;VALUE=DATE-TIME:20210416T160000
 DTEND;VALUE=DATE-TIME:20210416T165000

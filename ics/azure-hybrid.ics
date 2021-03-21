@@ -4,7 +4,7 @@ VERSION:2.0
 BEGIN:VEVENT
 UID:0@gaaustria2021
 CLASS:PUBLIC
-DESCRIPTION:Azure Hybrid - Learn about Hybrid Cloud Management with Azure\n\n---\n\nIn this session, Microsoft Cloud Advocate Thomas Maurer shows you how you can manage and govern your Windows and Linux servers and Kubernetes clusters hosted outside of Azure on your corporate network or other cloud providers, similar to how you manage native Azure virtual machines. When a hybrid machine is connected to Azure, it becomes a connected machine and is treated as a resource in Azure. Azure Arc provides you with the familiar cloud-native Azure management experience, like RBAC, Tags, Azure Policy, Log Analytics, and more.\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/azure-hybrid
+DESCRIPTION:Azure Hybrid - Learn about Hybrid Cloud Management with Azure\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nIn this session, Microsoft Cloud Advocate Thomas Maurer shows you how you can manage and govern your Windows and Linux servers and Kubernetes clusters hosted outside of Azure on your corporate network or other cloud providers, similar to how you manage native Azure virtual machines. When a hybrid machine is connected to Azure, it becomes a connected machine and is treated as a resource in Azure. Azure Arc provides you with the familiar cloud-native Azure management experience, like RBAC, Tags, Azure Policy, Log Analytics, and more.\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/azure-hybrid
 DTSTAMP;VALUE=DATE-TIME:20210416T120000
 DTSTART;VALUE=DATE-TIME:20210416T160000
 DTEND;VALUE=DATE-TIME:20210416T165000

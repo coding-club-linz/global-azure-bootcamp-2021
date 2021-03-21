@@ -4,7 +4,7 @@ VERSION:2.0
 BEGIN:VEVENT
 UID:0@gaaustria2021
 CLASS:PUBLIC
-DESCRIPTION:Become a Contributor to Microsoft Docs\n\n---\n\nMicrosoft Docs are open source on Github! Join content developers from a MSFT content team for a discussion on modern Microsoft documentation (regardless of technology). Learn about the content publishing engines behind Docs, and the best ways to add your content and fixes to Docs that are read by the entire customer community. There are hundreds of thousands of GitHub issues and PR’s submitted to Docs every month, how can you be an effective part of that process and get your face on the top of an article? \n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/azure-docs
+DESCRIPTION:Become a Contributor to Microsoft Docs\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nMicrosoft Docs are open source on Github! Join content developers from a MSFT content team for a discussion on modern Microsoft documentation (regardless of technology). Learn about the content publishing engines behind Docs, and the best ways to add your content and fixes to Docs that are read by the entire customer community. There are hundreds of thousands of GitHub issues and PR’s submitted to Docs every month, how can you be an effective part of that process and get your face on the top of an article? \n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/azure-docs
 DTSTAMP;VALUE=DATE-TIME:20210416T120000
 DTSTART;VALUE=DATE-TIME:20210416T160000
 DTEND;VALUE=DATE-TIME:20210416T165000

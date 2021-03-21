@@ -4,7 +4,7 @@ VERSION:2.0
 BEGIN:VEVENT
 UID:0@gaaustria2021
 CLASS:PUBLIC
-DESCRIPTION:A Cloud Native Data Warehouse based on PowerBI und Azure\n\n---\n\nThere is no “one-size-fits-all” for Business Intelligence Solutions in a federally organized company. Still, a high degree of standardization can be achieved through Microsoft’s cloud technologies and PaaS Services with cloud native tools and security mechanisms. From a practical viewpoint, we will provide an overview of how cloud technologies can be used to foster cooperation among different business units, standardize tools, and create a shared platform for company data. We will also talk about the challenges and insights we’ve come across and what benefits we created for the consumers of data. \n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/dwh-porsche
+DESCRIPTION:A Cloud Native Data Warehouse based on PowerBI und Azure\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nThere is no “one-size-fits-all” for Business Intelligence Solutions in a federally organized company. Still, a high degree of standardization can be achieved through Microsoft’s cloud technologies and PaaS Services with cloud native tools and security mechanisms. From a practical viewpoint, we will provide an overview of how cloud technologies can be used to foster cooperation among different business units, standardize tools, and create a shared platform for company data. We will also talk about the challenges and insights we’ve come across and what benefits we created for the consumers of data. \n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/dwh-porsche
 DTSTAMP;VALUE=DATE-TIME:20210416T120000
 DTSTART;VALUE=DATE-TIME:20210416T140000
 DTEND;VALUE=DATE-TIME:20210416T145000
