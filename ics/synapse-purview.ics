@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:Connect your data artifacts with Azure Synapse Analytics and Azure Purview\n\n---\n\nIn human brains, synapses are responsible to connect information pieces together. Over time, our knowledge increases when more and more synapses are connected together. Following that analogy, Azure Synapse Analytics wants to connect (all) information silos together and provide a single point of analytics. For a complete overview over your company's data estate, Azure Purview - the data catalog and governance solution - can be used. \nJoin this session, if you want to hear about the building blocks of Azure Synapse Analytics, how Data Engineers and Data Scientists and even BI developer can work together and see how easy it is to start with Synapse Analytics!\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/synapse-purview
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T100000
+DTEND;VALUE=DATE-TIME:20210416T105000
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:Connect your data artifacts with Azure Synapse Analytics and Azure Purview
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

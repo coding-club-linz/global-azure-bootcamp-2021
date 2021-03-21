@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:IoT Central - Daten rasch online bringen! (mit node-red/sigfox/IO-Link/CloudRAIL)\n\n---\n\nDaten aus Sensoren in Dashboards bringen ist heute oft eine verbreitete Anforderung! Sensoren aus der Industrie kommen mittels  OPC-UA od. IO-Link Sensoren, mittels sigfox/LoraWAN per Funk ortsungebunden.\n\nIch zeige live, wie man Sensoren vom Anstecken bis ins Dashboard konfiguriert (Azure IoT PnP) oder beliebige andere Messwerte mittels OpenSource Plattform Node-Red integriert (IoTC Bridge)! \n\nFür die Developer unter Euch: node-red ist eine node.js Plattform, die in der Industrie sehr beliebt und verbreitet ist ;) Also JavaScript ist Dein Freund...\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/iot-central
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T110000
+DTEND;VALUE=DATE-TIME:20210416T115000
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:IoT Central - Daten rasch online bringen! (mit node-red/sigfox/IO-Link/CloudRAIL)
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

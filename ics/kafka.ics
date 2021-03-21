@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:Four Different Ways of Working with Kafka on Azure\n\n---\n\nLife doesn't happen in batch mode, which is why for several years now, we see a very strong tendency towards stream processing throughout various industries. Companies need, or least partially have to rethink their existing data architectures in order to enable near real-time business cases. Besides traditional database systems and batch-driven tooling, many companies put Apache Kafka® - the de facto standard for robust and scalable event streaming - to good use.\n\nThis talk explores the following four different ways to run Kafka on Azure:\n\n* Kafka on HDInsight (open-source core Kafka)\n* EventHubs (Microsoft's very own "Kafka look-alike")\n* Confluent Cloud (a vendor-backed Kafka distribution)\n* Kafka in Azure Kubernetes Service\n\nYou will walk away with a better understanding about the most important benefits, drawbacks and implications for each of the discussed alternatives. \n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/kafka
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T130000
+DTEND;VALUE=DATE-TIME:20210416T135000
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:Four Different Ways of Working with Kafka on Azure
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:Micro Frontends mit Module Federation, Angular und Azure Static Web Apps\n\n---\n\nDie Umsetzung von Microfrontends war bis jetzt alles andere als einfach. Da gängige Frameworks und Build-Werkzeuge diese Idee nicht einmal ansatzweise kannten, musste man ordentlich in die Trickkiste greifen. \n\nDie von Webpack 5 gebotene Module Federation leitet hier einen entscheidenden Richtungswechsel ein. Sie erlaubt es, separat kompilierte Anwendungsteile zur Laufzeit zu laden und Bibliotheken zwischen diesen zu teilen. \nIn dieser Session erfahren Sie von Microfrontend-Pionier Manfred Steyer, wie Sie diesen Mechanismus zur Schaffung von Microfrontends mit Angular nutzen können. Dazu entwickeln wir ein Micro Frontend, das wir mit Azure Static Web Apps hosten und zur Laufzeit dynamisch in eine App-Shell laden.\n\nAm Ende der Session haben Sie einen Überblick über das Thema und wissen, wie Sie Module Federation in Ihren Projekten nutzen können sowie welche Konsequenzen sich darauf ergeben.\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/ng-static-web-apps
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T130000
+DTEND;VALUE=DATE-TIME:20210416T135000
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:Micro Frontends mit Module Federation, Angular und Azure Static Web Apps
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

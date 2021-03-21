@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:Azure AI in Power BI integrieren\n\n---\n\nPower BI Desktop ist Microsoft’s kostenloses Werkzeug um Self-Service BI zu betreiben. Es liefert jeden Monat spannende neue Features und Gartner hat es seit 2019 zu dem führenden BI-Tool erklärt (das Tableau und Qlik hinter sich gelassen hat). In diesem Vortrag wollen wir ansehen, wie Azure's AI Dienste in Power BI Desktop verwendet werden können um Daten anzureichern: Cognitive Services, Azure Machine Learning Services und AI Insights. \n\n\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/ai-power-bi
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T160000
+DTEND;VALUE=DATE-TIME:20210416T165000
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:Azure AI in Power BI integrieren
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

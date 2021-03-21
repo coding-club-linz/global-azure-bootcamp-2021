@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:Modern continous delivery on Azure Kubernetes Service\n\n---\n\nContinuous delivery (CD) might be a challenging and daunting task to set up and maintain based on 1000+ lines of pipeline code - but it doesn’t have to be this way. Modern tools can make your application deployment and delivery process an efficient, quick, and sustainable commodity without requiring a lot of configuration.\n\nIn this talk you will learn 1) how to employ new delivery models such as blue/green deployments, and 2) how to integrate quality gates into pipelines to ensure no bad code changes can make it to production. We are going to use the open-source tool Keptn that is based on SRE principles to define delivery and operation workflows and will be doing a live deployment with quality gates on Azure Kubernetes Service (AKS). \n\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/ci-cd-aks
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T120000
+DTEND;VALUE=DATE-TIME:20210416T125000
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:Modern continous delivery on Azure Kubernetes Service
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

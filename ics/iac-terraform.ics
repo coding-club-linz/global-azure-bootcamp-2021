@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:Infrastructure as Code for Azure with Terraform\n\n---\n\nModern and distributed application architectures often require a large set of services and systems with a rather complex configuration to work as expected. You and your team can create and manage such infrastructures professionally by adopting Infrastructure as Code (IaC) and relying on Terraform. In this talk, Azure MVP Thorsten Hans demonstrates how to create reliable and predictable Azure infrastructures with Terraform. You will learn how to structure your project, create and mutate your services and manage multiple environments in no time.\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/iac-terraform
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T140000
+DTEND;VALUE=DATE-TIME:20210416T145000
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:Infrastructure as Code for Azure with Terraform
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

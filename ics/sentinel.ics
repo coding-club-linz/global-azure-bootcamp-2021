@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:Azure Sentinel das moderne SIEM system\n\n---\n\nEin jeder spricht davon, ein jeder würde es gerne implementieren, aber es scheitert oft an den Kosten/Sizing und der Angst, dass das System mit den Jahren nicht mehr ausreichend performt. \nMicrosoft hat die Antwort auf diese Probleme, mit Azure Sentinel bekommen Sie ein modernes SIEM System basierend auf einer PaaS Architektur und nach den Pay-as-you-Go Prinzip.\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/sentinel
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T130000
+DTEND;VALUE=DATE-TIME:20210416T135000
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:Azure Sentinel das moderne SIEM system
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

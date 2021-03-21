@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:Enabling the protection, detection and response to cyber-threats\n\n---\n\nMicrosoft is committed to enable a secure digital transformation to customers and partners. Come and join this session where Martina will detail strategies to protect, detect and respond to today's cyber-threats with practical examples and technology showcase.\nUse modern tools to get an unified view to current threats and infos how to mitigate risk.\n\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/cyber-threats
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T110000
+DTEND;VALUE=DATE-TIME:20210416T115000
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:Enabling the protection, detection and response to cyber-threats
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:Notes from the field Microsoft Information Protection\n\n---\n\nEver thought about how the different protections play together to protect your information? In this session you will learn how Azure Information Protection, Endpoint DLP, Cloud App Security and Conditional Access can work together to protect every aspect during work. It will also be a part to monitor the solutions with Azure Log Analytics. All of this is showcased with real world examples.\n\nWhat you will learn:\n- Integration possibility with other systems\n- Benefits and Limits of the solutions in production environments\n- Roadmap for a successful setup\n\n---\n\nStreaming URL: https://www.globalazure.at/sessions/ms-info-protection
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T140000
+DTEND;VALUE=DATE-TIME:20210416T145000
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:Notes from the field Microsoft Information Protection
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
