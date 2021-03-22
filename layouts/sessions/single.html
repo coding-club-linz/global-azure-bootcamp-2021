@@ -37,7 +37,7 @@
                     <p>
                         <div class="text-muted timeslot">
                             {{ dateFormat "Monday, January 2, 2006" $session.startsAt }}
-                            {{ dateFormat "15:04" $session.startsAt }} - {{ dateFormat "15:04" $session.endsAt }}
+                            {{ dateFormat "15:04" $session.startsAt }} - {{ dateFormat "15:04" $session.endsAt }} CEST
                         </div>
                     </p>
                     <p class="text-muted">{{ safeHTML  (replace $session.description "\r\n" "<br/>") }}</p>

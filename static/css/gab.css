@@ -75,6 +75,10 @@ p {
     line-height: 1.5;
 }
 
+.float-right {
+    float: right;
+}
+
 .text-muted {
     opacity: 0.55;
     color: inherit;
@@ -602,6 +606,26 @@ fieldset[disabled] .btn-primary.active {
     background-color: #fff;
 }
 
+.btn-info {
+    border-color: #d0d0d0;
+    color: #000;
+    background-color: #d0d0d0;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info.focus,
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-primary {
+    border-color: #aaa;
+    color: #000;
+    background-color: #aaa;
+}
+
 .btn {
     border: 0;
     border-radius: 300px;
@@ -802,6 +826,10 @@ body {
     font-weight: 300;
 }
 
+.sessions .btn-info, .schedule-session .btn-primary {
+    margin-right: 10px;
+}
+
 .sessions h4, .schedule-session h4 {
     margin-top: 30px;
 }
@@ -942,6 +970,7 @@ body {
 .schedule .language, .sessions .language {
     float: right;
     font-weight: 300;
+    margin-top: 1px;
 }
 
 .schedule .speaker {

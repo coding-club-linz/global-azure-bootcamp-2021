@@ -69,8 +69,7 @@
                                 {{ if eq (int $question.questionId) (int $shortLinkQuestionId) }}
                                 <a href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar" aria-hidden="true"></i>Add
                                     to calendar</a><br />
-                                <!-- <a href="/sessions/{{$question.answerValue}}" target="_blank"><i class="fa fa-video-camera" aria-hidden="true"></i>Open Microsoft Teams
-                                    live event</a> -->
+                                <a href="/sessions/{{$question.answerValue}}" target="_blank"><i class="fa fa-video-camera" aria-hidden="true"></i>Join stream</a>
                                 {{ end }}
                                 {{ end }}
                             </div>
@@ -131,13 +130,19 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">{{ .title }}</h4>
+                <h4 class="modal-title" id="myModalLabel">
+                    {{ range where (index $.Site.Data.sessionize.categories 1).items "id" "in" .categoryItems }}
+                        <span class="label label-default float-right">{{ .name }}</span>
+                    {{ end }}
+                    <span>{{ .title }}</span>
+
+                </h4>
             </div>
             <div class="modal-body speaker">
                 <p>
                     <div class="text-muted timeslot">
-                        {{/* dateFormat "Monday, January 2, 2006" .startsAt */}}
-                        {{ dateFormat "15:04" .startsAt }} - {{ dateFormat "15:04" .endsAt }}
+                        {{ dateFormat "Monday, January 2, 2006" .startsAt }}
+                        {{ dateFormat "15:04" .startsAt }} - {{ dateFormat "15:04" .endsAt }} CEST
                     </div>
                 </p>
                 
@@ -147,9 +152,10 @@
                 <div class="links">
                     {{ range $question := .questionAnswers }}
                     {{ if eq (int $question.questionId) (int $shortLinkQuestionId) }}
-                    <a class="btn btn-primary btn-xs" href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar"
+                    <a class="btn btn-primary btn-xs float-left" href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar"
                             aria-hidden="true"></i>Add
-                        to calendar</a><br/>
+                        to calendar</a>
+                    <a class="btn btn-primary btn-xs" href="/sessions/{{$question.answerValue}}" target="_blank"><i class="fa fa-video-camera" aria-hidden="true"></i>Join stream</a>
                     {{ end }}
                     {{ end }}
                 </div>

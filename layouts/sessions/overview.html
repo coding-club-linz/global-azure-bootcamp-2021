@@ -55,7 +55,8 @@
                     </p>
                     <p>
                         <div class="text-muted timeslot">
-                            {{ dateFormat "15:04" .startsAt }} - {{ dateFormat "15:04" .endsAt }}
+                            {{ dateFormat "Monday, January 2, 2006" .startsAt }}
+                            {{ dateFormat "15:04" .startsAt }} - {{ dateFormat "15:04" .endsAt }} CEST
                         </div>
                     </p>
                     <p class="text-muted">{{ safeHTML  (replace .description "\r\n" "<br/>") }}</p>
@@ -64,12 +65,11 @@
                     <div class="calendar-link">
                         {{ range $question := .questionAnswers }}
                         {{ if eq (int $question.questionId) (int $shortLinkQuestionId) }}
-                        <a class="btn btn-primary btn-xs" href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar"
+                        <a class="btn btn-info btn-xs float-left" href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar"
                                 aria-hidden="true"></i>Add
-                            to calendar</a><br/>
-                        <!-- <a href="/sessions/{{$question.answerValue}}" target="_blank"><i
-                                class="fa fa-video-camera" aria-hidden="true"></i>Open Microsoft Teams
-                            live event</a> -->
+                            to calendar</a>
+                        <a class="btn btn-info btn-xs" href="/sessions/{{$question.answerValue}}" target="_blank"><i
+                                class="fa fa-video-camera" aria-hidden="true"></i>Join stream</a>
                         {{ end }}
                         {{ end }}
                     </div>
