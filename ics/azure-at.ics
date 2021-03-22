@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:Microsoft Datacenter Region in Austria - What does it mean and how can you benefit?\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nLet´s talk about the announced Microsoft Datacenter Region Austria East.\n- What does the announcement really mean from a technical point of view?\n- How does a Microsoft datacenter look like in real life?\n- Which physical infrastructure can you expect in the Austrian region?\n- Which services will be there?\n- How can you benefit from the Austrian region?\n- How can you influence the make-up of the Austrian Datacenter region?\n\n---\n\nStreaming URL: https://globalazure.at/sessions/azure-at
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T120000
+DTEND;VALUE=DATE-TIME:20210416T125000
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:Microsoft Datacenter Region in Austria - What does it mean and how can you benefit?
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

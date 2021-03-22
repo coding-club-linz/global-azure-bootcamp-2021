@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:Technische Integration von Digital Twins in IoT Lösungen\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nMit Azure Digital Twins kommt endlich Kontext und zusätzliche Insights in IoT Lösungen. Doch wie erfolgt die technische Integration?\n\n---\n\nStreaming URL: https://globalazure.at/sessions/digital-twins
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T120000
+DTEND;VALUE=DATE-TIME:20210416T125000
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:Technische Integration von Digital Twins in IoT Lösungen
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
