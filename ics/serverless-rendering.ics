@@ -6,8 +6,8 @@ UID:0@gaaustria2021
 CLASS:PUBLIC
 DESCRIPTION:Serverless Rendering with Azure Functions and TypeScript\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nOh, the pendulum swings! \n\nRender everything on the server! No, render everything on the client! Render everything ... on the server again, except that there are no servers?\n\nIf all those pendulum swings make your head dizzy, don't worry! Pendulums have the tendency to stop right in the middle. And this is where we are going with the big question: Where, and when, should we render our HTML?\n\nIn this talk, we explore rendering strategies with the help of Azure Functions. \n\nWe look into\n- lesser-known TypeScript features like JSX factories\n- concepts like Hydration\n- an architecture for highly dynamic and performant web sites\n\nJoin us and see where the pendulum stops. And find out if we give it another swing!\n\n---\n\nStreaming URL: https://globalazure.at/sessions/serverless-rendering
 DTSTAMP;VALUE=DATE-TIME:20210416T120000
-DTSTART;VALUE=DATE-TIME:20210416T140000
-DTEND;VALUE=DATE-TIME:20210416T145000
+DTSTART;VALUE=DATE-TIME:20210416T150000
+DTEND;VALUE=DATE-TIME:20210416T155000
 LOCATION:Online
 SUMMARY;LANGUAGE=en-us:Serverless Rendering with Azure Functions and TypeScript
 TRANSP:TRANSPARENT
