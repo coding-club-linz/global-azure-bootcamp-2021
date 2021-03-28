@@ -16,22 +16,22 @@
 
                     <hr class="primary">
 
-                    <p class="text-muted"><b>More sessions will be announced soon.</b>
+                    <!--<p class="text-muted"><b>More sessions will be announced soon.</b>
                     </p>
 
                     <p class="text-muted">If you’re
                         passionate about Azure and want to share your expertise with the community then we'd love to
                         hear
                         from you.
-                    </p>
+                    </p> -->
                 </div>
 
-                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
+                <!-- <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
                     <a href="https://sessionize.com/global-azure-austria-2021/" target="_blank"><i
                             class="fa fa-microphone fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                         <p>Submit session</p>
                     </a>
-                </div>
+                </div> -->
             </div>
 
             {{ range $index, $element := sort (where $.Site.Data.sessionize.sessions "isServiceSession" false) ".title" }}
