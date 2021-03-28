@@ -9,6 +9,7 @@
     --primary-button: #e3c038;
     --primary-button-dark: #ad8f18;
     --secondary: #f0f0f0;
+    --warning-bg: #e3c138bb;
 }
 
 html,
@@ -137,10 +138,10 @@ p {
 }
 
 .bg-warning {
-    background-color: #fff59d;
+    background-color: var(--warning-bg);
 }
 
-.bg-dark a {
+.bg-dark a:not(.btn) {
     color: rgba(255, 255, 255, 0.9);
     text-decoration: underline;
 }
@@ -501,7 +502,7 @@ header .fa-chevron-circle-down {
 
 .btn-default {
     border-color: var(--primary-button);
-    color: #000;
+    color: #000 !important;
     background-color: var(--primary-button);
     -webkit-transition: all 0.35s;
     -moz-transition: all 0.35s;
@@ -761,7 +762,7 @@ body {
 }
 
 .sponsors img.prio3 {
-    max-width: 150px;
+    max-width: 250px;
     width: 80%;
 }
 
@@ -913,6 +914,11 @@ body {
 }
 
 /* Schedule */
+#schedule .btn-default {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .schedule {
     margin-top: 20px;
 }

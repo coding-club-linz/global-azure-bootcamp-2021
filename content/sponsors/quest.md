@@ -10,4 +10,4 @@ Quest bietet Softwarelösungen für die sich schnell verändernde Welt der Unter
 Quest Software GmbH  
 Im Mediapark 4e  
 D-50670 Köln  
-[www.quest.com](https://www.quest.com//)
+[www.quest.com](https://www.quest.com/)
