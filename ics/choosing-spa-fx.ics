@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:Die Qual der Wahl bei den Single Page Application Frameworks\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nDieser Vortrag gibt einen Überblick über die aktuellen Single Page Applikation Frameworks und versucht diese zu vergleichen. Der Fokus liegt dabei auf den aktuellen "Top 3" der SPA Frameworks: Angular, React und Vue.js. Der Vortrag schaut aber auch über den Tellerrand und beleuchtet aktuelle Trends und Entwicklungen bei modernen Webframeworks.\n\n---\n\nStreaming URL: https://globalazure.at/sessions/choosing-spa-fx
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T160000
+DTEND;VALUE=DATE-TIME:20210416T165000
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:Die Qual der Wahl bei den Single Page Application Frameworks
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
