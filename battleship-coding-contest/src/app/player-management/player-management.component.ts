@@ -50,7 +50,7 @@ export class PlayerManagementComponent implements OnInit {
   }
 
   login(): void {
-    this.authService.loginWithRedirect({ redirect_uri: this.redirectUri });
+    this.authService.loginWithPopup({ redirect_uri: this.redirectUri });
   }
 
   logout(): void {
