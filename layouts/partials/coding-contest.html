@@ -6,13 +6,14 @@
                 <h2 class="section-heading">Battleship Coding Contest</h2>
                 <hr>
                 <p>
-                    Take part in the Battleship Coding Contest. adfsas
+                    Take part in the Battleship Coding Contest.
                 </p>
             </div>
 
             <div class="col-sm-12">
-                
-                <battleship-player-management redirect-uri="{{.Site.BaseUrl}}battleship/"></battleship-player-management>
+                {{ with .Site.BaseURL }}
+                    <battleship-player-management redirect-uri="{{ . }}battleship/"></battleship-player-management>
+                {{ end }}
             </div>
         </div>
     </div>
