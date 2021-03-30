@@ -10,6 +10,8 @@
     --primary-button-dark: #ad8f18;
     --secondary: #f0f0f0;
     --warning-bg: #e3c138bb;
+    --required-bg: #e3c1382a;
+    --error: #e3312d;
 }
 
 html,
@@ -171,6 +173,35 @@ aside {
     padding: 0;
 }
 
+/* battleship */
+input[required] {
+    background-color: var(--required-bg);
+}
+
+input.ng-touched.ng-invalid {
+    border: 1px solid var(--error);
+}
+
+p.error {
+    background-color: var(--warning-bg);
+    font-size: 14px;
+    padding: 6px 12px;
+}
+
+/* tables */
+.table > thead > tr > th {
+    border-bottom: 1px solid #555;
+}
+
+.table > tbody > tr > td {
+    border-top: 1px solid #555;
+}
+
+section.bg-dark .table > tbody > tr > td {
+    border-top: 1px solid #777;
+}
+
+/* nav */
 #mainNav {
     box-shadow: 2px 2px 15px 7px rgba(0, 0, 0, 0.05);
 }
@@ -501,9 +532,11 @@ header .fa-chevron-circle-down {
 }
 
 .btn-default {
-    border-color: var(--primary-button);
+    border-color: var(--secondary);
     color: #000 !important;
-    background-color: var(--primary-button);
+    border-width: 1px;
+    border-style: solid;
+    background-color: var(--secondary);
     -webkit-transition: all 0.35s;
     -moz-transition: all 0.35s;
     transition: all 0.35s;
@@ -734,12 +767,14 @@ body {
 }
 
 /* About */
-#about hr, #junior-bootcamp hr {
+#about hr,
+#junior-bootcamp hr {
     border-color: var(--primary-button);
     border-width: 2px;
 }
 
-#about hr:first-of-type, #junior-bootcamp hr:first-of-type {
+#about hr:first-of-type,
+#junior-bootcamp hr:first-of-type {
     border-color: #000;
     border-width: 3px;
 }
@@ -808,8 +843,8 @@ body {
 
 /* Speakers */
 .sessions .row {
-    padding-top: 30px; 
-    margin-top: -30px
+    padding-top: 30px;
+    margin-top: -30px;
 }
 
 .sessions p.text-muted,
@@ -827,11 +862,13 @@ body {
     font-weight: 300;
 }
 
-.sessions .btn-info, .schedule-session .btn-primary {
+.sessions .btn-info,
+.schedule-session .btn-primary {
     margin-right: 10px;
 }
 
-.sessions h4, .schedule-session h4 {
+.sessions h4,
+.schedule-session h4 {
     margin-top: 30px;
 }
 
@@ -853,7 +890,8 @@ body {
     margin-bottom: 20px;
 }
 
-.modal-dialog .bio, .modal-dialog .bio p {
+.modal-dialog .bio,
+.modal-dialog .bio p {
     font-size: 15px;
 }
 
@@ -960,10 +998,6 @@ body {
     cursor: pointer;
 }
 
-.schedule.table>tbody>tr>td {
-    border-top: 1px solid #777;
-}
-
 .schedule .session a {
     text-decoration: none;
 }
@@ -973,7 +1007,8 @@ body {
     /* opacity: 0.66; */
 }
 
-.schedule .language, .sessions .language {
+.schedule .language,
+.sessions .language {
     float: right;
     font-weight: 300;
     margin-top: 1px;

@@ -1,0 +1,208 @@
+<div class="row">
+    <div class="col-sm-12">
+        <!-- login -->
+        <ng-container *ngIf="authService.isAuthenticated$ | async; else loggedOut">
+            <div class="logout">
+                <span *ngIf="authService.user$ | async as user">
+                    {{ user.name }}
+                </span>
+                <button class="btn btn-light" (click)="editUser()"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                <button class="btn btn-primary" (click)="logout()">
+                    Log out
+                </button>
+            </div>
+
+            <ng-container *ngIf="isRegistered">
+                <!-- players -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Player Name</th>
+                            <th>Web API Url</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <ng-container *ngIf="!isLoading">
+                            <tr *ngFor="let player of players">
+                                <td>{{player.name}}</td>
+                                <td>{{player.webApiUrl}}</td>
+                                <td title="Edit player"><a (click)="editPlayer(player)"><i class="fa fa-pencil"
+                                            aria-hidden="true"></i></a>
+                                </td>
+                                <td title="Test player url"><a (click)="testPlayer(player)"><i class="fa fa-check-circle"
+                                            aria-hidden="true"></i></a>
+                                </td>
+                                <td title="Run player"><a (click)="runPlayer(player)"><i class="fa fa-play-circle"
+                                            aria-hidden="true"></i></a>
+                                </td>
+                                <td title="Delete player"><a (click)="confirmDeletePlayer(player)"><i
+                                            class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                            </tr>
+                        </ng-container>
+
+                        <tr *ngIf="!players.length && !isLoading">
+                            <td colspan="5" class="text-center">No players registered</td>
+                        </tr>
+
+                        <tr *ngIf="isLoading">
+                            <td colspan="5" class="text-center">loading...</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="text-center">
+                    <button class="btn btn-primary" (click)="addPlayer()">
+                        Add player
+                    </button>
+                </p>
+            </ng-container>
+
+            <ng-container *ngIf="isInitialized && !isRegistered">
+                <form novalidate="true" class="was-validated">
+                    <div class="form-group">
+                        <label for="email">Email (not visible for other users)</label>
+                        <input type="text" class="form-control" id="email" name="email" [(ngModel)]="user.email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nickname">Nickname</label>
+                        <input type="text" class="form-control" id="nickname" name="nickname"
+                            [(ngModel)]="user.nickName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="publicTwitter">Twitter (optional)</label>
+                        <input type="text" class="form-control" id="publicTwitter" name="publicTwitter"
+                            [(ngModel)]="user.publicTwitter">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="publicUrl">Public Url (optional)</label>
+                        <input type="text" class="form-control" id="publicUrl" name="publicUrl"
+                            [(ngModel)]="user.publicUrl">
+                    </div>
+
+                    <p class="text-center">
+                        <button class="btn btn-primary" (click)="register()">
+                            Register
+                        </button>
+                    </p>
+                </form>
+            </ng-container>
+        </ng-container>
+
+        <ng-template #loggedOut>
+            <ng-container *ngIf="isInitialized">
+                <p>Log in to register your player for the battle.</p>
+                <p class="text-center"><button class="btn btn-primary" (click)="login()">Log in</button></p>
+            </ng-container>
+        </ng-template>
+
+        <p class="error" [innerHTML]="error" *ngIf="error"></p>
+    </div>
+</div>
+
+<div class="modal fade battleship-player" id="user-dialog" #userDialog tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">User Settings</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="email">Email (not visible for other users)</label>
+                    <input type="text" class="form-control" id="email" name="email" [(ngModel)]="user.email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nickname">Nickname</label>
+                    <input type="text" class="form-control" id="nickname" name="nickname" [(ngModel)]="user.nickName"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="publicTwitter">Twitter (optional)</label>
+                    <input type="text" class="form-control" id="publicTwitter" name="publicTwitter"
+                        [(ngModel)]="user.publicTwitter">
+                </div>
+
+                <div class="form-group">
+                    <label for="publicUrl">Public Url (optional)</label>
+                    <input type="text" class="form-control" id="publicUrl" name="publicUrl"
+                        [(ngModel)]="user.publicUrl">
+                </div>
+
+                <p class="error" [innerHTML]="userDialogError" *ngIf="userDialogError"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" (click)="saveUser()">Save user</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade battleship-player" id="player-dialog" #playerDialog tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Player</h4>
+            </div>
+            <div class="modal-body" *ngIf="selectedPlayer">
+                <div class="form-group">
+                    <label for="name">Name of Player</label>
+                    <input type="text" class="form-control" id="name" [(ngModel)]="selectedPlayer.name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="webApiUrl">Web API Url</label>
+                    <input type="text" class="form-control" id="webApiUrl" [(ngModel)]="selectedPlayer.webApiUrl"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="apiKey">API Key (optional)</label>
+                    <input type="text" class="form-control" [(ngModel)]="selectedPlayer.apiKey">
+                </div>
+
+                <p class="error" [innerHTML]="playerDialogError" *ngIf="playerDialogError"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" (click)="savePlayer()">Save player</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade battleship-player" id="confirm-delete-dialog" #confirmDeleteDialog tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Delete</h4>
+            </div>
+            <div class="modal-body" *ngIf="selectedPlayer">
+                <p>Do you really want to delete the player {{selectedPlayer.name}}?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" (click)="deletePlayer()">Delete player</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

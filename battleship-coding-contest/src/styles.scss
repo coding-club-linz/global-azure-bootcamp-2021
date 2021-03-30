@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+input.ng-touched.ng-invalid {
+    border: 1px solid red;
+}
+
+input[required] {
+    background-color: lightyellow;
+}
+
+.error {
+    background-color: yellow;
+    padding: 10px 20px;
+}

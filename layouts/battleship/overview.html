@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body id="page">
+    {{ partial "nav.html" . }}
+
+    <section id="battleship-coding-contest">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Battleship Coding Contest</h2>
+                    <hr>
+                    <p>
+                        Take part in the Battleship Coding Contest.
+                    </p>
+                </div>
+
+                <div class="col-sm-12">
+                    <battleship-player-management redirect-uri="http://127.0.0.1:1313/battleship/"></battleship-player-management>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="battleship-coding-contest-ranking" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Battleship Ranking</h2>
+                    <hr class="light">
+                    <p>
+                        Here are the most successful players.
+                    </p>
+                </div>
+
+                <div class="col-sm-12">
+                    <battleship-ranking></battleship-ranking>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{ partial "sponsors.html" . }}
+
+    {{ partial "contact.html" . }}
+
+    {{ partial "js.html" . }}
+</body>
+
+</html>
