@@ -20,7 +20,9 @@
                 </div>
 
                 <div class="col-sm-12">
-                    <battleship-player-management redirect-uri="http://127.0.0.1:1313/battleship/"></battleship-player-management>
+                    {{ with .Site.BaseURL }}
+                    <battleship-player-management redirect-uri="{{ . }}battleship"></battleship-player-management>
+                    {{ end }}
                 </div>
             </div>
         </div>

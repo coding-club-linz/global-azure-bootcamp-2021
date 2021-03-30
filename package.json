@@ -4,7 +4,7 @@
   "description": "[![Build Hugo website](https://github.com/coding-club-linz/global-azure-bootcamp-2021/actions/workflows/ci-cd.yaml/badge.svg)](https://github.com/coding-club-linz/global-azure-bootcamp-2021/actions/workflows/ci-cd.yaml)",
   "main": "index.js",
   "scripts": {
-    "serve": "hugo serve --baseUrl http://127.0.0.1",
+    "serve": "hugo serve --baseUrl http://127.0.0.1/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
