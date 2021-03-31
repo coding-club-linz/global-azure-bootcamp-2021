@@ -28,7 +28,6 @@ import { PlayerManagementComponent } from './player-management/player-management
 
       // Request this scope at user authentication time
       scope: 'read:current_user',
-      //redirectUri: window.location.origin + '/battleship/',
 
       // Specify configuration for the interceptor              
       httpInterceptor: {

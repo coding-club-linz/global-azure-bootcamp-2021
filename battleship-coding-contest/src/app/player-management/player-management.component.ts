@@ -34,7 +34,7 @@ export class PlayerManagementComponent implements OnInit {
   constructor(public authService: AuthService, @Inject(DOCUMENT) public document: Document, private http: HttpClient) {
     this.authService.user$.subscribe(
       (profile) => {
-        console.warn('auth service', profile);
+        // console.warn('auth service', profile);
         if (!profile) {
           this.isInitialized = true;
         } else if (profile && !this.userLoaded) {
@@ -92,13 +92,19 @@ export class PlayerManagementComponent implements OnInit {
   }
 
   addPlayer(): void {
-    this.selectedPlayer = { name: '', apiKey: '', webApiUrl: '' };
+    this.selectedPlayer = { name: '', apiKey: '', webApiUrl: '', hasApiKey: false };
     $(this.playerDialog.nativeElement).modal({});
   }
 
   editPlayer(player: Player): void {
     this.selectedPlayer = Object.assign({}, player);
     $(this.playerDialog.nativeElement).modal({});
+  }
+
+  apiKeyChanged() {
+    if (this.selectedPlayer) {
+      this.selectedPlayer.apiKeyChanged = true;
+    }
   }
 
   confirmDeletePlayer(player: Player): void {
@@ -129,7 +135,18 @@ export class PlayerManagementComponent implements OnInit {
           await this.http.post(`${environment.apiEndpoint}/api/players`, this.selectedPlayer).toPromise();
         } else {
           // update player
-          await this.http.patch(`${environment.apiEndpoint}/api/players/${this.selectedPlayer.id}`, this.selectedPlayer).toPromise();
+          let player: any = {
+            name: this.selectedPlayer.name,
+            webApiUrl: this.selectedPlayer.webApiUrl,
+          };
+
+          if (!this.selectedPlayer.hasApiKey) {
+            player.apiKey = '';
+          } else if (this.selectedPlayer.apiKeyChanged === true) {
+            player.apiKey = this.selectedPlayer.apiKey;
+          }
+
+          await this.http.patch(`${environment.apiEndpoint}/api/players/${this.selectedPlayer.id}`, player).toPromise();
         }
 
         $(this.playerDialog.nativeElement).modal('hide');
@@ -169,7 +186,13 @@ export class PlayerManagementComponent implements OnInit {
 
   private async loadPlayers() {
     this.isLoading = true;
-    this.players = (await this.http.get<Player[]>(`${environment.apiEndpoint}/api/players`).toPromise())
+    this.players = (await this.http.get<Player[]>(`${environment.apiEndpoint}/api/players`).toPromise()).map((p) => ({
+      id: p.id,
+      name: p.name,
+      webApiUrl: p.webApiUrl,
+      apiKey: p.hasApiKey ? '***************' : '',
+      hasApiKey: p.hasApiKey
+    }))
       .sort((a, b) => a.name < b.name ? -1 : 1);
     this.isLoading = false;
   }

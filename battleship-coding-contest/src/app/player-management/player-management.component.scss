@@ -26,8 +26,19 @@ a i {
     }
 }
 
-.fa-spinner {
+input[type=checkbox] {
+    margin-right: 10px;
+}
+
+.page-busy-indicator {
     font-size: 36px;
+}
+
+.loading-players {
+    margin-right: 10px;
+}
+
+.fa-spinner {
     animation-name: rotate-s-loader;
     animation-iteration-count: infinite;
     animation-duration: 1s;
