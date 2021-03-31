@@ -38,6 +38,7 @@ export class PlayerManagementComponent implements OnInit {
         if (!profile) {
           this.isInitialized = true;
         } else if (profile && !this.userLoaded) {
+          this.isInitialized = false;
           this.userLoaded = true;
           this.user.email = profile.email;
           this.loadUser();

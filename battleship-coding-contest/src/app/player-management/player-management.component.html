@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-sm-12">
         <!-- login -->
-        <ng-container *ngIf="authService.isAuthenticated$ | async; else loggedOut">
+        <ng-container *ngIf="isInitialized && (authService.isAuthenticated$ | async); else loggedOut">
             <div class="logout">
                 <span *ngIf="authService.user$ | async as user">
                     {{ user.name }}
@@ -12,7 +12,7 @@
                 </button>
             </div>
 
-            <ng-container *ngIf="isRegistered">
+            <ng-container *ngIf="isInitialized && isRegistered">
                 <!-- players -->
                 <table class="table">
                     <thead>
@@ -34,8 +34,8 @@
                                 <td title="Edit player"><a (click)="editPlayer(player)"><i class="fa fa-pencil"
                                             aria-hidden="true"></i></a>
                                 </td>
-                                <td title="Test player url"><a (click)="testPlayer(player)"><i class="fa fa-check-circle"
-                                            aria-hidden="true"></i></a>
+                                <td title="Test player url"><a (click)="testPlayer(player)"><i
+                                            class="fa fa-check-circle" aria-hidden="true"></i></a>
                                 </td>
                                 <td title="Run player"><a (click)="runPlayer(player)"><i class="fa fa-play-circle"
                                             aria-hidden="true"></i></a>
@@ -103,6 +103,10 @@
                 <p class="text-center"><button class="btn btn-primary" (click)="login()">Log in</button></p>
             </ng-container>
         </ng-template>
+
+        <ng-container *ngIf="!isInitialized">
+            <p class="text-center"><i class="fa fa-spinner" aria-hidden="true"></i></p>
+        </ng-container>
 
         <p class="error" [innerHTML]="error" *ngIf="error"></p>
     </div>
