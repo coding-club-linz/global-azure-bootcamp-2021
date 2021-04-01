@@ -3,6 +3,8 @@ export interface Player {
     name: string;
     webApiUrl: string;
     hasApiKey: boolean;
+    lastMeasurement?: Date;
+    avgNumberOfShots?: number;
     apiKey: string;
     apiKeyChanged?: boolean;
 }

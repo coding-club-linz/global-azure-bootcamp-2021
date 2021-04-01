@@ -17,6 +17,8 @@ export class PlayerManagementComponent implements OnInit {
   @ViewChild('userDialog') userDialog!: ElementRef;
   @ViewChild('playerDialog') playerDialog!: ElementRef;
   @ViewChild('confirmDeleteDialog') confirmDeleteDialog!: ElementRef;
+  @ViewChild('errorDialog') errorDialog!: ElementRef;
+  @ViewChild('successDialog') successDialog!: ElementRef;
   @Input() redirectUri: string = '';
 
   isInitialized = false;
@@ -28,6 +30,7 @@ export class PlayerManagementComponent implements OnInit {
   error = '';
   userDialogError = '';
   playerDialogError = '';
+  playerError: { title: string, detail: string } | null = null;
 
   private userLoaded = false;
 
@@ -115,13 +118,19 @@ export class PlayerManagementComponent implements OnInit {
   async testPlayer(player: Player) {
     try {
       await this.http.get(`${environment.apiEndpoint}/api/players/${player.id}/test`).toPromise();
+      $(this.successDialog.nativeElement).modal({});
     } catch (error: any) {
-      console.warn(error);
+      this.playerError = error.error;
+      if (this.playerError) {
+        this.playerError.title = this.playerError.title.replace(/\\n/, '<br/>').replace(/\n/, '<br/>');;
+        this.playerError.detail = this.playerError.detail.replace(/\\n/, '<br/>').replace(/\n/, '<br/>');;
+      }
+      $(this.errorDialog.nativeElement).modal({});
     }
   }
 
   async runPlayer(player: Player) {
-    // TODO: run player
+    await this.http.post(`${environment.apiEndpoint}/api/players/${player.id}/play`, {}).toPromise();
     await this.loadPlayers();
   }
 
@@ -191,7 +200,9 @@ export class PlayerManagementComponent implements OnInit {
       name: p.name,
       webApiUrl: p.webApiUrl,
       apiKey: p.hasApiKey ? '***************' : '',
-      hasApiKey: p.hasApiKey
+      hasApiKey: p.hasApiKey,
+      lastMeasurement: p.lastMeasurement,
+      avgNumberOfShots: p.avgNumberOfShots
     }))
       .sort((a, b) => a.name < b.name ? -1 : 1);
     this.isLoading = false;
