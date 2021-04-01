@@ -4,12 +4,12 @@ VERSION:2.0
 BEGIN:VEVENT
 UID:0@gaaustria2021
 CLASS:PUBLIC
-DESCRIPTION:Azure (I)IoT Fremdenführer - (I)IoT aus der Praxis. Das Große Was, Wo, Wie und Wohin mit dem Daten\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nWie fange ich an? Gute Frage und die Antwort findet ihr hier. Es geht um nichts anderes als die Frage nach dem Wohin mit meinen Daten und Warum und Was ich damit machen kann und will. Es wird ein kurzer Querschnitt durch das Organisatorische, das Technische und das Statistische Azure-Universum. Ihr werdet IoTHub, IotEdge, Azure Stream Analytics, Azure DataLake, Azure SQL, Azure Databricks, Azure Synapse uvm. Beteiligte in diesem Beitrag sehen. Viel Spass!\n\n---\n\nStreaming URL: https://globalazure.at/sessions/iot-data
+DESCRIPTION:Azure (I)IoT Fremdenführer - (I)IoT aus der Praxis. Das Große Was, Wo, Wie und Wohin mit den Daten\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nWie fange ich an? Gute Frage und die Antwort findet ihr hier. Es geht um nichts anderes als die Frage nach dem Wohin mit meinen Daten und Warum und Was ich damit machen kann und will. Es wird ein kurzer Querschnitt durch das Organisatorische, das Technische und das Statistische Azure-Universum. Ihr werdet IoTHub, IotEdge, Azure Stream Analytics, Azure DataLake, Azure SQL, Azure Databricks, Azure Synapse uvm. Beteiligte in diesem Beitrag sehen. Viel Spass!\n\n---\n\nStreaming URL: https://globalazure.at/sessions/iot-data
 DTSTAMP;VALUE=DATE-TIME:20210416T120000
 DTSTART;VALUE=DATE-TIME:20210416T090000
 DTEND;VALUE=DATE-TIME:20210416T095000
 LOCATION:Online
-SUMMARY;LANGUAGE=en-us:Azure (I)IoT Fremdenführer - (I)IoT aus der Praxis. Das Große Was, Wo, Wie und Wohin mit dem Daten
+SUMMARY;LANGUAGE=en-us:Azure (I)IoT Fremdenführer - (I)IoT aus der Praxis. Das Große Was, Wo, Wie und Wohin mit den Daten
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR
