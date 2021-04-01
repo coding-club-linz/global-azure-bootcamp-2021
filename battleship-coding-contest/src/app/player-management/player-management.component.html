@@ -17,44 +17,61 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Player Name</th>
-                            <th>Web API Url</th>
-                            <th>Last Run</th>
-                            <th>Number of Shots</th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                            <th>Player</th>
+                            <th class="hidden-xs">Last Run</th>
+                            <th class="hidden-xs">Number of Shots</th>
+                            <th class="hidden-xs"></th>
+                            <th class="hidden-xs"></th>
+                            <th class="hidden-xs"></th>
+                            <th class="hidden-xs"></th>
                         </tr>
                     </thead>
 
                     <tbody>
                         <ng-container *ngIf="!isLoading">
                             <tr *ngFor="let player of players">
-                                <td>{{player.name}}</td>
-                                <td>{{player.webApiUrl}}</td>
-                                <td>{{player.lastMeasurement}}</td>
-                                <td>{{player.avgNumberOfShots}}</td>
-                                <td title="Edit player"><a (click)="editPlayer(player)"><i class="fa fa-pencil"
-                                            aria-hidden="true"></i></a>
+                                <td>
+                                    <span class="playerName">{{player.name}}</span><br />{{player.webApiUrl}}
+                                    <div class="visible-xs">
+                                        <br />
+                                        Last Run: {{player.lastMeasurement | date:'short'}}<br/>
+                                        Number of Shots: {{player.avgNumberOfShots | number:'0.2-2'}}
+                                        <br /><br />
+                                        <div class="commands-xs text-center">
+                                            <a (click)="editPlayer(player)"><i class="fa fa-pencil"
+                                                    aria-hidden="true"></i></a>
+                                            <a (click)="testPlayer(player)"><i class="fa fa-check-circle"
+                                                    aria-hidden="true"></i></a>
+                                            <a (click)="runPlayer(player)"><i class="fa fa-play-circle"
+                                                    aria-hidden="true"></i></a>
+                                            <a (click)="confirmDeletePlayer(player)"><i class="fa fa-trash-o"
+                                                    aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
                                 </td>
-                                <td title="Test player url"><a (click)="testPlayer(player)"><i
+                                <td class="hidden-xs">{{player.lastMeasurement | date:'short'}}</td>
+                                <td class="text-right hidden-xs">{{player.avgNumberOfShots | number:'0.2-2'}}</td>
+                                <td class="hidden-xs" title="Edit player"><a (click)="editPlayer(player)"><i
+                                            class="fa fa-pencil" aria-hidden="true"></i></a>
+                                </td>
+                                <td class="hidden-xs" title="Test player url"><a (click)="testPlayer(player)"><i
                                             class="fa fa-check-circle" aria-hidden="true"></i></a>
                                 </td>
-                                <td title="Run player"><a (click)="runPlayer(player)"><i class="fa fa-play-circle"
-                                            aria-hidden="true"></i></a>
+                                <td class="hidden-xs" title="Run player"><a (click)="runPlayer(player)"><i
+                                            class="fa fa-play-circle" aria-hidden="true"></i></a>
                                 </td>
-                                <td title="Delete player"><a (click)="confirmDeletePlayer(player)"><i
+                                <td class="hidden-xs" title="Delete player"><a (click)="confirmDeletePlayer(player)"><i
                                             class="fa fa-trash-o" aria-hidden="true"></i></a></td>
                             </tr>
                         </ng-container>
 
                         <tr *ngIf="!players.length && !isLoading">
-                            <td colspan="8" class="text-center">No players registered</td>
+                            <td colspan="7" class="text-center">No players registered</td>
                         </tr>
 
                         <tr *ngIf="isLoading">
-                            <td colspan="8" class="text-center"><i class="fa fa-spinner loading-players" aria-hidden="true"></i>loading players</td>
+                            <td colspan="7" class="text-center"><i class="fa fa-spinner loading-players"
+                                    aria-hidden="true"></i>loading players</td>
                         </tr>
                     </tbody>
                 </table>
@@ -110,6 +127,11 @@
 
         <ng-container *ngIf="!isInitialized">
             <p class="text-center"><i class="fa fa-spinner page-busy-indicator" aria-hidden="true"></i></p>
+        </ng-container>
+
+        <ng-container *ngIf="isBusy">
+            <div class="busy-indicator text-center"><i class="fa fa-spinner page-busy-indicator" aria-hidden="true"></i>
+            </div>
         </ng-container>
 
         <p class="error" [innerHTML]="error" *ngIf="error"></p>
@@ -181,13 +203,15 @@
                 </div>
 
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="hasApiKey" [(ngModel)]="selectedPlayer.hasApiKey">
+                    <input type="checkbox" class="form-check-input" id="hasApiKey"
+                        [(ngModel)]="selectedPlayer.hasApiKey">
                     <label class="form-check-label" for="hasApiKey">API Key needed</label>
-                  </div>
+                </div>
 
                 <div class="form-group">
                     <label for="apiKey">API Key</label>
-                    <input type="password" id="apiKey" class="form-control" [(ngModel)]="selectedPlayer.apiKey" (change)="apiKeyChanged()" [disabled]="!selectedPlayer.hasApiKey">
+                    <input type="password" id="apiKey" class="form-control" [(ngModel)]="selectedPlayer.apiKey"
+                        (change)="apiKeyChanged()" [disabled]="!selectedPlayer.hasApiKey">
                 </div>
 
                 <p class="error" [innerHTML]="playerDialogError" *ngIf="playerDialogError"></p>
@@ -197,6 +221,11 @@
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
+
+        <ng-container *ngIf="isBusy">
+            <div class="busy-indicator text-center"><i class="fa fa-spinner page-busy-indicator" aria-hidden="true"></i>
+            </div>
+        </ng-container>
     </div>
 </div>
 
@@ -227,7 +256,8 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">{{playerError?.title}}</h4>
+                <h4 class="modal-title" id="myModalLabel"><i class="fa fa-exclamation-circle error-icon"
+                        aria-hidden="true"></i>{{playerError?.title}}</h4>
             </div>
             <div class="modal-body">
                 <p [innerHtml]="playerError?.detail"></p>
@@ -246,7 +276,8 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Success</h4>
+                <h4 class="modal-title" id="myModalLabel"><i class="fa fa-check-circle success-icon"
+                        aria-hidden="true"></i>Success</h4>
             </div>
             <div class="modal-body">
                 <p>The player has been tested successfully.</p>

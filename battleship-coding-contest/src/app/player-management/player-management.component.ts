@@ -31,6 +31,7 @@ export class PlayerManagementComponent implements OnInit {
   userDialogError = '';
   playerDialogError = '';
   playerError: { title: string, detail: string } | null = null;
+  isBusy = false;
 
   private userLoaded = false;
 
@@ -100,6 +101,7 @@ export class PlayerManagementComponent implements OnInit {
   }
 
   editPlayer(player: Player): void {
+    this.playerDialogError = '';
     this.selectedPlayer = Object.assign({}, player);
     $(this.playerDialog.nativeElement).modal({});
   }
@@ -117,21 +119,30 @@ export class PlayerManagementComponent implements OnInit {
 
   async testPlayer(player: Player) {
     try {
+      this.isBusy = true;
       await this.http.get(`${environment.apiEndpoint}/api/players/${player.id}/test`).toPromise();
       $(this.successDialog.nativeElement).modal({});
+      this.isBusy = false;
     } catch (error: any) {
       this.playerError = error.error;
-      if (this.playerError) {
+      if (this.playerError && this.playerError.title) {
         this.playerError.title = this.playerError.title.replace(/\\n/, '<br/>').replace(/\n/, '<br/>');;
         this.playerError.detail = this.playerError.detail.replace(/\\n/, '<br/>').replace(/\n/, '<br/>');;
+      } else {
+        this.playerError = { title: 'Error', detail: error.message };
       }
+
+      this.isBusy = false;
       $(this.errorDialog.nativeElement).modal({});
     }
   }
 
   async runPlayer(player: Player) {
+    this.isBusy = true;
     await this.http.post(`${environment.apiEndpoint}/api/players/${player.id}/play`, {}).toPromise();
+    this.isBusy = false;
     await this.loadPlayers();
+
   }
 
   async savePlayer(): Promise<void> {
@@ -139,6 +150,8 @@ export class PlayerManagementComponent implements OnInit {
 
     if (this.selectedPlayer) {
       try {
+        this.isBusy = true;
+
         if (!this.selectedPlayer.id) {
           // add player
           await this.http.post(`${environment.apiEndpoint}/api/players`, this.selectedPlayer).toPromise();
@@ -159,9 +172,14 @@ export class PlayerManagementComponent implements OnInit {
         }
 
         $(this.playerDialog.nativeElement).modal('hide');
+        this.isBusy = false;
+
         await this.loadPlayers();
       } catch (error: any) {
-        if (error.error) {
+        this.isBusy = false;
+        console.error(error);
+
+        if (error.error && error.error.detail) {
           this.setErrorMessage(error.error.detail, 'playerDialog');
         } else {
           this.setErrorMessage(error.message, 'playerDialog');
@@ -171,10 +189,18 @@ export class PlayerManagementComponent implements OnInit {
   }
 
   async deletePlayer(): Promise<void> {
+    this.isBusy = true;
+
     if (this.selectedPlayer && this.selectedPlayer.id) {
-      await this.http.delete(`${environment.apiEndpoint}/api/players/${this.selectedPlayer.id}`).toPromise();
-      $(this.confirmDeleteDialog.nativeElement).modal('hide');
-      await this.loadPlayers();
+      try {
+        await this.http.delete(`${environment.apiEndpoint}/api/players/${this.selectedPlayer.id}`).toPromise();
+      } catch (error: any) {
+      } finally {
+        this.isBusy = false;
+        $(this.confirmDeleteDialog.nativeElement).modal('hide');
+        await this.loadPlayers();
+      }
+
     }
   }
 
@@ -182,7 +208,6 @@ export class PlayerManagementComponent implements OnInit {
     try {
       this.user = (await this.http.get<User>(`${environment.apiEndpoint}/api/users/me`).toPromise());
       this.isRegistered = true;
-      //this.user.email = profile.email;
       await this.loadPlayers();
     } catch (error: any) {
       if (error.status !== 404) {
