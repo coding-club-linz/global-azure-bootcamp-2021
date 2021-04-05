@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "build-dev": "ng build --output-hashing none && node scripts/concatenate",
     "build": "ng build --prod --output-hashing none && node scripts/concatenate",
     "test": "ng test",
     "lint": "ng lint",

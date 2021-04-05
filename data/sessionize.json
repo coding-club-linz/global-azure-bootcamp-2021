@@ -12,7 +12,8 @@
         "fc1eabb6-63ee-4b6c-ab8e-f78b10481265",
         "7d6ddad1-fc5e-4fb8-b882-c3878168e8c7",
         "4914bda7-8eab-4116-ad3a-c7c39794432e",
-        "dec436e1-09df-4536-a59e-5af1653b892a"
+        "dec436e1-09df-4536-a59e-5af1653b892a",
+        "d1582402-da1a-48f9-a9d3-721b801bc85b"
       ],
       "categoryItems": [
         77272,
@@ -22,6 +23,10 @@
         {
           "questionId": 28454,
           "answerValue": "azure-ama"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=2HDTar0zoto"
         }
       ],
       "roomId": 18083
@@ -97,7 +102,7 @@
     },
     {
       "id": "249439",
-      "title": "Azure (I)IoT Fremdenführer - (I)IoT aus der Praxis. Das Große Was, Wo, Wie und Wohin mit dem Daten",
+      "title": "Azure (I)IoT Fremdenführer - (I)IoT aus der Praxis. Das Große Was, Wo, Wie und Wohin mit den Daten",
       "description": "Wie fange ich an? Gute Frage und die Antwort findet ihr hier. Es geht um nichts anderes als die Frage nach dem Wohin mit meinen Daten und Warum und Was ich damit machen kann und will. Es wird ein kurzer Querschnitt durch das Organisatorische, das Technische und das Statistische Azure-Universum. Ihr werdet IoTHub, IotEdge, Azure Stream Analytics, Azure DataLake, Azure SQL, Azure Databricks, Azure Synapse uvm. Beteiligte in diesem Beitrag sehen. Viel Spass!",
       "startsAt": "2021-04-16T09:00:00",
       "endsAt": "2021-04-16T09:50:00",
@@ -303,6 +308,29 @@
       "roomId": 18086
     },
     {
+      "id": "250607",
+      "title": "Microsoft Datacenter Region in Austria - What does it mean and how can you benefit?",
+      "description": "Let´s talk about the announced Microsoft Datacenter Region Austria East.\r\n- What does the announcement really mean from a technical point of view?\r\n- How does a Microsoft datacenter look like in real life?\r\n- Which physical infrastructure can you expect in the Austrian region?\r\n- Which services will be there?\r\n- How can you benefit from the Austrian region?\r\n- How can you influence the make-up of the Austrian Datacenter region?",
+      "startsAt": "2021-04-16T12:00:00",
+      "endsAt": "2021-04-16T12:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "d1582402-da1a-48f9-a9d3-721b801bc85b"
+      ],
+      "categoryItems": [
+        77272,
+        77275
+      ],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "azure-at"
+        }
+      ],
+      "roomId": 18083
+    },
+    {
       "id": "250183",
       "title": "Modern continous delivery on Azure Kubernetes Service",
       "description": "Continuous delivery (CD) might be a challenging and daunting task to set up and maintain based on 1000+ lines of pipeline code - but it doesn’t have to be this way. Modern tools can make your application deployment and delivery process an efficient, quick, and sustainable commodity without requiring a lot of configuration.\r\n\r\nIn this talk you will learn 1) how to employ new delivery models such as blue/green deployments, and 2) how to integrate quality gates into pipelines to ensure no bad code changes can make it to production. We are going to use the open-source tool Keptn that is based on SRE principles to define delivery and operation workflows and will be doing a live deployment with quality gates on Azure Kubernetes Service (AKS). \r\n",
@@ -324,6 +352,52 @@
         }
       ],
       "roomId": 18084
+    },
+    {
+      "id": "249423",
+      "title": "Azure Hybrid - Learn about Hybrid Cloud Management with Azure",
+      "description": "In this session, Microsoft Cloud Advocate Thomas Maurer shows you how you can manage and govern your Windows and Linux servers and Kubernetes clusters hosted outside of Azure on your corporate network or other cloud providers, similar to how you manage native Azure virtual machines. When a hybrid machine is connected to Azure, it becomes a connected machine and is treated as a resource in Azure. Azure Arc provides you with the familiar cloud-native Azure management experience, like RBAC, Tags, Azure Policy, Log Analytics, and more.",
+      "startsAt": "2021-04-16T12:00:00",
+      "endsAt": "2021-04-16T12:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "9f2650fc-7c67-4e04-aef7-c283298d71f6"
+      ],
+      "categoryItems": [
+        77272,
+        77275
+      ],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "azure-hybrid"
+        }
+      ],
+      "roomId": 18085
+    },
+    {
+      "id": "248948",
+      "title": "Technische Integration von Digital Twins in IoT Lösungen",
+      "description": "Mit Azure Digital Twins kommt endlich Kontext und zusätzliche Insights in IoT Lösungen. Doch wie erfolgt die technische Integration?",
+      "startsAt": "2021-04-16T12:00:00",
+      "endsAt": "2021-04-16T12:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "bcba35d9-71a3-4219-bca0-eb8546baf2d8"
+      ],
+      "categoryItems": [
+        77272,
+        77274
+      ],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "digital-twins"
+        }
+      ],
+      "roomId": 18086
     },
     {
       "id": "248217",
@@ -418,15 +492,15 @@
       "roomId": 18086
     },
     {
-      "id": "246675",
-      "title": "Serverless Rendering with Azure Functions and TypeScript",
-      "description": "Oh, the pendulum swings! \r\n\r\nRender everything on the server! No, render everything on the client! Render everything ... on the server again, except that there are no servers?\r\n\r\nIf all those pendulum swings make your head dizzy, don't worry! Pendulums have the tendency to stop right in the middle. And this is where we are going with the big question: Where, and when, should we render our HTML?\r\n\r\nIn this talk, we explore rendering strategies with the help of Azure Functions. \r\n\r\nWe look into\r\n- lesser-known TypeScript features like JSX factories\r\n- concepts like Hydration\r\n- an architecture for highly dynamic and performant web sites\r\n\r\nJoin us and see where the pendulum stops. And find out if we give it another swing!",
+      "id": "246656",
+      "title": "Welcoming the Quantum Era with Azure Quantum",
+      "description": "Harnessing the unique behaviour of quantum physics and applying it to computing, quantum computers introduce new concepts to traditional programming methods such as superposition, entanglement, and quantum interference.\r\n\r\nMicrosoft, having a clear mindset towards the coming quantum era, is partnering with quantum hardware companies to provide developers with cloud access to quantum hardware. \r\n\r\nLeveraging the Azure Quantum platform and the Q# language, developers are now able to explore quantum algorithms and run their quantum programs on different types of quantum hardware.\r\n\r\nIn this session, we will explore Azure Quantum’s capabilities and run a Q# quantum application on a real quantum computer.",
       "startsAt": "2021-04-16T14:00:00",
       "endsAt": "2021-04-16T14:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "f62f9691-37cd-4ca6-81f1-14c7234ab46e"
+        "242e3255-6458-4c50-b715-6903a36467a8"
       ],
       "categoryItems": [
         77272,
@@ -435,7 +509,7 @@
       "questionAnswers": [
         {
           "questionId": 28454,
-          "answerValue": "serverless-rendering"
+          "answerValue": "quantum"
         }
       ],
       "roomId": 18083
@@ -488,18 +562,19 @@
     },
     {
       "id": "248654",
-      "title": "A Cloud Native Data Warehouse based on PowerBI und Azure",
-      "description": "There is no “one-size-fits-all” for Business Intelligence Solutions in a federally organized company. Still, a high degree of standardization can be achieved through Microsoft’s cloud technologies and PaaS Services with cloud native tools and security mechanisms. From a practical viewpoint, we will provide an overview of how cloud technologies can be used to foster cooperation among different business units, standardize tools, and create a shared platform for company data. We will also talk about the challenges and insights we’ve come across and what benefits we created for the consumers of data. ",
+      "title": "Cloud Native Business Intelligence mit PowerBI und Azure",
+      "description": "In einem dezentral organisierten Unternehmen gibt es keine „Einheitsgröße“ für Business Intelligence-Lösungen. Trotzdem kann ein hohes Maß an Standardisierung und Sicherheit durch die Cloud-Technologien von Microsoft den PaaS Services und dem Einsatz von nativen Cloud-Tools und Sicherheitsmechanismen erreicht werden. Wir geben eine Praxis Einblick , wie Cloud-Technologien verwendet werden können, um die Zusammenarbeit zwischen verschiedenen Geschäftsbereichen zu fördern, Tools zu standardisieren und eine gemeinsame Plattform für Unternehmensdaten zu erstellen. Wir werden auch über die Herausforderungen und Erkenntnisse sprechen, auf die wir gestoßen sind, und über die Vorteile, die wir für die Anwender geschaffen haben.",
       "startsAt": "2021-04-16T14:00:00",
       "endsAt": "2021-04-16T14:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "9eb4b3a8-87c3-4b53-9f7c-0219c473edd2"
+        "9eb4b3a8-87c3-4b53-9f7c-0219c473edd2",
+        "1b25ccee-afe5-4df5-9016-6398d5c52621"
       ],
       "categoryItems": [
         77272,
-        77275
+        77274
       ],
       "questionAnswers": [
         {
@@ -510,15 +585,15 @@
       "roomId": 18086
     },
     {
-      "id": "246656",
-      "title": "Welcoming the Quantum Era with Azure Quantum",
-      "description": "Harnessing the unique behaviour of quantum physics and applying it to computing, quantum computers introduce new concepts to traditional programming methods such as superposition, entanglement, and quantum interference.\r\n\r\nMicrosoft, having a clear mindset towards the coming quantum era, is partnering with quantum hardware companies to provide developers with cloud access to quantum hardware. \r\n\r\nLeveraging the Azure Quantum platform and the Q# language, developers are now able to explore quantum algorithms and run their quantum programs on different types of quantum hardware.\r\n\r\nIn this session, we will explore Azure Quantum’s capabilities and run a Q# quantum application on a real quantum computer.",
+      "id": "246675",
+      "title": "Serverless Rendering with Azure Functions and TypeScript",
+      "description": "Oh, the pendulum swings! \r\n\r\nRender everything on the server! No, render everything on the client! Render everything ... on the server again, except that there are no servers?\r\n\r\nIf all those pendulum swings make your head dizzy, don't worry! Pendulums have the tendency to stop right in the middle. And this is where we are going with the big question: Where, and when, should we render our HTML?\r\n\r\nIn this talk, we explore rendering strategies with the help of Azure Functions. \r\n\r\nWe look into\r\n- lesser-known TypeScript features like JSX factories\r\n- concepts like Hydration\r\n- an architecture for highly dynamic and performant web sites\r\n\r\nJoin us and see where the pendulum stops. And find out if we give it another swing!",
       "startsAt": "2021-04-16T15:00:00",
       "endsAt": "2021-04-16T15:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "242e3255-6458-4c50-b715-6903a36467a8"
+        "f62f9691-37cd-4ca6-81f1-14c7234ab46e"
       ],
       "categoryItems": [
         77272,
@@ -527,7 +602,7 @@
       "questionAnswers": [
         {
           "questionId": 28454,
-          "answerValue": "quantum"
+          "answerValue": "serverless-rendering"
         }
       ],
       "roomId": 18083
@@ -602,50 +677,27 @@
       "roomId": 18086
     },
     {
-      "id": "247120",
-      "title": "Become a Contributor to Microsoft Docs",
-      "description": "Microsoft Docs are open source on Github! Join content developers from a MSFT content team for a discussion on modern Microsoft documentation (regardless of technology). Learn about the content publishing engines behind Docs, and the best ways to add your content and fixes to Docs that are read by the entire customer community. There are hundreds of thousands of GitHub issues and PR’s submitted to Docs every month, how can you be an effective part of that process and get your face on the top of an article? ",
+      "id": "252072",
+      "title": "Die Qual der Wahl bei den Single Page Application Frameworks",
+      "description": "Dieser Vortrag gibt einen Überblick über die aktuellen Single Page Applikation Frameworks und versucht diese zu vergleichen. Der Fokus liegt dabei auf den aktuellen \"Top 3\" der SPA Frameworks: Angular, React und Vue.js. Der Vortrag schaut aber auch über den Tellerrand und beleuchtet aktuelle Trends und Entwicklungen bei modernen Webframeworks.",
       "startsAt": "2021-04-16T16:00:00",
       "endsAt": "2021-04-16T16:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "136bda4f-d1f3-47e2-83b3-8683ec888fb4"
+        "594c1b9a-bdfc-4d02-8045-65aa91a234ab"
       ],
       "categoryItems": [
         77272,
-        77275
+        77274
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
-          "answerValue": "azure-docs"
+          "answerValue": "choosing-spa-fx"
         }
       ],
       "roomId": 18083
-    },
-    {
-      "id": "249423",
-      "title": "Azure Hybrid - Learn about Hybrid Cloud Management with Azure",
-      "description": "In this session, Microsoft Cloud Advocate Thomas Maurer shows you how you can manage and govern your Windows and Linux servers and Kubernetes clusters hosted outside of Azure on your corporate network or other cloud providers, similar to how you manage native Azure virtual machines. When a hybrid machine is connected to Azure, it becomes a connected machine and is treated as a resource in Azure. Azure Arc provides you with the familiar cloud-native Azure management experience, like RBAC, Tags, Azure Policy, Log Analytics, and more.",
-      "startsAt": "2021-04-16T16:00:00",
-      "endsAt": "2021-04-16T16:50:00",
-      "isServiceSession": false,
-      "isPlenumSession": false,
-      "speakers": [
-        "9f2650fc-7c67-4e04-aef7-c283298d71f6"
-      ],
-      "categoryItems": [
-        77272,
-        77275
-      ],
-      "questionAnswers": [
-        {
-          "questionId": 28454,
-          "answerValue": "azure-hybrid"
-        }
-      ],
-      "roomId": 18084
     },
     {
       "id": "250262",
@@ -666,6 +718,29 @@
         {
           "questionId": 28454,
           "answerValue": "azure-rust"
+        }
+      ],
+      "roomId": 18084
+    },
+    {
+      "id": "247120",
+      "title": "Become a Contributor to Microsoft Docs",
+      "description": "Microsoft Docs are open source on Github! Join content developers from a MSFT content team for a discussion on modern Microsoft documentation (regardless of technology). Learn about the content publishing engines behind Docs, and the best ways to add your content and fixes to Docs that are read by the entire customer community. There are hundreds of thousands of GitHub issues and PR’s submitted to Docs every month, how can you be an effective part of that process and get your face on the top of an article? ",
+      "startsAt": "2021-04-16T16:00:00",
+      "endsAt": "2021-04-16T16:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "136bda4f-d1f3-47e2-83b3-8683ec888fb4"
+      ],
+      "categoryItems": [
+        77272,
+        77275
+      ],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "azure-docs"
         }
       ],
       "roomId": 18085
@@ -842,6 +917,33 @@
       "questionAnswers": []
     },
     {
+      "id": "1b25ccee-afe5-4df5-9016-6398d5c52621",
+      "firstName": "Günter",
+      "lastName": "Schulmeister",
+      "bio": "Günter Schulmeister is Cloud Transformation Lead at Porsche Holding Salzburg (PHS). Over the past 4 years, he has been focusing on the development of cloud platforms for PHS and the associated organizational changes. ",
+      "tagLine": "Cloud Transformation Lead",
+      "profilePicture": "https://sessionize.com/image/3844-400o400o2-YGtyXsN6fMnXb1B7A2Q2uS.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/Schulmeist4r",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.porscheinformatik.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        248654
+      ],
+      "fullName": "Günter Schulmeister",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
       "id": "1d18ea23-d6dc-4600-bbae-2916afebb0d7",
       "firstName": "Hannes",
       "lastName": "Lagler-Gruener",
@@ -907,6 +1009,60 @@
         247831
       ],
       "fullName": "Hans-Peter Grahsl",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "594c1b9a-bdfc-4d02-8045-65aa91a234ab",
+      "firstName": "Jonas",
+      "lastName": "Bandi",
+      "bio": "Jonas Bandi is a freelance developer, consultant and trainer. His current passion lies in bringing modern frontend development to traditional enterprise projects.\r\nComing from a Java & .NET background he is now primarily working with JavaScript, Angular & React. Jonas is currently building the web-stack for a leading wholesale supply company in Switzerland.",
+      "tagLine": "Enthusiastic Software Professional",
+      "profilePicture": "https://sessionize.com/image/a174-400o400o2-86c764fa-158c-4017-83c0-11aa72942ee2.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/jbandi",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.jonasbandi.net/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        252072
+      ],
+      "fullName": "Jonas Bandi",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "bcba35d9-71a3-4219-bca0-eb8546baf2d8",
+      "firstName": "Juergen",
+      "lastName": "Mayrbaeurl",
+      "bio": "Working for Microsoft HQ and based in Vienna - Austria, responsible for leading the strategic development and acceleration of Internet of Things device and cloud solutions with selected Microsoft partners, from business vision and technical architecture through to implementation and product release.",
+      "tagLine": "Microsoft Global&Strategic IoT Engagement Lead",
+      "profilePicture": "https://sessionize.com/image/63ca-400o400o2-f0833472-96da-4668-88a3-2a2a703af8db.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/JMayrbaeurl",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.microsoft.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        248948
+      ],
+      "fullName": "Juergen Mayrbaeurl",
       "categoryItems": [],
       "questionAnswers": []
     },
@@ -1182,11 +1338,6 @@
           "title": "Blog",
           "url": "https://blog.atwork.at",
           "linkType": "Blog"
-        },
-        {
-          "title": "Company Website",
-          "url": "https://atwork-it.com",
-          "linkType": "Company_Website"
         }
       ],
       "sessions": [
@@ -1606,6 +1757,23 @@
       "questionAnswers": []
     },
     {
+      "id": "d1582402-da1a-48f9-a9d3-721b801bc85b",
+      "firstName": "Thomas",
+      "lastName": "Vater",
+      "bio": "After nearly 20 years at Microsoft in various roles from Consulting, Pre-Sales to Solution Architecture, Thomas Vater now has the honor to act as the Datacenter Lead Cloud Solution Architect focusing on customers and partners committed to utilize the upcoming Austrian Datacenter Region. Building the right technical architectures for your cloud-only or hybrid solutions and also working with the global Datacenter Team to have the right services and features available in the local datacenter region is his main priority.",
+      "tagLine": "Datacenter Lead Cloud Solution Architect @ Microsoft",
+      "profilePicture": "https://sessionize.com/image/d25f-400o400o2-TL1vCnCV5EmKmf5SxwbVS1.JPG",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        248343,
+        250607
+      ],
+      "fullName": "Thomas Vater",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
       "id": "5fe6d127-e8f9-463a-8ca8-3109cbaddb2b",
       "firstName": "Thorsten",
       "lastName": "Hans",
@@ -1662,14 +1830,14 @@
           "linkType": "LinkedIn"
         },
         {
+          "title": "Facebook",
+          "url": "https://www.facebook.com/toni.pohl",
+          "linkType": "Facebook"
+        },
+        {
           "title": "Blog",
           "url": "http://blog.atwork.at",
           "linkType": "Blog"
-        },
-        {
-          "title": "Company Website",
-          "url": "http://www.atwork-it.com",
-          "linkType": "Company_Website"
         }
       ],
       "sessions": [
@@ -1692,31 +1860,6 @@
           "title": "Twitter",
           "url": "https://twitter.com/fedonman",
           "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://linkedin.com/in/fedonman",
-          "linkType": "LinkedIn"
-        },
-        {
-          "title": "Instagram",
-          "url": "https://instagram.com/fedonman",
-          "linkType": "Instagram"
-        },
-        {
-          "title": "Blog",
-          "url": "https://fedonman.com",
-          "linkType": "Blog"
-        },
-        {
-          "title": "Company Website",
-          "url": "https://atcom.gr",
-          "linkType": "Company_Website"
-        },
-        {
-          "title": "GitHub",
-          "url": "https://github.com/fedonman",
-          "linkType": "Other"
         }
       ],
       "sessions": [
@@ -1781,11 +1924,6 @@
           "title": "Blog",
           "url": "http://www.workingondata.com",
           "linkType": "Blog"
-        },
-        {
-          "title": "Company Website",
-          "url": "http://www.cubido.at",
-          "linkType": "Company_Website"
         }
       ],
       "sessions": [

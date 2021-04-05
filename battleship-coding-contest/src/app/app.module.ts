@@ -8,11 +8,13 @@ import { environment } from 'src/environments/environment';
 
 import { AppComponent } from './app.component';
 import { PlayerManagementComponent } from './player-management/player-management.component';
+import { RankingComponent } from './ranking/ranking.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlayerManagementComponent
+    PlayerManagementComponent,
+    RankingComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,7 @@ import { PlayerManagementComponent } from './player-management/player-management
     { provide: HTTP_INTERCEPTORS, useClass: AuthHttpInterceptor, multi: true },
   ],
   //bootstrap: [AppComponent],
-  entryComponents: [PlayerManagementComponent]
+  entryComponents: [PlayerManagementComponent, RankingComponent]
 })
 export class AppModule {
   constructor(private injector: Injector) {
@@ -65,5 +67,12 @@ export class AppModule {
     );
 
     customElements.define('battleship-player-management', playerManagement);
+
+    const ranking = createCustomElement<RankingComponent>(
+      RankingComponent,
+      { injector: this.injector }
+    );
+
+    customElements.define('battleship-ranking', ranking);
   }
 }

@@ -24,6 +24,7 @@
                             <th class="hidden-xs"></th>
                             <th class="hidden-xs"></th>
                             <th class="hidden-xs"></th>
+                            <th class="hidden-xs"></th>
                         </tr>
                     </thead>
 
@@ -34,7 +35,7 @@
                                     <span class="playerName">{{player.name}}</span><br />{{player.webApiUrl}}
                                     <div class="visible-xs">
                                         <br />
-                                        Last Run: {{player.lastMeasurement | date:'short'}}<br/>
+                                        Last Run: {{player.lastMeasurement | date:'short'}}<br />
                                         Number of Shots: {{player.avgNumberOfShots | number:'0.2-2'}}
                                         <br /><br />
                                         <div class="commands-xs text-center">
@@ -44,6 +45,7 @@
                                                     aria-hidden="true"></i></a>
                                             <a (click)="runPlayer(player)"><i class="fa fa-play-circle"
                                                     aria-hidden="true"></i></a>
+                                            <a (click)="showLog(player)"><i class="fa fa-file-text-o"></i></a>
                                             <a (click)="confirmDeletePlayer(player)"><i class="fa fa-trash-o"
                                                     aria-hidden="true"></i></a>
                                         </div>
@@ -59,6 +61,9 @@
                                 </td>
                                 <td class="hidden-xs" title="Run player"><a (click)="runPlayer(player)"><i
                                             class="fa fa-play-circle" aria-hidden="true"></i></a>
+                                </td>
+                                <td class="hidden-xs" title="Show log"><a (click)="showLog(player)"><i
+                                            class="fa fa-file-text-o" aria-hidden="true"></i></a>
                                 </td>
                                 <td class="hidden-xs" title="Delete player"><a (click)="confirmDeletePlayer(player)"><i
                                             class="fa fa-trash-o" aria-hidden="true"></i></a></td>
@@ -211,7 +216,7 @@
                 <div class="form-group">
                     <label for="apiKey">API Key</label>
                     <input type="password" id="apiKey" class="form-control" [(ngModel)]="selectedPlayer.apiKey"
-                        (change)="apiKeyChanged()" [disabled]="!selectedPlayer.hasApiKey">
+                        (change)="apiKeyChanged()" [disabled]="!selectedPlayer.hasApiKey" autocomplete="off">
                 </div>
 
                 <p class="error" [innerHTML]="playerDialogError" *ngIf="playerDialogError"></p>
@@ -281,6 +286,59 @@
             </div>
             <div class="modal-body">
                 <p>The player has been tested successfully.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade battleship-player" id="log-dialog" #logDialog tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg log-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Log</h4>
+            </div>
+            <div class="modal-body">
+                <div class="buttons">
+                    <button type="button" class="btn text-right" (click)="refreshLog()"><i class="fa fa-refresh" aria-hidden="true"></i> Refresh</button>
+                    <button type="button" class="btn text-right" (click)="clearLog()"><i class="fa fa-trash-o" aria-hidden="true"></i> Clear Log</button>
+                </div>
+                <table class="table">
+                    <tbody>
+                        <ng-container *ngIf="log.length">
+                            <ng-container *ngFor="let item of log; index as i">
+                                <tr>
+                                    <td>
+                                        <ng-container *ngIf="!item.completed">
+                                            {{item.timestamp | date:'M/d/yy, h:mm:ss a'}}
+                                        </ng-container>
+                                        <ng-container *ngIf="item.completed">
+                                            {{item.started | date:'M/d/yy, h:mm:ss a'}} - {{item.completed |
+                                            date:'M/d/yy, h:mm:ss a'}}
+                                        </ng-container>
+                                        <br />
+                                        {{item.logMessage}}
+                                    </td>
+                                </tr>
+                            </ng-container>
+                        </ng-container>
+
+                        <tr *ngIf="!log.length">
+                            <td colspan="3" class="text-center">No log entries available.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <ng-container *ngIf="isLogBusy">
+                    <div class="busy-indicator text-center"><i class="fa fa-spinner page-busy-indicator"
+                            aria-hidden="true"></i>
+                    </div>
+                </ng-container>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

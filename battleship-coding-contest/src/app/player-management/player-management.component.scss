@@ -108,3 +108,29 @@ input[type="checkbox"] {
         transform: rotate(360deg);
     }
 }
+
+.log-dialog {
+    .buttons {
+        float: right;
+
+        button {
+            margin-left: 5px;
+        }
+    }
+
+    table {
+        font-size: 12px;
+        font-family: "Courier New", Courier, monospace;
+
+        tr:first-of-type {
+            td {
+                border-top: none;
+            }
+        }
+    }
+}
+
+.modal-body {
+    max-height: 80vh;
+    overflow: auto;
+}

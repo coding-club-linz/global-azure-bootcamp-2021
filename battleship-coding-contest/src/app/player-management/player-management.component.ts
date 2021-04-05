@@ -19,6 +19,7 @@ export class PlayerManagementComponent implements OnInit {
   @ViewChild('confirmDeleteDialog') confirmDeleteDialog!: ElementRef;
   @ViewChild('errorDialog') errorDialog!: ElementRef;
   @ViewChild('successDialog') successDialog!: ElementRef;
+  @ViewChild('logDialog') logDialog!: ElementRef;
   @Input() redirectUri: string = '';
 
   isInitialized = false;
@@ -32,6 +33,8 @@ export class PlayerManagementComponent implements OnInit {
   playerDialogError = '';
   playerError: { title: string, detail: string } | null = null;
   isBusy = false;
+  isLogBusy = false;
+  log: any[] = [];
 
   private userLoaded = false;
 
@@ -139,10 +142,14 @@ export class PlayerManagementComponent implements OnInit {
 
   async runPlayer(player: Player) {
     this.isBusy = true;
-    await this.http.post(`${environment.apiEndpoint}/api/players/${player.id}/play`, {}).toPromise();
-    this.isBusy = false;
-    await this.loadPlayers();
+    try {
+      await this.http.post(`${environment.apiEndpoint}/api/players/${player.id}/play`, {}).toPromise();
+      this.isBusy = false;
+    } catch (error: any) {
+      this.isBusy = false
+    }
 
+    await this.loadPlayers();
   }
 
   async savePlayer(): Promise<void> {
@@ -201,6 +208,40 @@ export class PlayerManagementComponent implements OnInit {
         await this.loadPlayers();
       }
 
+    }
+  }
+
+  showLog(player: Player) {
+    this.selectedPlayer = player;
+    $(this.logDialog.nativeElement).modal({});
+    this.refreshLog();
+  }
+
+  async refreshLog() {
+    if (this.selectedPlayer) {
+      try {
+        this.isLogBusy = true;
+        this.log = (await this.http.get<any>(`${environment.apiEndpoint}/api/players/${this.selectedPlayer.id}/log`).toPromise());
+      } catch (error: any) {
+        this.setErrorMessage(error.message);
+      } finally {
+        this.isLogBusy = false;
+      }
+    }
+  }
+
+  async clearLog() {
+    if (this.selectedPlayer) {
+      try {
+        this.isLogBusy = true;
+        (await this.http.post(`${environment.apiEndpoint}/api/players/${this.selectedPlayer.id}/log/clear`, {}).toPromise());
+      } catch (error: any) {
+        this.setErrorMessage(error.message);
+      } finally {
+        this.isLogBusy = false;
+      }
+
+      await this.refreshLog();
     }
   }
 

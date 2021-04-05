@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Position</th>
+            <th>Player</th>
+            <th>Shots</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <ng-container *ngIf="!isLoading">
+            <tr *ngFor="let player of ranking; index as i">
+                <td>{{i + 1}}.</td>
+                <td>
+                    {{player.name}}
+                </td>
+                <td class="text-right">{{player.avgNumberOfShots | number:'0.2-2'}}</td>
+            </tr>
+        </ng-container>
+
+        <tr *ngIf="isLoading">
+            <td colspan="7" class="text-center"><i class="fa fa-spinner loading-players"
+                    aria-hidden="true"></i>loading players</td>
+        </tr>
+    </tbody>
+</table>
