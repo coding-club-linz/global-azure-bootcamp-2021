@@ -1,0 +1,16 @@
+<svg width="1920" height="1080" viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+    <image x="1700" y="20" width="200" height="154" xlink:href="../../gab2021.png" />
+    
+    <!-- Title and speaker -->
+    <rect x="0" y="{{bannerY}}" width="1920" height="{{bannerHeight}}" fill="#e3c038" opacity="0.90" />
+    <text font-family="Segoe UI" font-size="30" x="970" y="1045" fill="#000" text-anchor="middle" alignment-baseline="central">
+        {{speakers}}
+    </text>
+    
+    <text font-family="Segoe UI" font-size="40" font-weight="700" x="960" y="{{title1Y}}" fill="#000" text-anchor="middle" alignment-baseline="central">
+        {{title1}}
+    </text>
+    <text font-family="Segoe UI" font-size="40" font-weight="700" x="960" y="{{title2Y}}" fill="#000" text-anchor="middle" alignment-baseline="central">
+        {{title2}}
+    </text>
+</svg>

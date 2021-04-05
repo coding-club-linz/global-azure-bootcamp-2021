@@ -1,0 +1,30 @@
+<svg width="1920" height="1080" viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+    <image x="0" y="0" width="1920" height="1080" xlink:href="../../hero-bkg-1920x1080.png" />
+    <image x="1700" y="20" width="200" height="154" xlink:href="../../gab2021.png" />
+
+    <!-- Title -->
+    <text font-family="Segoe UI" font-size="68" font-weight="700" x="960" y="520" fill="#e3c038" text-anchor="middle" alignment-baseline="central">
+        {{title1}}
+    </text>
+
+    <text font-family="Segoe UI" font-size="68" font-weight="700" x="960" y="620" fill="#e3c038" text-anchor="middle" alignment-baseline="central">
+        {{title2}}
+    </text>
+
+    <!-- Speaker -->
+    <rect x="100" y="700" width="1720" height="100" rx="50" ry="50" fill="#e3c038" />
+    <text font-family="Segoe UI" font-size="40" x="960" y="765" fill="#000" text-anchor="middle" alignment-baseline="central">
+        {{speakers}}
+    </text>
+
+    {{speakerImg}}
+
+    <!-- Date -->
+    <text font-family="Segoe UI" font-size="50" font-weight="bold" x="960" y="900" fill="#e3c038" text-anchor="middle" alignment-baseline="central">
+        {{joinText}} on Friday, April 16th, {{startTime}} - {{endTime}} CEST
+    </text>
+
+    <text font-family="Segoe UI" font-size="40" x="960" y="965" fill="#e3c038" text-anchor="middle" alignment-baseline="central">
+        https://globalazure.at/sessions/{{link}}
+    </text>
+</svg>
