@@ -916,6 +916,7 @@ body {
 
 .speaker .link {
     margin-bottom: 2px;
+    overflow: hidden;
 }
 
 .speaker .link i {
