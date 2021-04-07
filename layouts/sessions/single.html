@@ -10,7 +10,7 @@
     {{ range $question:= $session.questionAnswers }}
     {{ if eq (int $question.questionId) (int $youTubeVideoQuestionId) }}
     <script>
-        window.location = "{{ $question.answerValue }}";
+        //window.location = "{{ $question.answerValue }}";
     </script>
     {{ end }}
     {{ end }}
@@ -56,16 +56,18 @@
                         {{ end }}
                     </div>
 
-                    {{ $hasYouTubeVideoQuestionId := false}}
+                    {{ $.Scratch.Add "hasYouTubeVideoQuestionId" false }}
+
                     <p class="text-center">
                         {{ range $question := $session.questionAnswers }}
                         {{ if eq (int $question.questionId) (int $youTubeVideoQuestionId) }}
-                        {{ $hasYouTubeVideoQuestionId := true}}
+                        {{ $.Scratch.Set "hasYouTubeVideoQuestionId" true }}
+                        
                         <a href="{{ $question.answerValue }}" class="btn btn-primary">Open in YouTube</a>
                         {{ end }}
                         {{ end }}
 
-                        {{ if eq $hasYouTubeVideoQuestionId false }}
+                        {{ if eq ($.Scratch.Get "hasYouTubeVideoQuestionId") false }}
                         <p class="bg-warning warning streaming-link">The streaming link will be published here a few days before the event.</p>
                         {{ end }}
                     </p>
@@ -75,6 +77,13 @@
                         <div class="col-md-8">
                             <h4>About {{ .firstName }} {{ .lastName }}</h4>
                             <div class="text-muted"><p class="bio">{{ .bio| markdownify }}</p></div>
+
+                            <div class="speaker">
+                                {{ range .links }}
+                                <div class="link"><a href="{{ .url }}" target="_blank">
+                                    {{ with eq .linkType "LinkedIn"}}<i class="fa fa-linkedin" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Blog"}}<i class="fa fa-rss" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Company_Website"}}<i class="fa fa-home" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Other"}}<i class="fa fa-link" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Twitter"}}<i class="fa fa-twitter" aria-hidden="true"></i>{{ end }}{{ with eq .linkType "Instagram"}}<i class="fa fa-instagram" aria-hidden="true"></i>{{ end }}{{ .url }}</a></div>
+                                {{ end }}
+                            </div>
                         </div>
                         <div class="col-md-4 text-center">
                             
