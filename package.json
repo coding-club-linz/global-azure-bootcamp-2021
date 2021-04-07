@@ -17,5 +17,7 @@
     "url": "https://github.com/coding-club-linz/global-azure-bootcamp-2021/issues"
   },
   "homepage": "https://github.com/coding-club-linz/global-azure-bootcamp-2021#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "remove-markdown": "^0.3.0"
+  }
 }

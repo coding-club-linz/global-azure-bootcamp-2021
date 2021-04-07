@@ -1,0 +1,647 @@
+Azure - Ask us Anything
+=============================================================================
+Eine Plattform in der Ihr unvorbereitet Fragen zu Azure, Azure in Österreich, Azure Services, Azure Zertifizierungen & Lerninhalte und alles was Euch sonst einfällt stellen könnt. Wir werden versuchen die Fragen mit dem breiten Wissen von Tamara Tomanic, Thomas Vater, Philipp Weckerle, Rainer Stropek & Gerwald Oberleitner zu beantworten.
+
+Gerwald Oberleitner, Rainer Stropek, Tamara Tomanic, Thomas Vater, Philipp Weckerle
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/azure-ama
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+SPAs mit Blazor 5.0/6.0: Stand der Dinge und Ausblick
+=============================================================================
+Blazor ist noch ein junges Webframework, wird aber in der .NET-Entwicklergemeinde gut angenommen, weil es ermöglicht, Single-Page-Web-Apps für alle modernen Browser mit .NET und C# zu programmieren.
+
+Dieser Vortrag von DOTNET-DOKTOR Holger Schwichtenberg beschäftigt sich mit den vielen Neuerungen, die Microsoft in .NET 5 für Blazor eingebaut hat. Er zeigt anhand eines in Azure DevOps gebauten und SQL Azure/Azure Web App gehosteten Praxisbeispiels die wichtigsten neuen Funktionen. Dabei benennt er auch deutlich die verbliebenen Schwächen und die resultierenden Einsatzbeschränkungen für Blazor.
+Zudem gibt behandelt er die Blazor-Neuerungen, die in der aktuellen Preview-Version von .NET 6 stecken und gibt einen Ausblick, woran Microsoft bis zum Erscheinen von Blazor 6 in .NET 6.0 noch arbeitet.
+
+Dr. Holger Schwichtenberg, www.IT-Visions.de / MAXIMAGO GmbH
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/blazor-news
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Multi-Cloud Magic: Leveraging Multi-Cloud Clusters in Real-World Scenarios
+=============================================================================
+Public, Private, Hybrid...Multi-Cloud?
+
+As the cloud development options and architectures continue to evolve, we've finally found ourselves at the next new thing: Multi-Cloud. What is it? Do we really need it? How would you take advantage of a multi-cloud solution?
+In this talk, I'd like to describe a few real-world use cases where a multi-cloud solution is currently in production, specifically when it comes to data. These include:
+Data Sovereignty & Data Residency
+Varied Client Requirements
+Developer / Client Choice
+A demo on how to setup a multi-cloud cluster will also be shown.
+The audience will leave with a more confident understanding of real-world, multi-cloud use cases and see how to create their own!
+
+Adrienne Tacke, Senior Developer Advocate at MongoDB
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/multi-cloud-magic
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Inside Azure AD Authentication
+=============================================================================
+This session brings you deep into the world of Azure Active Directory Authentication - definitely a must-know for everyone who works with AAD! Marcel, a Microsoft Regional Director and Azure MVP from Switzerland will be your guide on the bumpy roads to authentication procedures, App registrations, OAuth, Access Tokens and much more. Don't miss this essential session!
+
+Marcel Zehner, Microsoft RD & Azure MVP
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/inside-aad
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Azure (I)IoT Fremdenführer - (I)IoT aus der Praxis. Das Große Was, Wo, Wie und Wohin mit den Daten
+=============================================================================
+Wie fange ich an? Gute Frage und die Antwort findet ihr hier. Es geht um nichts anderes als die Frage nach dem Wohin mit meinen Daten und Warum und Was ich damit machen kann und will. Es wird ein kurzer Querschnitt durch das Organisatorische, das Technische und das Statistische Azure-Universum. Ihr werdet IoTHub, IotEdge, Azure Stream Analytics, Azure DataLake, Azure SQL, Azure Databricks, Azure Synapse uvm. Beteiligte in diesem Beitrag sehen. Viel Spass!
+
+Mario Schnalzenberger, Data Scientist, cubido business solutions GmbH
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/iot-data
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+When to use what monitoring service
+=============================================================================
+Azure provides a bunch of services for monitoring purposes. So, when should you use what service? If you want to know what options you have, this session is for you!
+
+Toni is giving an overview of the services and is diving into the monitoring services, showing samples, what benefits various services have, and when you should use what. Of course, with using such services comes a little bit of Azure management, governance, and best practices. Start with monitoring various workloads and get insights into your services and apps with the Azure cloud services.
+
+Toni Pohl, CTO atwork
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/monitoring
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+A full Journey to Azure Kubernetes Service (AKS)
+=============================================================================
+Docker-basierte Dienste sind heutzutage unverzichtbar und Kubernetes ist zur Nummer eins der Containerorchestratoren geworden. Neben einer kurzen Einführung in den Azure Kubernetes Service (AKS) werden wir einen kompletten Cluster von 0 auf 100 bauen und in eine Azure Umgebung integrieren. Die behandelten Themen umfassen: AKS Deployment (ARM/CLI), AAD-Integration, öffentliche Endpunkte mit Application Gateway/WAF, Zertifikatsmanagement, Skalierung und Zero-Downtime Deployment.
+
+Marc Müller, Principal Consultant @ 4tecture GmbH
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/k8s-journey
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Conditional Access & App Controls
+=============================================================================
+Use Conditional Access & App Controls enforce rules for cloud apps, devices and further conditional access parameters.
+
+Conditional Access is a basic option to control access to Microsoft 365 services. In addition to parameters such as users, apps or the device used to access, app policies can also be triggered in Conditional Access Policies. For example, depending on whether the user accesses from the company network or not, it can be determined whether the access is web-only or not.
+The options with this feature are, for example, a very powerful tool in the context of HOME Office to increase security and enforce compliance aspects.
+Using Conditional Access & App Controls we can create rules for cloud apps, the devices that are used to access those apps and further conditional access parameters.
+In this session, you will learn how to configure the basic settings using an example with Microsoft Teams and SharePoint. We will go through scenarios such as:
+•	Use app enforced restrictions
+•	Use Conditional Access App Control
+•	Force Sign-in frequency limitations
+•	Persistent browser session settings
+
+Nicki Borell, Remove-AllBusinessProblems -Identity "Nicki Borell"  -force
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/conditional-access
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Connect your data artifacts with Azure Synapse Analytics and Azure Purview
+=============================================================================
+In human brains, synapses are responsible to connect information pieces together. Over time, our knowledge increases when more and more synapses are connected together. Following that analogy, Azure Synapse Analytics wants to connect (all) information silos together and provide a single point of analytics. For a complete overview over your company's data estate, Azure Purview - the data catalog and governance solution - can be used.
+
+Join this session, if you want to hear about the building blocks of Azure Synapse Analytics, how Data Engineers and Data Scientists and even BI developer can work together and see how easy it is to start with Synapse Analytics!
+
+Wolfgang Strasser, data juggler
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/synapse-purview
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Konfigurationseinstellungen für Anwendungen in Azure absichern
+=============================================================================
+Das geheime Schlüssel und andere sensitive Konfigurationseinstellungen nicht in den Quellcode gehören ist heutzutage wohl jeder Person bekannt. Auch andere Konfigurationseinstellungen sollten sicher und gut verwaltet werden, denn auch durch Fehlkonfigurationen können Sicherheitslücken entstehen. In dieser Demo-Only Session sehen wir uns an wie wir Managed Identities, Azure KeyVault und Azure App Configuration einsetzen können, um unsere Konfigurationseinstellungen möglichst sicher zu verwalten und den Zugriff darauf auf das Notwendigste zu beschränken. Zudem zeige ich ihnen, wie sie die in Azure App Configuration integrierte Features-Flags Funktionalität nutzen können.
+
+Andreas Pollak, Azure Enthusiast
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/azure-config
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+BAWAGs Reise zur Cloud Container Plattform mit Microsoft Azure
+=============================================================================
+Wie viele andere Unternehmen betreibt die BAWAG Group seit einigen Jahren eine Microservice Architektur. Um die Vorteile einer solchen Architektur voll ausnützen zu können wurde Ende 2019 beschlossen die aktuelle on-prem Infrastruktur in die Cloud zu bringen. Mit Azure & Microsoft als strategischem Partner ist daher im letzten Jahr eine der größten AKS (Azure Kubernetes Service) Umgebungen Österreichs entstanden die mehrere kundennahe Applikationen beheimatet. In dieser Session wollen wir einen Einblick in die Reise & Ziele geben: die Auswahl der Container Plattform, Effizienz- und Verbesserungspotentiale gegenüber der Bestandsplattform, Architekturüberlegungen, der Weg von der Entwicklungs-, Test- bis zur Produktiv-Umgebung & schlussendlich die erfolgreiche Migration der Applikationen.
+
+Gerwald Oberleitner, Azure Application Development & DevOps Specialist @ Microsoft
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/aks-bawag
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Enabling the protection, detection and response to cyber-threats
+=============================================================================
+Microsoft is committed to enable a secure digital transformation to customers and partners. Come and join this session where Martina will detail strategies to protect, detect and respond to today's cyber-threats with practical examples and technology showcase.
+
+Use modern tools to get an unified view to current threats and infos how to mitigate risk.
+
+Martina Grom, CEO atwork, MVP Office 365, Microsoft RD
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/cyber-threats
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+IoT Central - Daten rasch online bringen! (mit node-red/sigfox/IO-Link/CloudRAIL)
+=============================================================================
+Daten aus Sensoren in Dashboards bringen ist heute oft eine verbreitete Anforderung! Sensoren aus der Industrie kommen mittels  OPC-UA od. IO-Link Sensoren, mittels sigfox/LoraWAN per Funk ortsungebunden.
+
+Ich zeige live, wie man Sensoren vom Anstecken bis ins Dashboard konfiguriert (Azure IoT PnP) oder beliebige andere Messwerte mittels OpenSource Plattform Node-Red integriert (IoTC Bridge)!
+Für die Developer unter Euch: node-red ist eine node.js Plattform, die in der Industrie sehr beliebt und verbreitet ist ;) Also JavaScript ist Dein Freund...
+
+Stefan Denninger, Senior Consultant IoT, Microsoft Azure MVP
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/iot-central
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Microsoft Datacenter Region in Austria - What does it mean and how can you benefit?
+=============================================================================
+Let´s talk about the announced Microsoft Datacenter Region Austria East.
+
+What does the announcement really mean from a technical point of view?
+How does a Microsoft datacenter look like in real life?
+Which physical infrastructure can you expect in the Austrian region?
+Which services will be there?
+How can you benefit from the Austrian region?
+How can you influence the make-up of the Austrian Datacenter region?
+
+Thomas Vater, Datacenter Lead Cloud Solution Architect @ Microsoft
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/azure-at
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Modern continous delivery on Azure Kubernetes Service
+=============================================================================
+Continuous delivery (CD) might be a challenging and daunting task to set up and maintain based on 1000+ lines of pipeline code - but it doesn’t have to be this way. Modern tools can make your application deployment and delivery process an efficient, quick, and sustainable commodity without requiring a lot of configuration.
+
+In this talk you will learn 1) how to employ new delivery models such as blue/green deployments, and 2) how to integrate quality gates into pipelines to ensure no bad code changes can make it to production. We are going to use the open-source tool Keptn that is based on SRE principles to define delivery and operation workflows and will be doing a live deployment with quality gates on Azure Kubernetes Service (AKS).
+
+Jürgen Etzlstorfer, Technology Strategist, Dynatrace
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/ci-cd-aks
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Azure Hybrid - Learn about Hybrid Cloud Management with Azure
+=============================================================================
+In this session, Microsoft Cloud Advocate Thomas Maurer shows you how you can manage and govern your Windows and Linux servers and Kubernetes clusters hosted outside of Azure on your corporate network or other cloud providers, similar to how you manage native Azure virtual machines. When a hybrid machine is connected to Azure, it becomes a connected machine and is treated as a resource in Azure. Azure Arc provides you with the familiar cloud-native Azure management experience, like RBAC, Tags, Azure Policy, Log Analytics, and more.
+
+Thomas Maurer, Cloud Advocate @ Microsoft
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/azure-hybrid
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Technische Integration von Digital Twins in IoT Lösungen
+=============================================================================
+Mit Azure Digital Twins kommt endlich Kontext und zusätzliche Insights in IoT Lösungen. Doch wie erfolgt die technische Integration?
+
+Juergen Mayrbaeurl, Microsoft Global&Strategic IoT Engagement Lead
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/digital-twins
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Micro Frontends mit Module Federation, Angular und Azure Static Web Apps
+=============================================================================
+Die Umsetzung von Microfrontends war bis jetzt alles andere als einfach. Da gängige Frameworks und Build-Werkzeuge diese Idee nicht einmal ansatzweise kannten, musste man ordentlich in die Trickkiste greifen.
+
+Die von Webpack 5 gebotene Module Federation leitet hier einen entscheidenden Richtungswechsel ein. Sie erlaubt es, separat kompilierte Anwendungsteile zur Laufzeit zu laden und Bibliotheken zwischen diesen zu teilen.
+In dieser Session erfahren Sie von Microfrontend-Pionier Manfred Steyer, wie Sie diesen Mechanismus zur Schaffung von Microfrontends mit Angular nutzen können. Dazu entwickeln wir ein Micro Frontend, das wir mit Azure Static Web Apps hosten und zur Laufzeit dynamisch in eine App-Shell laden.
+Am Ende der Session haben Sie einen Überblick über das Thema und wissen, wie Sie Module Federation in Ihren Projekten nutzen können sowie welche Konsequenzen sich darauf ergeben.
+
+Manfred Steyer, Google Developer Expert focusing on Angular
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/ng-static-web-apps
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Four Different Ways of Working with Kafka on Azure
+=============================================================================
+Life doesn't happen in batch mode, which is why for several years now, we see a very strong tendency towards stream processing throughout various industries. Companies need, or least partially have to rethink their existing data architectures in order to enable near real-time business cases. Besides traditional database systems and batch-driven tooling, many companies put Apache Kafka® - the de facto standard for robust and scalable event streaming - to good use.
+
+This talk explores the following four different ways to run Kafka on Azure:
+Kafka on HDInsight (open-source core Kafka)
+EventHubs (Microsoft's very own "Kafka look-alike")
+Confluent Cloud (a vendor-backed Kafka distribution)
+Kafka in Azure Kubernetes Service
+You will walk away with a better understanding about the most important benefits, drawbacks and implications for each of the discussed alternatives.
+
+Hans-Peter Grahsl, SW Engineer, Technical Trainer, Consultant & Associate Lecturer
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/kafka
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Azure Sentinel das moderne SIEM system
+=============================================================================
+Ein jeder spricht davon, ein jeder würde es gerne implementieren, aber es scheitert oft an den Kosten/Sizing und der Angst, dass das System mit den Jahren nicht mehr ausreichend performt.
+
+Microsoft hat die Antwort auf diese Probleme, mit Azure Sentinel bekommen Sie ein modernes SIEM System basierend auf einer PaaS Architektur und nach den Pay-as-you-Go Prinzip.
+
+Hannes Lagler-Gruener, ACP IT Solutions GMBH, Multi Cloud Architect 
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/sentinel
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Was ist Governance und warum Power Automate hier helfen kann?!
+=============================================================================
+In meiner Session geht nicht um Datenkonnektivität, DAX oder Power Query: Es geht um Governance. Dieses Thema wird sehr oft ignoriert oder sogar vergessen. Aber wenn Sie keine Governance haben, kann es sein, dass Ihre Organisation in ernsthafte Gefahr gerät. Vielleicht denken Sie, dass ich ein wenig übertreibe? Nicht, wenn ich Ihnen in meinem Vortrag zeige, wie schnell sensible Daten Ihres Unternehmens bei Google gefunden werden können. Und das alles, nur weil es keine Prozesse gibt, die dies hätten verhindern können. In meinem Vortrag zeige ich Ihnen einen einfachen Weg, wie Sie einen solchen Benachrichtigungsprozess schnell und automatisiert mit Power Automate und dem Protection Office erstellen können.
+
+Kathrin Borchert, Senior Consultant, Trainerin, MVP and Power BI Enthusiast
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/governance-automate
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Welcoming the Quantum Era with Azure Quantum
+=============================================================================
+Harnessing the unique behaviour of quantum physics and applying it to computing, quantum computers introduce new concepts to traditional programming methods such as superposition, entanglement, and quantum interference.
+
+Microsoft, having a clear mindset towards the coming quantum era, is partnering with quantum hardware companies to provide developers with cloud access to quantum hardware.
+Leveraging the Azure Quantum platform and the Q# language, developers are now able to explore quantum algorithms and run their quantum programs on different types of quantum hardware.
+In this session, we will explore Azure Quantum’s capabilities and run a Q# quantum application on a real quantum computer.
+
+Vyron Vasileiadis, Software Engineer & Microsoft Certified Trainer
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/quantum
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Infrastructure as Code for Azure with Terraform
+=============================================================================
+Modern and distributed application architectures often require a large set of services and systems with a rather complex configuration to work as expected. You and your team can create and manage such infrastructures professionally by adopting Infrastructure as Code (IaC) and relying on Terraform. In this talk, Azure MVP Thorsten Hans demonstrates how to create reliable and predictable Azure infrastructures with Terraform. You will learn how to structure your project, create and mutate your services and manage multiple environments in no time.
+
+Thorsten Hans, Consultant at Thinktecture
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/iac-terraform
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Notes from the field Microsoft Information Protection
+=============================================================================
+Ever thought about how the different protections play together to protect your information? In this session you will learn how Azure Information Protection, Endpoint DLP, Cloud App Security and Conditional Access can work together to protect every aspect during work. It will also be a part to monitor the solutions with Azure Log Analytics. All of this is showcased with real world examples.
+
+What you will learn:
+Integration possibility with other systems
+Benefits and Limits of the solutions in production environments
+Roadmap for a successful setup
+
+Thomas Kurth, baseVISION AG, Workplace Consultant and Microsoft MVP
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/ms-info-protection
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Cloud Native Business Intelligence mit PowerBI und Azure
+=============================================================================
+In einem dezentral organisierten Unternehmen gibt es keine „Einheitsgröße“ für Business Intelligence-Lösungen. Trotzdem kann ein hohes Maß an Standardisierung und Sicherheit durch die Cloud-Technologien von Microsoft den PaaS Services und dem Einsatz von nativen Cloud-Tools und Sicherheitsmechanismen erreicht werden. Wir geben eine Praxis Einblick , wie Cloud-Technologien verwendet werden können, um die Zusammenarbeit zwischen verschiedenen Geschäftsbereichen zu fördern, Tools zu standardisieren und eine gemeinsame Plattform für Unternehmensdaten zu erstellen. Wir werden auch über die Herausforderungen und Erkenntnisse sprechen, auf die wir gestoßen sind, und über die Vorteile, die wir für die Anwender geschaffen haben.
+
+Günter Schulmeister, Carola Seyr (Porsche Holding Salzburg)
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/dwh-porsche
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Serverless Rendering with Azure Functions and TypeScript
+=============================================================================
+Oh, the pendulum swings!
+
+Render everything on the server! No, render everything on the client! Render everything ... on the server again, except that there are no servers?
+If all those pendulum swings make your head dizzy, don't worry! Pendulums have the tendency to stop right in the middle. And this is where we are going with the big question: Where, and when, should we render our HTML?
+In this talk, we explore rendering strategies with the help of Azure Functions.
+We look into
+lesser-known TypeScript features like JSX factories
+concepts like Hydration
+an architecture for highly dynamic and performant web sites
+Join us and see where the pendulum stops. And find out if we give it another swing!
+
+Stefan Baumgartner, Internet Batman
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/serverless-rendering
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Let's explore Azure Bicep! ... and compare it to Hashicorp's Terraform
+=============================================================================
+Recently I started to explore Azure and it's tools to implement Infrastructure as Code (IaC).  I use Terraform for years now, but sometimes it can be fun to break a habit ;-)
+
+In this session we will take look into Azure Bicep and compare it to Hashicorp's popular IaC tool Terraform.
+Chosing the right tool, that fits your needs is hard. So let's take a  look into both tools to see which one you can use in your next awesome project.
+Additionally, we will  we discover Bicep hands-on by implementing a simple static website using Azure Storage Account.
+This session requires at least basic knowledge of Infrastructure as code, Terraform and Azure Resource Manager (ARM).
+
+Nora Schöner, Senior Software Engineer @ Codecamp:N
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/bicep
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Pentesting Azure Container Services
+=============================================================================
+Containers are playing their role in the digital transformation by providing a fast deployment of cloud-native applications. Containers are also often viewed as secure, which is true. But how are they really well configured?
+
+A demo-based session.
+The session includes:
+Containers 101
+Backdooring Docker containers images
+Poisoning images on Azure Container Registry
+Compromise containers on Azure Container Instance
+Compromise containers on Azure Kubernetes Services
+Vulnerability Assessment
+
+Sergey Chubarov, Ethical Hacker
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/container-pentesting
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Anomaly Detection as a Service - Was ist normal?
+=============================================================================
+Wann wurde etwas aus Ihrem Shop gekauft? Wann war ein Zugriff auf Ihrer Website? Wann wurde eine Nachricht versandt? Wann ist ein Fehler aufgetreten?
+
+Wir speichern täglich derartige zeitbasierte Daten in unseren Anwendungen - aber wie schnell würde es uns auffallen, wenn es zu ungewöhnlichen Abweichungen kommen würde?
+Der Metrics Advisor aus den Azure Cognitive Services stellt APIs zur AI-unterstützten Erkennung von Abweichungen in Daten bereit. Roman Schacherl zeigt live und an unterschiedlichen Praxisbeispielen, wie Sie diese neuen Azure-Dienste nutzen können.
+
+Roman Schacherl, softaware gmbh
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/anomaly-detection
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Die Qual der Wahl bei den Single Page Application Frameworks
+=============================================================================
+Dieser Vortrag gibt einen Überblick über die aktuellen Single Page Applikation Frameworks und versucht diese zu vergleichen. Der Fokus liegt dabei auf den aktuellen "Top 3" der SPA Frameworks: Angular, React und Vue.js. Der Vortrag schaut aber auch über den Tellerrand und beleuchtet aktuelle Trends und Entwicklungen bei modernen Webframeworks.
+
+Jonas Bandi, Enthusiastic Software Professional
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/choosing-spa-fx
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Rust, Kubernetes, and the Cloud
+=============================================================================
+Moving to the cloud is a Big Deal™. So why would you want to throw a new language like Rust into the mix? Join us as we demonstrate how Rust can be used with Azure to simplify and bring safety to your code. We'll give a brief overview of the strengths and weaknesses of using Rust in the cloud in general before demoing how you can use Rust to connect to and leverage the Azure APIs. Kubernetes more your thing? We've got that covered too! We'll show how Rust makes interfacing with and writing tooling for Kubernetes a breeze, followed by a practical demo of a Rust project (Krustlet) in action on AKS.
+
+Taylor Thomas, Senior Software Engineer
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/azure-rust
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Become a Contributor to Microsoft Docs
+=============================================================================
+Microsoft Docs are open source on Github! Join content developers from a MSFT content team for a discussion on modern Microsoft documentation (regardless of technology). Learn about the content publishing engines behind Docs, and the best ways to add your content and fixes to Docs that are read by the entire customer community. There are hundreds of thousands of GitHub issues and PR’s submitted to Docs every month, how can you be an effective part of that process and get your face on the top of an article?
+
+William Assaf, Senior Content Developer, Microsoft
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/azure-docs
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+Azure AI in Power BI integrieren
+=============================================================================
+Power BI Desktop ist Microsoft’s kostenloses Werkzeug um Self-Service BI zu betreiben. Es liefert jeden Monat spannende neue Features und Gartner hat es seit 2019 zu dem führenden BI-Tool erklärt (das Tableau und Qlik hinter sich gelassen hat). In diesem Vortrag wollen wir ansehen, wie Azure's AI Dienste in Power BI Desktop verwendet werden können um Daten anzureichern: Cognitive Services, Azure Machine Learning Services und AI Insights.
+
+Markus Ehrenmüller-Jensen, BI Architect
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/ai-power-bi
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
