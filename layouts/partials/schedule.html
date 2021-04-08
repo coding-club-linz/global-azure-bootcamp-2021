@@ -49,7 +49,7 @@
                         {{ range $room := $.Site.Data.rooms.rooms }}
                         <td class="session">
                             {{ range (where (where (where $.Site.Data.sessionize.sessions "isServiceSession" false ) "roomId" .id ) "startsAt" $timeslot.startsAt) }}
-                            {{ if in .categoryItems 77272 }}
+                            {{ if or (or (or (or (in .categoryItems 77272) (in .categoryItems 81456)) (in .categoryItems 81457)) (in .categoryItems 81458)) (in .categoryItems 81459) }}
 
                             <div class="label label-default"><span class="timeslot">{{ dateFormat "15:04" $timeslot.startsAt }} - {{ dateFormat "15:04" .endsAt }}</span>
                                 {{ range $category := where (index $.Site.Data.sessionize.categories 1).items "id" "in" .categoryItems }}

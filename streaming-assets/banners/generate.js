@@ -7,7 +7,7 @@ const data = JSON.parse(rawData);
 
 
 // banner-logo
-execSync(`"C:\\Program Files\\Inkscape\\bin\\inkscape" --export-filename "images/banner-logo" --export-type "png" "logo.svg"`, (error, stdout, stderr) => {
+execSync(`"C:\\Program Files\\Inkscape\\bin\\inkscape" --export-filename "../../static/sessions/banners/banner-logo.png" --export-type "png" "logo.svg"`, (error, stdout, stderr) => {
     console.log('   ', error, stdout, stderr);
 });
 

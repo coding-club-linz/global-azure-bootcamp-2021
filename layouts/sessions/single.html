@@ -56,7 +56,7 @@
                         {{ end }}
                     </div>
 
-                    {{ $.Scratch.Add "hasYouTubeVideoQuestionId" false }}
+                    {{ $.Scratch.Set "hasYouTubeVideoQuestionId" false }}
 
                     <p class="text-center">
                         {{ range $question := $session.questionAnswers }}

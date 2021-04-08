@@ -16,7 +16,7 @@
         "d1582402-da1a-48f9-a9d3-721b801bc85b"
       ],
       "categoryItems": [
-        77272,
+        81458,
         77274
       ],
       "questionAnswers": [
@@ -43,13 +43,17 @@
         "44c0ae91-e75d-468f-ad3c-d6c60cc9978a"
       ],
       "categoryItems": [
-        77272,
+        81458,
         77274
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "blazor-news"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=TGRkhzXehFQ"
         }
       ],
       "roomId": 18083
@@ -66,13 +70,17 @@
         "a378b580-baef-4c58-a9b3-589139c88159"
       ],
       "categoryItems": [
-        77272,
+        81456,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "multi-cloud-magic"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=aR5sIN1Tkeo"
         }
       ],
       "roomId": 18084
@@ -89,13 +97,17 @@
         "2b9c4a87-fa59-48a1-a6a5-b8bd012434f8"
       ],
       "categoryItems": [
-        77272,
+        81457,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "inside-aad"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=iv7sH-gkafs"
         }
       ],
       "roomId": 18085
@@ -112,13 +124,17 @@
         "f21baecf-1b61-4e0b-8fb8-71894f39022b"
       ],
       "categoryItems": [
-        77272,
+        81459,
         77274
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "iot-data"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=AN8U-XYJDpY"
         }
       ],
       "roomId": 18086
@@ -135,13 +151,17 @@
         "6221ae7e-40aa-49f7-9c41-e8a2c5ba1d75"
       ],
       "categoryItems": [
-        77272,
+        81458,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "monitoring"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=6xbJUz8xMvY"
         }
       ],
       "roomId": 18083
@@ -158,13 +178,17 @@
         "3c55cfbb-36de-4d10-a164-fbfc76d7d3a7"
       ],
       "categoryItems": [
-        77272,
+        81456,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "k8s-journey"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=7BywFyPgG98"
         }
       ],
       "roomId": 18084
@@ -181,13 +205,17 @@
         "d56fc7e4-7d2e-4381-bf8d-e86ec25b12a1"
       ],
       "categoryItems": [
-        77272,
+        81457,
         77274
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "conditional-access"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=kO3MC_GByD8"
         }
       ],
       "roomId": 18085
@@ -204,13 +232,17 @@
         "7db10e99-f0e1-40f6-af98-1f9466502615"
       ],
       "categoryItems": [
-        77272,
+        81459,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "synapse-purview"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=ukVYVMuY-AI"
         }
       ],
       "roomId": 18086
@@ -227,13 +259,17 @@
         "6b3a5dfb-fd19-4b8d-82c8-67775d6acbef"
       ],
       "categoryItems": [
-        77272,
+        81458,
         77274
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "azure-config"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=BEdmYyXN3iY"
         }
       ],
       "roomId": 18083
@@ -250,13 +286,17 @@
         "fc1eabb6-63ee-4b6c-ab8e-f78b10481265"
       ],
       "categoryItems": [
-        77272,
+        81456,
         77274
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "aks-bawag"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=Me9AckAwiMM"
         }
       ],
       "roomId": 18084
@@ -273,13 +313,17 @@
         "72d847d4-d71a-48b9-9788-5bc1471d3ea4"
       ],
       "categoryItems": [
-        77272,
+        81457,
         77274
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "cyber-threats"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=OE-rTSSw0gg"
         }
       ],
       "roomId": 18085
@@ -296,13 +340,17 @@
         "d4d4edb1-4d65-4571-9ac1-b05588ab473f"
       ],
       "categoryItems": [
-        77272,
+        81459,
         77274
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "iot-central"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=9fNy1ELP8kM"
         }
       ],
       "roomId": 18086
@@ -319,13 +367,17 @@
         "d1582402-da1a-48f9-a9d3-721b801bc85b"
       ],
       "categoryItems": [
-        77272,
+        81458,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "azure-at"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=6tKSulKuJbY"
         }
       ],
       "roomId": 18083
@@ -342,13 +394,17 @@
         "657a5782-97e3-4c5f-ab08-049487a91d5d"
       ],
       "categoryItems": [
-        77272,
+        81456,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "ci-cd-aks"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=Octq_9ZczUg"
         }
       ],
       "roomId": 18084
@@ -365,13 +421,17 @@
         "9f2650fc-7c67-4e04-aef7-c283298d71f6"
       ],
       "categoryItems": [
-        77272,
+        81457,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "azure-hybrid"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=J3F6otOGlOU"
         }
       ],
       "roomId": 18085
@@ -388,13 +448,17 @@
         "bcba35d9-71a3-4219-bca0-eb8546baf2d8"
       ],
       "categoryItems": [
-        77272,
+        81459,
         77274
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "digital-twins"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=6lLYtPh9O3U"
         }
       ],
       "roomId": 18086
@@ -411,13 +475,17 @@
         "a115f4fa-5dbf-45f2-a1b5-4a47802b0664"
       ],
       "categoryItems": [
-        77272,
+        81458,
         77274
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "ng-static-web-apps"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=sjf6Xf4PU-g"
         }
       ],
       "roomId": 18083
@@ -434,13 +502,17 @@
         "24ac62e3-9f98-41e6-bf7e-d4852c642e8b"
       ],
       "categoryItems": [
-        77272,
+        81456,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "kafka"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=4AZrWmkRixE"
         }
       ],
       "roomId": 18084
@@ -457,13 +529,17 @@
         "1d18ea23-d6dc-4600-bbae-2916afebb0d7"
       ],
       "categoryItems": [
-        77272,
+        81457,
         77274
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "sentinel"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=KAuh1yeRHsM"
         }
       ],
       "roomId": 18085
@@ -480,13 +556,17 @@
         "57d61f5e-9ccd-4f7e-931f-79e8edbdaa54"
       ],
       "categoryItems": [
-        77272,
+        81459,
         77274
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "governance-automate"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=uWW945LAjLc"
         }
       ],
       "roomId": 18086
@@ -503,13 +583,17 @@
         "242e3255-6458-4c50-b715-6903a36467a8"
       ],
       "categoryItems": [
-        77272,
+        81458,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "quantum"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=pQ4mIRO8MU4"
         }
       ],
       "roomId": 18083
@@ -526,13 +610,17 @@
         "5fe6d127-e8f9-463a-8ca8-3109cbaddb2b"
       ],
       "categoryItems": [
-        77272,
+        81456,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "iac-terraform"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=6e3aI5WAg5M"
         }
       ],
       "roomId": 18084
@@ -549,13 +637,17 @@
         "53035a6a-4dcc-41d2-9d15-673db70e7074"
       ],
       "categoryItems": [
-        77272,
+        81457,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "ms-info-protection"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=kmZ7HuTGOUg"
         }
       ],
       "roomId": 18085
@@ -573,13 +665,17 @@
         "1b25ccee-afe5-4df5-9016-6398d5c52621"
       ],
       "categoryItems": [
-        77272,
+        81459,
         77274
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "dwh-porsche"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=cTi8NGLT5as"
         }
       ],
       "roomId": 18086
@@ -596,13 +692,17 @@
         "f62f9691-37cd-4ca6-81f1-14c7234ab46e"
       ],
       "categoryItems": [
-        77272,
+        81458,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "serverless-rendering"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=hiI4QFGMJ8Q"
         }
       ],
       "roomId": 18083
@@ -619,13 +719,17 @@
         "53f0b9ef-6acb-4bc3-8569-7386e974f07b"
       ],
       "categoryItems": [
-        77272,
+        81456,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "bicep"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=efPx3cipMsQ"
         }
       ],
       "roomId": 18084
@@ -642,13 +746,17 @@
         "a292c14b-e84f-4024-92c6-32bf91e5cf73"
       ],
       "categoryItems": [
-        77272,
+        81457,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "container-pentesting"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=_TXB6-6oM0I"
         }
       ],
       "roomId": 18085
@@ -665,13 +773,17 @@
         "215d7eef-de12-4228-891c-677811fa9d4a"
       ],
       "categoryItems": [
-        77272,
+        81459,
         77274
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "anomaly-detection"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=5vEqU0IdNY8"
         }
       ],
       "roomId": 18086
@@ -688,13 +800,17 @@
         "594c1b9a-bdfc-4d02-8045-65aa91a234ab"
       ],
       "categoryItems": [
-        77272,
+        81458,
         77274
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "choosing-spa-fx"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=G1ZsDzGywWo"
         }
       ],
       "roomId": 18083
@@ -711,13 +827,17 @@
         "47d0e9bd-3ac9-49a9-b462-996de9a18c6b"
       ],
       "categoryItems": [
-        77272,
+        81456,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "azure-rust"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=sec2LPsYXvs"
         }
       ],
       "roomId": 18084
@@ -734,13 +854,17 @@
         "136bda4f-d1f3-47e2-83b3-8683ec888fb4"
       ],
       "categoryItems": [
-        77272,
+        81458,
         77275
       ],
       "questionAnswers": [
         {
           "questionId": 28454,
           "answerValue": "azure-docs"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=8RSl1FG2n7E"
         }
       ],
       "roomId": 18085
@@ -757,13 +881,21 @@
         "0b456caf-b754-47c8-bfab-e8a34bda8efb"
       ],
       "categoryItems": [
-        77272,
+        81459,
         77274
       ],
       "questionAnswers": [
         {
+          "questionId": 28453,
+          "answerValue": "https://www.youtube.com/watch?v=S9QfhuJ8SDA"
+        },
+        {
           "questionId": 28454,
           "answerValue": "ai-power-bi"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=S9QfhuJ8SDA"
         }
       ],
       "roomId": 18086
@@ -1914,16 +2046,6 @@
           "title": "Twitter",
           "url": "http://twitter.com/wstrasser",
           "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/wolfgang-strasser/",
-          "linkType": "LinkedIn"
-        },
-        {
-          "title": "Blog",
-          "url": "http://www.workingondata.com",
-          "linkType": "Blog"
         }
       ],
       "sessions": [
@@ -1939,19 +2061,19 @@
       "id": 28453,
       "question": "Streaming URL",
       "questionType": "Web_address",
-      "sort": 13
+      "sort": 19
     },
     {
       "id": 28454,
       "question": "Short Link",
       "questionType": "Short_Text",
-      "sort": 20
+      "sort": 32
     },
     {
       "id": 28455,
       "question": "YouTube Video",
       "questionType": "Short_Text",
-      "sort": 21
+      "sort": 33
     }
   ],
   "categories": [
@@ -1968,6 +2090,26 @@
           "id": 77273,
           "name": "Junior Bootcamp",
           "sort": 2
+        },
+        {
+          "id": 81456,
+          "name": "DevOps",
+          "sort": 3
+        },
+        {
+          "id": 81457,
+          "name": "Cloud Security",
+          "sort": 4
+        },
+        {
+          "id": 81458,
+          "name": "Cloud Dev",
+          "sort": 5
+        },
+        {
+          "id": 81459,
+          "name": "IoT & Data",
+          "sort": 6
         }
       ],
       "sort": 0,
