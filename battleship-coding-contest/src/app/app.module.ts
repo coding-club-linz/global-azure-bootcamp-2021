@@ -36,7 +36,10 @@ import { RankingComponent } from './ranking/ranking.component';
         allowedList: [
           {
             // Match any request that starts 'https://coding-club-linz.eu.auth0.com/api/v2/' (note the asterisk)
-            uri: environment.apiEndpoint + '/api/*',
+            //uri: environment.apiEndpoint + '/api/*',
+            uriMatcher: (uri) => {
+              return uri.startsWith(environment.apiEndpoint + '/api/') && !uri.startsWith(environment.apiEndpoint + '/api/results');
+            },
             tokenOptions: {
               // The attached token should target this audience
               audience: 'https://coding-pirates.coderdojo.net/management',

@@ -12,6 +12,7 @@
                 </button>
             </div>
 
+            Test: {{ isInitialized }} {{ isRegistered }}
             <ng-container *ngIf="isInitialized && isRegistered">
                 <!-- players -->
                 <table class="table">
@@ -205,6 +206,12 @@
                     <label for="webApiUrl">Web API Url</label>
                     <input type="text" class="form-control" id="webApiUrl" [(ngModel)]="selectedPlayer.webApiUrl"
                         required>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" class="form-check-input" id="needsThrottling"
+                        [(ngModel)]="selectedPlayer.needsThrottling">
+                    <label class="form-check-label" for="needsThrottling">Needs Throttling</label>
                 </div>
 
                 <div class="form-check">

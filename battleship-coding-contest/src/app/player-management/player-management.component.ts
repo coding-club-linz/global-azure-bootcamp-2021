@@ -40,15 +40,14 @@ export class PlayerManagementComponent implements OnInit {
 
   constructor(public authService: AuthService, @Inject(DOCUMENT) public document: Document, private http: HttpClient) {
     this.authService.user$.subscribe(
-      (profile) => {
-        // console.warn('auth service', profile);
+      async (profile) => {
         if (!profile) {
           this.isInitialized = true;
         } else if (profile && !this.userLoaded) {
           this.isInitialized = false;
           this.userLoaded = true;
           this.user.email = profile.email;
-          this.loadUser();
+          await this.loadUser();
         }
       }
     );
@@ -99,7 +98,7 @@ export class PlayerManagementComponent implements OnInit {
   }
 
   addPlayer(): void {
-    this.selectedPlayer = { name: '', apiKey: '', webApiUrl: '', hasApiKey: false };
+    this.selectedPlayer = { name: '', apiKey: '', webApiUrl: '', hasApiKey: false, needsThrottling: false };
     $(this.playerDialog.nativeElement).modal({});
   }
 
@@ -167,6 +166,7 @@ export class PlayerManagementComponent implements OnInit {
           let player: any = {
             name: this.selectedPlayer.name,
             webApiUrl: this.selectedPlayer.webApiUrl,
+            needsThrottling: this.selectedPlayer.needsThrottling
           };
 
           if (!this.selectedPlayer.hasApiKey) {
@@ -268,7 +268,8 @@ export class PlayerManagementComponent implements OnInit {
       apiKey: p.hasApiKey ? '***************' : '',
       hasApiKey: p.hasApiKey,
       lastMeasurement: p.lastMeasurement,
-      avgNumberOfShots: p.avgNumberOfShots
+      avgNumberOfShots: p.avgNumberOfShots,
+      needsThrottling: p.needsThrottling
     }))
       .sort((a, b) => a.name < b.name ? -1 : 1);
     this.isLoading = false;

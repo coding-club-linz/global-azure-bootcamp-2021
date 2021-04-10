@@ -7,4 +7,5 @@ export interface Player {
     avgNumberOfShots?: number;
     apiKey: string;
     apiKeyChanged?: boolean;
+    needsThrottling: boolean;
 }
