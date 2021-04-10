@@ -1,3 +1,8 @@
+---
+title: "Teilnahmebedingungen Battleship Coding Contest"
+layout: single
+---
+
 ## Teilnahmebedingungen *Battleship Coding Contest*
 
 ### Einleitung
