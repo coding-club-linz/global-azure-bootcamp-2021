@@ -14,6 +14,11 @@ export class RankingComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   async ngOnInit() {
+    await this.refresh();
+  }
+
+  async refresh() {
+    this.isLoading = true;
     this.ranking = await this.http.get<any[]>(`${environment.apiEndpoint}/api/results`).toPromise();
     this.isLoading = false;
   }

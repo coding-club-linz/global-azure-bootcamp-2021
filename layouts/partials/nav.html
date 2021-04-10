@@ -28,12 +28,12 @@
                     <a class="page-scroll"
                         href="{{ cond (eq .Page.Dir "") "" "/" }}#schedule">{{ .Site.Params.navigation.links.schedule }}</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a class="page-scroll"
                         href="{{ cond (eq .Page.Dir "") "" "/" }}#speakers">Speakers</a>
-                </li>
+                </li> -->
                 <!-- <li class="{{ cond (eq .Page.Dir "battleship\\") "active" "" }}">
-                    <a href="/battleship">Battleship CC</a>
+                    <a href="/battleship">BSCC</a>
                 </li> -->
                 <li class="{{ cond (eq .Page.Title "Sessions") "active" "" }}">
                     <a href="/sessions">{{ .Site.Params.navigation.links.sessions }}</a>

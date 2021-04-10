@@ -12,7 +12,6 @@
                 </button>
             </div>
 
-            Test: {{ isInitialized }} {{ isRegistered }}
             <ng-container *ngIf="isInitialized && isRegistered">
                 <!-- players -->
                 <table class="table">
@@ -126,7 +125,7 @@
 
         <ng-template #loggedOut>
             <ng-container *ngIf="isInitialized">
-                <p>Log in to register your player for the battle.</p>
+                <p class="text-center">Log in to register your player for the battle.</p>
                 <p class="text-center"><button class="btn btn-primary" (click)="login()">Log in</button></p>
             </ng-container>
         </ng-template>

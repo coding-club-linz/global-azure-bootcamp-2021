@@ -156,6 +156,10 @@ p {
     color: rgba(255, 255, 255, 0.9) !important;
 }
 
+.bg-dark .btn {
+    color: #000;
+}
+
 .warning {
     padding: 10px;
     text-align: center;
@@ -206,6 +210,10 @@ p.error {
     background-color: var(--warning-bg);
     font-size: 14px;
     padding: 6px 12px;
+}
+
+.faq p {
+    font-size: 16px;;
 }
 
 /* tables */
