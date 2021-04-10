@@ -681,6 +681,24 @@
       "roomId": 18086
     },
     {
+      "id": "253368",
+      "title": "Ein Blick hinter die Kulissen der Microsoft Cloud: Wie sieht so eine Cloud denn tatsächlich aus?",
+      "description": "Jeder redet von der Cloud, aber möchtet ihr wissen was tatsächlich dahinter steckt? \r\n- WIe sieht so ein Rechenzentrum eigentlich aus?\r\n- Wie sind die miteinander verbunden?\r\n- Welche coolen Technologien stecken dahinter? (Wusstet ihr, dass wir z.B. auch an Unterwasser-Rechenzentren forschen, oder Microsoft mit riesigen Schiffen Netzwerkkabel quer durch die Ozeane verlegt?)\r\n- Wie kann man Rechenzentren bauen, die auch für die Umwelt verträglich sind? (Co2-Ausstoß, Energieverbrauch)\r\n- Und bald werden wir auch eigene Microsoft Rechenzentren in Österreich haben. Wozu eigentlich?",
+      "startsAt": "2021-04-16T14:00:00",
+      "endsAt": "2021-04-16T14:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "d1582402-da1a-48f9-a9d3-721b801bc85b"
+      ],
+      "categoryItems": [
+        77273,
+        77274
+      ],
+      "questionAnswers": [],
+      "roomId": 18548
+    },
+    {
       "id": "246675",
       "title": "Serverless Rendering with Azure Functions and TypeScript",
       "description": "Oh, the pendulum swings! \r\n\r\nRender everything on the server! No, render everything on the client! Render everything ... on the server again, except that there are no servers?\r\n\r\nIf all those pendulum swings make your head dizzy, don't worry! Pendulums have the tendency to stop right in the middle. And this is where we are going with the big question: Where, and when, should we render our HTML?\r\n\r\nIn this talk, we explore rendering strategies with the help of Azure Functions. \r\n\r\nWe look into\r\n- lesser-known TypeScript features like JSX factories\r\n- concepts like Hydration\r\n- an architecture for highly dynamic and performant web sites\r\n\r\nJoin us and see where the pendulum stops. And find out if we give it another swing!",
@@ -787,6 +805,24 @@
         }
       ],
       "roomId": 18086
+    },
+    {
+      "id": "254680",
+      "title": "Was Brawl Stars so über dich weiß",
+      "description": "Du hast vielleicht schon mal gehört, dass wir alle \"Spuren im Internet\" hinterlassen. Seit ein paar Jahren hat jeder das Recht, die Daten die über ihn von einem Unternehmen gesammelt werden, zugesandt zu bekommen. Mein Sohn hat das für Brawl Star gemacht - und genau diese Daten werden wir (natürlich mit seiner Erlaubnis) analysieren.\r\nMeistens, so auch in diesem Fall, werden die Daten als JSON-Dateien zur Verfügung gestellt. Diese Dateien sind sowhl vom Computer als auch von uns Menschen lesbar. Die Vielzahl der darin enthaltenen Informationen lässt sich aber schwer durch einfaches Durchlesen auswerten. Daher werden wir ein kostenloses Werkzeug (Power BI) verwenden um die Informationen auch begreifbar zu machen.\r\n\r\nDinge, die wir also besprechen werden:\r\n* Das Recht auf die eigenen Daten\r\n* Datenformat JSON \r\n* Microsoft Power BI (kostenlos)",
+      "startsAt": "2021-04-16T15:00:00",
+      "endsAt": "2021-04-16T15:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "0b456caf-b754-47c8-bfab-e8a34bda8efb"
+      ],
+      "categoryItems": [
+        77273,
+        77274
+      ],
+      "questionAnswers": [],
+      "roomId": 18548
     },
     {
       "id": "252072",
@@ -899,6 +935,24 @@
         }
       ],
       "roomId": 18086
+    },
+    {
+      "id": "253583",
+      "title": "RESTful Web Services mit Spring Boot",
+      "description": "Die Kommunikation zwischen Front- und Backend einer App erfolgt oft über eine sogenannte REST API. Dabei stellt das Backend bestimmte Methoden zur Verfügung, die Clients benutzen können. Doch wie funktioniert so eine REST API eigentlich und was sollte man dabei beachten? \r\n\r\nIn diesem Workshop werden wir einen einfachen Web Service mit Spring Boot implementieren, der eine API zum Wörter raten (wie beim Spiel Hangman) zur Verfügung stellt.\r\n\r\nUm an diesem Workshop teilzunehmen, solltest du folgendes auf deinem Computer installieren: \r\n* Java mit Version 1.8 oder höher\r\n* Eine Enwicklungsumgebung wie Intellij IDEA (bevorzugt) oder Eclipse (wenn du schon Erfahrung damit hast)",
+      "startsAt": "2021-04-16T16:00:00",
+      "endsAt": "2021-04-16T16:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "0979c01c-b27b-4c4a-be3b-b1d0a927bd6a"
+      ],
+      "categoryItems": [
+        77273,
+        77274
+      ],
+      "questionAnswers": [],
+      "roomId": 18548
     }
   ],
   "speakers": [
@@ -1236,6 +1290,22 @@
       "questionAnswers": []
     },
     {
+      "id": "0979c01c-b27b-4c4a-be3b-b1d0a927bd6a",
+      "firstName": "Katharina",
+      "lastName": "Sick",
+      "bio": "Katharina is a enthusiastic Java and Kotlin Developer. She started off as a mobile developer, but  soon decided to focus on backend and IoT solutions. She enjoys being part of the full development cycle of applications. Therefore, she is also quite interested in graphics design and fronted development.",
+      "tagLine": "Software Engineer @ Dynatrace",
+      "profilePicture": "https://sessionize.com/image/6b62-400o400o2-TrJcSMM4W5bkgmytAvzV5h.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        253583
+      ],
+      "fullName": "Katharina Sick",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
       "id": "57d61f5e-9ccd-4f7e-931f-79e8edbdaa54",
       "firstName": "Kathrin",
       "lastName": "Borchert",
@@ -1425,22 +1495,13 @@
           "linkType": "Twitter"
         },
         {
-          "title": "LinkedIn",
-          "url": "http://at.linkedin.com/pub/markus-ehrenmueller/40/382/5b9",
-          "linkType": "LinkedIn"
-        },
-        {
-          "title": "Blog",
-          "url": "http://SavoryData.wordpress.com",
-          "linkType": "Blog"
-        },
-        {
           "title": "Company Website",
-          "url": "http://www.SavoryData.com",
+          "url": "http://www.savorydata.com",
           "linkType": "Company_Website"
         }
       ],
       "sessions": [
+        254680,
         246003
       ],
       "fullName": "Markus Ehrenmüller-Jensen",
@@ -1899,7 +1960,8 @@
       "links": [],
       "sessions": [
         248343,
-        250607
+        250607,
+        253368
       ],
       "fullName": "Thomas Vater",
       "categoryItems": [],
@@ -2154,6 +2216,11 @@
       "id": 18086,
       "name": "IoT, Data, ML",
       "sort": 3
+    },
+    {
+      "id": 18548,
+      "name": "Junior",
+      "sort": 4
     }
   ]
 }

@@ -113,16 +113,18 @@
 
                 <h5><b>Sessions</b></h5>
                 <p class="sessions">
+                    <ul>
                     {{ range where $.Site.Data.sessionize.sessions "id" "in" (apply .sessions "string" ".") }}
 
-                    <a href="/sessions#{{.id}}">{{ .title }}</a>
+                    <li><a href="/sessions#{{.id}}">{{ .title }}</a></li>
                     {{ end }}
+                    </ul>
                 </p>
 
                 <h5><b>Links</b></h5>
-                <p>{{ range .links }}
-                    <div><a href="{{ .url }}" target="_blank">{{ .title }}</a></div>
-                    {{ end }}
+                <p><ul>{{ range .links }}
+                    <li><a href="{{ .url }}" target="_blank">{{ .title }}</a></li>
+                    {{ end }}</ul>
                 </p>
             </div>
             <div class="modal-footer">
