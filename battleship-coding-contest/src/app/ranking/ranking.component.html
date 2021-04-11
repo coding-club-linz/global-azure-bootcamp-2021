@@ -1,13 +1,13 @@
 <p class="text-right">
-    <button type="button" class="btn" (click)="refresh()"><i class="fa fa-refresh" aria-hidden="true"></i> Refresh</button>
+    <button type="button" class="btn" (click)="refresh()"><i class="fa fa-refresh" aria-hidden="true"></i><span class="hidden-xs"> Refresh</span></button>
 </p>
 <table class="table">
     <thead>
         <tr>
-            <th>Position</th>
+            <th class="hidden-xs">Position</th>
             <th>Player</th>
-            <th class="text-right">Shots</th>
-            <th class="text-right">Std Dev <i class="fa fa-info-circle" aria-hidden="true"><span
+            <th class="hidden-xs text-right">Shots</th>
+            <th class="hidden-xs text-right">Std Dev <i class="fa fa-info-circle" aria-hidden="true"><span
                 data-tooltip="Standard Deviation"></span></i></th>
         </tr>
     </thead>
@@ -15,12 +15,17 @@
     <tbody>
         <ng-container *ngIf="!isLoading">
             <tr *ngFor="let player of ranking; index as i">
-                <td>{{i + 1}}.</td>
-                <td>
+                <td class="visible-xs">
+                    {{i + 1}}. {{player.name}}<br/>
+                    Average number of shots: {{player.avgNumberOfShots | number:'0.2-2'}}<br/>
+                    Standard deviation: {{player.stdDev | number:'0.2-2'}}
+                </td>
+                <td class="hidden-xs">{{i + 1}}.</td>
+                <td class="hidden-xs">
                     {{player.name}}
                 </td>
-                <td class="text-right">{{player.avgNumberOfShots | number:'0.2-2'}}</td>
-                <td class="text-right">{{player.stdDev | number:'0.2-2'}}</td>
+                <td class="hidden-xs text-right">{{player.avgNumberOfShots | number:'0.2-2'}}</td>
+                <td class="hidden-xs text-right">{{player.stdDev | number:'0.2-2'}}</td>
             </tr>
         </ng-container>
 

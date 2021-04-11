@@ -20,6 +20,8 @@
                 <button class="btn btn-primary" (click)="logout()">
                     Log out
                 </button>
+
+                <button *ngIf="isInitialized && isRegistered" type="button" class="btn float-right" (click)="loadPlayers()"><i class="fa fa-refresh" aria-hidden="true"></i><span class="hidden-xs"> Refresh</span></button>
             </div>
 
             <ng-container *ngIf="isInitialized && isRegistered">
@@ -31,7 +33,7 @@
                                         data-tooltip="Name of the player"></span></i></th>
                             <th class="hidden-xs">Last Run <i class="fa fa-info-circle" aria-hidden="true"><span
                                         data-tooltip="Date and time of last tournament"></span></i></th>
-                            <th class="hidden-xs text-right">Number of Shots <i class="fa fa-info-circle"
+                            <th class="hidden-xs text-right">Shots <i class="fa fa-info-circle"
                                     aria-hidden="true"><span
                                         data-tooltip="Average number of shots that your player needed to sink all ships during the games of the last tournament. Your goal is to need as few shots as possible, so lower is better."></span></i>
                             </th>
@@ -52,9 +54,9 @@
                                     <span class="playerName">{{player.name}}</span><br />{{player.webApiUrl}}
                                     <div class="visible-xs">
                                         <br />
-                                        Last Run: {{player.lastMeasurement | date:'short'}}<br />
-                                        Number of Shots: {{player.avgNumberOfShots | number:'0.2-2'}}<br/>
-                                        Standard Deviation: {{player.stdDev | number:'0.2-2'}}
+                                        Last run: {{player.lastMeasurement | date:'short'}}<br />
+                                        Number of shots: {{player.avgNumberOfShots | number:'0.2-2'}}<br/>
+                                        Standard seviation: {{player.stdDev | number:'0.2-2'}}
                                         <br /><br />
                                         <div class="commands-xs text-center">
                                             <a (click)="editPlayer(player)"><i class="fa fa-pencil"
@@ -90,11 +92,11 @@
                         </ng-container>
 
                         <tr *ngIf="!players.length && !isLoading">
-                            <td colspan="8" class="text-center">No players registered</td>
+                            <td colspan="9" class="text-center">No players registered</td>
                         </tr>
 
                         <tr *ngIf="isLoading">
-                            <td colspan="8" class="text-center"><i class="fa fa-spinner loading-players"
+                            <td colspan="9" class="text-center"><i class="fa fa-spinner loading-players"
                                     aria-hidden="true"></i>loading players</td>
                         </tr>
                     </tbody>
@@ -228,7 +230,7 @@
                 <h4 class="modal-title" id="myModalLabel">Player</h4>
             </div>
             <div class="modal-body" *ngIf="selectedPlayer">
-                <p>Specify a publicly reachable Url for your player. See <a
+                <p>Specify a publicly reachable url for your player. See <a
                         href="https://github.com/rstropek/BattleshipContestFunc/wiki"
                         target="_blank">Wiki</a> for details. You can use tools like ngrok to run players locally (see
                     also <a href="https://github.com/rstropek/BattleshipContestFunc/wiki/Running-Players-Locally"
@@ -241,9 +243,15 @@
 
                 <div class="form-group">
                     <label for="webApiUrl">Web API Url <i class="fa fa-info-circle"><span
-                                data-tooltip="Publicly reachable absolute Url where your player is running. This Url will not be publicly visible."></span></i></label>
+                                data-tooltip="Publicly reachable absolute url where your player is running. This url will not be publicly visible."></span></i></label>
                     <input type="text" class="form-control" id="webApiUrl" [(ngModel)]="selectedPlayer.webApiUrl"
                         required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gitHubUrl">GitHub Url (optional) <i class="fa fa-info-circle"><span
+                                data-tooltip="GitHub url of your player. This url will be visible for other users."></span></i></label>
+                    <input type="text" class="form-control" id="gitHubUrl" [(ngModel)]="selectedPlayer.gitHubUrl">
                 </div>
 
                 <div class="form-group">

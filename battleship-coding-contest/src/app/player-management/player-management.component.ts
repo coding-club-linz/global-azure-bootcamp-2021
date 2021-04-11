@@ -98,7 +98,7 @@ export class PlayerManagementComponent implements OnInit {
   }
 
   addPlayer(): void {
-    this.selectedPlayer = { name: '', apiKey: '', webApiUrl: '', hasApiKey: false, needsThrottling: false };
+    this.selectedPlayer = { name: '', apiKey: '', webApiUrl: '', hasApiKey: false, needsThrottling: false, gitHubUrl: '' };
     $(this.playerDialog.nativeElement).modal({});
   }
 
@@ -168,7 +168,8 @@ export class PlayerManagementComponent implements OnInit {
           let player: any = {
             name: this.selectedPlayer.name,
             webApiUrl: this.selectedPlayer.webApiUrl,
-            needsThrottling: this.selectedPlayer.needsThrottling
+            needsThrottling: this.selectedPlayer.needsThrottling,
+            gitHubUrl: this.selectedPlayer.gitHubUrl
           };
 
           if (!this.selectedPlayer.hasApiKey) {
@@ -247,6 +248,24 @@ export class PlayerManagementComponent implements OnInit {
     }
   }
 
+  async loadPlayers() {
+    this.isLoading = true;
+    this.players = (await this.http.get<Player[]>(`${environment.apiEndpoint}/api/players`).toPromise()).map((p) => ({
+      id: p.id,
+      name: p.name,
+      webApiUrl: p.webApiUrl,
+      apiKey: p.hasApiKey ? '***************' : '',
+      hasApiKey: p.hasApiKey,
+      lastMeasurement: p.lastMeasurement,
+      avgNumberOfShots: p.avgNumberOfShots,
+      stdDev: p.stdDev,
+      needsThrottling: p.needsThrottling,
+      gitHubUrl: p.gitHubUrl
+    }))
+      .sort((a, b) => a.name < b.name ? -1 : 1);
+    this.isLoading = false;
+  }
+
   private async loadUser() {
     try {
       this.user = (await this.http.get<User>(`${environment.apiEndpoint}/api/users/me`).toPromise());
@@ -259,23 +278,6 @@ export class PlayerManagementComponent implements OnInit {
     }
 
     this.isInitialized = true;
-  }
-
-  private async loadPlayers() {
-    this.isLoading = true;
-    this.players = (await this.http.get<Player[]>(`${environment.apiEndpoint}/api/players`).toPromise()).map((p) => ({
-      id: p.id,
-      name: p.name,
-      webApiUrl: p.webApiUrl,
-      apiKey: p.hasApiKey ? '***************' : '',
-      hasApiKey: p.hasApiKey,
-      lastMeasurement: p.lastMeasurement,
-      avgNumberOfShots: p.avgNumberOfShots,
-      stdDev: p.stdDev,
-      needsThrottling: p.needsThrottling
-    }))
-      .sort((a, b) => a.name < b.name ? -1 : 1);
-    this.isLoading = false;
   }
 
   private setErrorMessage(message: string, type: null | 'userDialog' | 'playerDialog' = null) {
