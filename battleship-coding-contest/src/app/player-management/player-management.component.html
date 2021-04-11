@@ -1,12 +1,22 @@
 <div class="row">
     <div class="col-sm-12">
+        <ng-container *ngIf="isInitialized && isRegistered">
+            <p class="text-center">Here you see your players and their last tournament results.</p>
+        </ng-container>
+
+        <ng-container *ngIf="isInitialized && !isRegistered">
+            <p class="text-center">You have to register your user before you can start competing in the
+                Battleship Coding Contest.</p>
+        </ng-container>
+
         <!-- login -->
         <ng-container *ngIf="isInitialized && (authService.isAuthenticated$ | async); else loggedOut">
             <div class="logout">
                 <span *ngIf="authService.user$ | async as user">
                     {{ user.name }}
                 </span>
-                <button class="btn btn-light" (click)="editUser()"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                <button class="btn btn-light" *ngIf="isRegistered" (click)="editUser()"><i class="fa fa-cog"
+                        aria-hidden="true"></i></button>
                 <button class="btn btn-primary" (click)="logout()">
                     Log out
                 </button>
@@ -17,9 +27,14 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Player</th>
-                            <th class="hidden-xs">Last Run</th>
-                            <th class="hidden-xs">Number of Shots</th>
+                            <th>Player <i class="fa fa-info-circle" aria-hidden="true"><span
+                                        data-tooltip="Name of the player"></span></i></th>
+                            <th class="hidden-xs">Last Run <i class="fa fa-info-circle" aria-hidden="true"><span
+                                        data-tooltip="Date and time of last tournament"></span></i></th>
+                            <th class="hidden-xs text-right">Number of Shots <i class="fa fa-info-circle"
+                                    aria-hidden="true"><span
+                                        data-tooltip="Average number of shots that your player needed to sink all ships during the games of the last tournament. Your goal is to need as few shots as possible, so lower is better."></span></i>
+                            </th>
                             <th class="hidden-xs"></th>
                             <th class="hidden-xs"></th>
                             <th class="hidden-xs"></th>
@@ -91,25 +106,32 @@
             <ng-container *ngIf="isInitialized && !isRegistered">
                 <form novalidate="true" class="was-validated">
                     <div class="form-group">
-                        <label for="email">Email (not visible for other users)</label>
+                        <label for="email">Email (not visible for other users) <i class="fa fa-info-circle"
+                                aria-hidden="true"><span
+                                    data-tooltip="You email address will not be publicly visible. We will use this email address to get in contact with you (e.g. notification if you win a price, information about technical problems, etc.)."></span></i></label>
                         <input type="text" class="form-control" id="email" name="email" [(ngModel)]="user.email"
                             required>
                     </div>
 
                     <div class="form-group">
-                        <label for="nickname">Nickname</label>
+                        <label for="nickname">Nickname <i class="fa fa-info-circle" aria-hidden="true"><span
+                                    data-tooltip="The publicly visible name of your user."></span></i></label>
                         <input type="text" class="form-control" id="nickname" name="nickname"
                             [(ngModel)]="user.nickName" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="publicTwitter">Twitter (optional)</label>
+                        <label for="publicTwitter">Twitter (optional) <i class="fa fa-info-circle"
+                                aria-hidden="true"><span
+                                    data-tooltip="Here you can optionally share your twitter handle. It will be publicly visible."></span></i></label>
                         <input type="text" class="form-control" id="publicTwitter" name="publicTwitter"
                             [(ngModel)]="user.publicTwitter">
                     </div>
 
                     <div class="form-group">
-                        <label for="publicUrl">Public Url (optional)</label>
+                        <label for="publicUrl">Public
+                            Url (optional) <i class="fa fa-info-circle" aria-hidden="true"><span
+                                    data-tooltip="Here you can share a public URL where people can learn more about you (e.g. blog, company website). Has to be an absolute URL (e.g. https://linz.coderdojo.net)."></span></i></label>
                         <input type="text" class="form-control" id="publicUrl" name="publicUrl"
                             [(ngModel)]="user.publicUrl">
                     </div>
@@ -153,25 +175,31 @@
                 <h4 class="modal-title" id="myModalLabel">User Settings</h4>
             </div>
             <div class="modal-body">
+                <p>Change the settings of your user.</p>
                 <div class="form-group">
-                    <label for="email">Email (not visible for other users)</label>
+                    <label for="email">Email (not visible for other users) <i class="fa fa-info-circle"
+                            aria-hidden="true"><span
+                                data-tooltip="You email address will not be publicly visible. We will use this email address to get in contact with you (e.g. notification if you win a price, information about technical problems, etc.)."></span></i></label>
                     <input type="text" class="form-control" id="email" name="email" [(ngModel)]="user.email" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="nickname">Nickname</label>
+                    <label for="nickname">Nickname <i class="fa fa-info-circle" aria-hidden="true"><span
+                                data-tooltip="The publicly visible name of your user."></span></i></label>
                     <input type="text" class="form-control" id="nickname" name="nickname" [(ngModel)]="user.nickName"
                         required>
                 </div>
 
                 <div class="form-group">
-                    <label for="publicTwitter">Twitter (optional)</label>
+                    <label for="publicTwitter">Twitter (optional) <i class="fa fa-info-circle" aria-hidden="true"><span
+                                data-tooltip="Here you can optionally share your twitter handle. It will be publicly visible."></span></i></label>
                     <input type="text" class="form-control" id="publicTwitter" name="publicTwitter"
                         [(ngModel)]="user.publicTwitter">
                 </div>
 
                 <div class="form-group">
-                    <label for="publicUrl">Public Url (optional)</label>
+                    <label for="publicUrl">Public Url (optional) <i class="fa fa-info-circle" aria-hidden="true"><span
+                                data-tooltip="Here you can share a public URL where people can learn more about you (e.g. blog, company website). Has to be an absolute URL (e.g. https://linz.coderdojo.net)."></span></i></label>
                     <input type="text" class="form-control" id="publicUrl" name="publicUrl"
                         [(ngModel)]="user.publicUrl">
                 </div>
@@ -196,13 +224,20 @@
                 <h4 class="modal-title" id="myModalLabel">Player</h4>
             </div>
             <div class="modal-body" *ngIf="selectedPlayer">
+                <p>Specify a publicly reachable Url for your player. See <a
+                        href="https://github.com/rstropek/BattleshipContestFunc/wiki/Player-Web-API"
+                        target="_blank">Wiki</a> for details. You can use tools like ngrok to run players locally (see
+                    also <a href="https://github.com/rstropek/BattleshipContestFunc/wiki/Running-Players-Locally"
+                        target="_blank">Wiki - Running Players Locally</a>).</p>
                 <div class="form-group">
-                    <label for="name">Name of Player</label>
+                    <label for="name">Name of Player <i class="fa fa-info-circle"><span
+                                data-tooltip="Publicly visible name of player"></span></i></label>
                     <input type="text" class="form-control" id="name" [(ngModel)]="selectedPlayer.name" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="webApiUrl">Web API Url</label>
+                    <label for="webApiUrl">Web API Url <i class="fa fa-info-circle"><span
+                                data-tooltip="Publicly reachable absolute Url where your player is running. This Url will not be publicly visible."></span></i></label>
                     <input type="text" class="form-control" id="webApiUrl" [(ngModel)]="selectedPlayer.webApiUrl"
                         required>
                 </div>
@@ -210,13 +245,16 @@
                 <div class="form-group">
                     <input type="checkbox" class="form-check-input" id="needsThrottling"
                         [(ngModel)]="selectedPlayer.needsThrottling">
-                    <label class="form-check-label" for="needsThrottling">Needs Throttling</label>
+                    <label class="form-check-label" for="needsThrottling">Needs Throttling <i
+                            class="fa fa-info-circle"><span
+                                data-tooltip="Check this box if you use a (free) service like ngrok that limits the number of HTTP requests per minute. We will only send approx. 15-20 requests/minute to your player if you check this box. Otherwise, it can be up to 100 requests/minute during a tournament."></span></i></label>
                 </div>
 
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="hasApiKey"
                         [(ngModel)]="selectedPlayer.hasApiKey">
-                    <label class="form-check-label" for="hasApiKey">API Key needed</label>
+                    <label class="form-check-label" for="hasApiKey">API Key needed <i class="fa fa-info-circle"><span
+                                data-tooltip="Check this box if you want to protect your player with an API key. The API key will be sent to your player as the code query parameter (e.g. https://.../api/getReady?code=<your-api-key>). This API key is not publicly visible."></span></i></label>
                 </div>
 
                 <div class="form-group">
@@ -311,8 +349,10 @@
             </div>
             <div class="modal-body">
                 <div class="buttons">
-                    <button type="button" class="btn text-right" (click)="refreshLog()"><i class="fa fa-refresh" aria-hidden="true"></i> Refresh</button>
-                    <button type="button" class="btn text-right" (click)="clearLog()"><i class="fa fa-trash-o" aria-hidden="true"></i> Clear Log</button>
+                    <button type="button" class="btn text-right" (click)="refreshLog()"><i class="fa fa-refresh"
+                            aria-hidden="true"></i> Refresh</button>
+                    <button type="button" class="btn text-right" (click)="clearLog()"><i class="fa fa-trash-o"
+                            aria-hidden="true"></i> Clear Log</button>
                 </div>
                 <table class="table">
                     <tbody>
