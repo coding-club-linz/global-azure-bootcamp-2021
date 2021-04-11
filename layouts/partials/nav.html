@@ -32,9 +32,9 @@
                     <a class="page-scroll"
                         href="{{ cond (eq .Page.Dir "") "" "/" }}#speakers">Speakers</a>
                 </li> -->
-                <!-- <li class="{{ cond (eq .Page.Dir "battleship\\") "active" "" }}">
+                <li class="{{ cond (eq .Page.Dir "battleship\\") "active" "" }}">
                     <a href="/battleship">BSCC</a>
-                </li> -->
+                </li>
                 <li class="{{ cond (eq .Page.Title "Sessions") "active" "" }}">
                     <a href="/sessions">{{ .Site.Params.navigation.links.sessions }}</a>
                 </li>
