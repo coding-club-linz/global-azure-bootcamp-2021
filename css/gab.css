@@ -177,6 +177,80 @@ aside {
     padding: 0;
 }
 
+/* tooltips */
+label i.fa-info-circle,
+th i.fa-info-circle {
+    position: relative;
+    margin-left: 10px;
+}
+
+span[data-tooltip] {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+span[data-tooltip]::before {
+    content: attr(data-tooltip);
+    font-family: "Nunito Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.3em;
+    position: absolute;
+    display: none;
+
+    /* vertically center */
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* move to right */
+    left: 100%;
+    margin-left: 15px; /* and add a small left margin */
+
+    /* basic styles */
+    width: 250px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    z-index: 100000000;
+}
+
+th span[data-tooltip]::before {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+span[data-tooltip]:hover::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+th span[data-tooltip]:hover::after {
+    content: " ";
+    position: absolute;
+    top: 10px;  /* At the top of the tooltip */
+    right: 0;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+span[data-tooltip]:hover::before {
+    display: block;
+}
+
 /* video */
 .video-container {
     position: relative;
@@ -213,7 +287,11 @@ p.error {
 }
 
 .faq p {
-    font-size: 16px;;
+    font-size: 16px;
+}
+
+#battleship-coding-contest-player .modal-body p {
+    font-size: 15px;
 }
 
 /* tables */
@@ -879,7 +957,8 @@ body {
     margin-top: -30px;
 }
 
-.sessions .text-muted, .sessions .text-muted p,
+.sessions .text-muted,
+.sessions .text-muted p,
 .speakers .text-muted {
     font-size: 16px;
 }
@@ -1115,7 +1194,8 @@ body {
 }
 
 /* schedule junior */
-#schedule-junior .description, #schedule-junior .description p {
+#schedule-junior .description,
+#schedule-junior .description p {
     font-size: 15px !important;
 }
 
