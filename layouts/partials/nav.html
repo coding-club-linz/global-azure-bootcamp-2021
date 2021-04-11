@@ -32,7 +32,7 @@
                     <a class="page-scroll"
                         href="{{ cond (eq .Page.Dir "") "" "/" }}#speakers">Speakers</a>
                 </li> -->
-                <li class="{{ cond (eq .Page.Dir "battleship\\") "active" "" }}">
+                <li class="{{ cond (eq .Page.Title "Battleship Coding Contest") "active" "" }}">
                     <a href="/battleship">BSCC</a>
                 </li>
                 <li class="{{ cond (eq .Page.Title "Sessions") "active" "" }}">
@@ -42,10 +42,10 @@
                     <a class="page-scroll"
                         href="{{ cond (eq .Page.Dir "") "" "/" }}#travel">{{ .Site.Params.navigation.links.location }}</a>
                 </li> -->
-                <li class="{{ cond (eq .Page.Dir "junior-bootcamp\\") "active" "" }}">
+                <li class="{{ cond (eq .Page.Title "Junior Bootcamp") "active" "" }}">
                     <a href="/junior-bootcamp">{{ .Site.Params.navigation.links.juniorBootcamp }}</a>
                 </li>
-                <li class="{{ cond (eq .Page.Dir "sponsors\\") "active" "" }}">
+                <li class="{{ cond (eq .Page.Title "Sponsors") "active" "" }}">
                     <a href="/sponsors">{{ .Site.Params.navigation.links.sponsors }}</a>
                 </li>
                 <li class="{{ cond (eq .Page.Title "Code of Conduct") "active" "" }}">
