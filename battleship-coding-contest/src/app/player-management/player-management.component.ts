@@ -144,6 +144,8 @@ export class PlayerManagementComponent implements OnInit {
     try {
       await this.http.post(`${environment.apiEndpoint}/api/players/${player.id}/play`, {}).toPromise();
       this.isBusy = false;
+
+      this.showLog(player);
     } catch (error: any) {
       this.isBusy = false
     }
