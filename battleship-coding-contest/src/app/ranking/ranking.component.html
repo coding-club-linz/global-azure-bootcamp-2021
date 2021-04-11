@@ -7,6 +7,8 @@
             <th>Position</th>
             <th>Player</th>
             <th class="text-right">Shots</th>
+            <th class="text-right">Std Dev <i class="fa fa-info-circle" aria-hidden="true"><span
+                data-tooltip="Standard Deviation"></span></i></th>
         </tr>
     </thead>
 
@@ -18,6 +20,7 @@
                     {{player.name}}
                 </td>
                 <td class="text-right">{{player.avgNumberOfShots | number:'0.2-2'}}</td>
+                <td class="text-right">{{player.stdDev | number:'0.2-2'}}</td>
             </tr>
         </ng-container>
 

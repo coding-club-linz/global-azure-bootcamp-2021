@@ -269,6 +269,7 @@ export class PlayerManagementComponent implements OnInit {
       hasApiKey: p.hasApiKey,
       lastMeasurement: p.lastMeasurement,
       avgNumberOfShots: p.avgNumberOfShots,
+      stdDev: p.stdDev,
       needsThrottling: p.needsThrottling
     }))
       .sort((a, b) => a.name < b.name ? -1 : 1);

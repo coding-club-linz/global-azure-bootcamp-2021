@@ -5,6 +5,7 @@ export interface Player {
     hasApiKey: boolean;
     lastMeasurement?: Date;
     avgNumberOfShots?: number;
+    stdDev?: number;
     apiKey: string;
     apiKeyChanged?: boolean;
     needsThrottling: boolean;

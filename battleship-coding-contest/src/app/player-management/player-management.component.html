@@ -35,6 +35,8 @@
                                     aria-hidden="true"><span
                                         data-tooltip="Average number of shots that your player needed to sink all ships during the games of the last tournament. Your goal is to need as few shots as possible, so lower is better."></span></i>
                             </th>
+                            <th class="hidden-xs text-right">Std Dev <i class="fa fa-info-circle" aria-hidden="true"><span
+                                data-tooltip="Standard Deviation"></span></i></th>
                             <th class="hidden-xs"></th>
                             <th class="hidden-xs"></th>
                             <th class="hidden-xs"></th>
@@ -51,7 +53,8 @@
                                     <div class="visible-xs">
                                         <br />
                                         Last Run: {{player.lastMeasurement | date:'short'}}<br />
-                                        Number of Shots: {{player.avgNumberOfShots | number:'0.2-2'}}
+                                        Number of Shots: {{player.avgNumberOfShots | number:'0.2-2'}}<br/>
+                                        Standard Deviation: {{player.stdDev | number:'0.2-2'}}
                                         <br /><br />
                                         <div class="commands-xs text-center">
                                             <a (click)="editPlayer(player)"><i class="fa fa-pencil"
@@ -68,6 +71,7 @@
                                 </td>
                                 <td class="hidden-xs">{{player.lastMeasurement | date:'short'}}</td>
                                 <td class="text-right hidden-xs">{{player.avgNumberOfShots | number:'0.2-2'}}</td>
+                                <td class="text-right hidden-xs">{{player.stdDev | number:'0.2-2'}}</td>
                                 <td class="hidden-xs" title="Edit player"><a (click)="editPlayer(player)"><i
                                             class="fa fa-pencil" aria-hidden="true"></i></a>
                                 </td>
@@ -86,11 +90,11 @@
                         </ng-container>
 
                         <tr *ngIf="!players.length && !isLoading">
-                            <td colspan="7" class="text-center">No players registered</td>
+                            <td colspan="8" class="text-center">No players registered</td>
                         </tr>
 
                         <tr *ngIf="isLoading">
-                            <td colspan="7" class="text-center"><i class="fa fa-spinner loading-players"
+                            <td colspan="8" class="text-center"><i class="fa fa-spinner loading-players"
                                     aria-hidden="true"></i>loading players</td>
                         </tr>
                     </tbody>
@@ -343,17 +347,17 @@
     <div class="modal-dialog modal-lg log-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Log</h4>
-            </div>
-            <div class="modal-body">
-                <div class="buttons">
+                <div class="buttons float-right">
                     <button type="button" class="btn text-right" (click)="refreshLog()"><i class="fa fa-refresh"
                             aria-hidden="true"></i> Refresh</button>
                     <button type="button" class="btn text-right" (click)="clearLog()"><i class="fa fa-trash-o"
                             aria-hidden="true"></i> Clear Log</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
                 </div>
+                <h4 class="modal-title" id="myModalLabel">Log</h4>
+            </div>
+            <div class="modal-body">
                 <table class="table">
                     <tbody>
                         <ng-container *ngIf="log.length">
