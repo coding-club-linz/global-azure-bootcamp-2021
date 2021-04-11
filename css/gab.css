@@ -78,6 +78,10 @@ p {
     line-height: 1.5;
 }
 
+button i {
+    margin-right: 5px;
+}
+
 .float-right {
     float: right;
 }
