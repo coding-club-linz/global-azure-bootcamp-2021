@@ -4,12 +4,12 @@ VERSION:2.0
 BEGIN:VEVENT
 UID:0@gaaustria2021
 CLASS:PUBLIC
-DESCRIPTION:Inside Azure AD Authentication\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nThis session brings you deep into the world of Azure Active Directory Authentication - definitely a must-know for everyone who works with AAD! Marcel, a Microsoft Regional Director and Azure MVP from Switzerland will be your guide on the bumpy roads to authentication procedures, App registrations, OAuth, Access Tokens and much more. Don't miss this essential session!\n\n---\n\nStreaming URL: https://globalazure.at/sessions/inside-aad
+DESCRIPTION:Web API Security With Azure Active Directory\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nGetting started with Azure Active Directory (AAD) can be a bit confusing. Flows, app registrations, service principals, redirect URIs, scopes, client IDs vs. object IDs - the sheer number of concepts you have to be familiar with scares many people away. With his session, Rainer would like to bring some clarity into the auth jungle of AAD. He will not show slides. Instead, he will build an end-to-end application with Angular in the front-end and .NET 5 in the back-end. Rainer will demonstrate how AAD can be used to protect all application layers. On your way through the sample, you will learn about important concepts of AAD.\n\n---\n\nStreaming URL: https://globalazure.at/sessions/inside-aad
 DTSTAMP;VALUE=DATE-TIME:20210416T120000
 DTSTART;VALUE=DATE-TIME:20210416T090000
 DTEND;VALUE=DATE-TIME:20210416T095000
 LOCATION:Online
-SUMMARY;LANGUAGE=en-us:Inside Azure AD Authentication
+SUMMARY;LANGUAGE=en-us:Web API Security With Azure Active Directory
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR
