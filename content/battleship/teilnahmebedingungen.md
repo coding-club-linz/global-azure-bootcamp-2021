@@ -13,7 +13,7 @@ Veranstalter der Aktion ist der Coding Club Linz, Birkenweg 16, 4060 Leonding. D
 
 ### Laufzeit
 
-Der BSCC beginnt am 16. April 2021, 8:00 Uhr und endet am 30. April 2021, 17:00 Uhr. Die GewinnerInnen werden bis 7. Mai 2021 über die bei der Registrierung angegebene Emailadresse verständigt. Erfolgt von den GewinnerInnen keine Rückmeldung binnen fünf Werktagen nach Verständigung, wird der jeweilige Preis an die nächstgereihte Spielerin vergeben.
+Der BSCC beginnt am 16. April 2021, 8:00 Uhr und endet am 3. Mai 2021, 17:00 Uhr. Die GewinnerInnen werden bis 10. Mai 2021 über die bei der Registrierung angegebene Emailadresse verständigt. Erfolgt von den GewinnerInnen keine Rückmeldung binnen fünf Werktagen nach Verständigung, wird der jeweilige Preis an die nächstgereihte Spielerin vergeben.
 
 Der Coding Club Linz behält sich vor, den BSCC ohne Angabe von Gründen und ohne Ankündigung zu verkürzen, zu verlängern, zu verändern oder abzusagen, ohne dass sich daraus Ansprüche auf Haftung bzw. Schadensersatz ableiten lassen. Der Coding Club Linz übernimmt keine Gewähr für entgangene Gewinnchancen.
 
