@@ -62,19 +62,17 @@
                                     <div class="description text-faded">{{ safeHTML  (replace .description "\r\n" "<br/>") }}</div>
 
                                     {{ $shortLinkQuestionId := (index (where $.Site.Data.sessionize.questions "question" "Short Link") 0).id }}
-                                    <div class="calendar-link">
+                                    <div class="calendar-link text-center">
                                         {{ range $question := .questionAnswers }}
                                         {{ if eq (int $question.questionId) (int $shortLinkQuestionId) }}
-                                        <a class="btn btn-info btn-xs float-left" href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar"
+                                        <!-- <a class="btn btn-primary btn-xs float-left" href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar"
                                                 aria-hidden="true"></i>Add
-                                            to calendar</a>
-                                        <a class="btn btn-info btn-xs" href="/sessions/{{$question.answerValue}}" target="_blank"><i
+                                            to calendar</a> -->
+                                        <a class="btn btn-primary btn-xs" href="/sessions/{{$question.answerValue}}" target="_blank"><i
                                                 class="fa fa-video-camera" aria-hidden="true"></i>Join stream</a>
                                         {{ end }}
                                         {{ end }}
                                     </div>
-
-                                    <p class="bg-warning warning streaming-link">Der Zugangslink folgt in Kürze.</p>
 
                                     <!-- {{ range where $.Site.Data.sessionize.speakers "id" "in" .speakers }}
                                     <h5>About {{ .firstName }} {{ .lastName }}</h5>

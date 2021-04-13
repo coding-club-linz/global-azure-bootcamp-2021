@@ -87,14 +87,15 @@
     },
     {
       "id": "247854",
-      "title": "Inside Azure AD Authentication",
-      "description": "This session brings you deep into the world of Azure Active Directory Authentication - definitely a must-know for everyone who works with AAD! Marcel, a Microsoft Regional Director and Azure MVP from Switzerland will be your guide on the bumpy roads to authentication procedures, App registrations, OAuth, Access Tokens and much more. Don't miss this essential session!",
+      "title": "Web API Security With Azure Active Directory",
+      "description": "Getting started with Azure Active Directory (AAD) can be a bit confusing. Flows, app registrations, service principals, redirect URIs, scopes, client IDs vs. object IDs - the sheer number of concepts you have to be familiar with scares many people away. With his session, Rainer would like to bring some clarity into the auth jungle of AAD. He will not show slides. Instead, he will build an end-to-end application with Angular in the front-end and .NET 5 in the back-end. Rainer will demonstrate how AAD can be used to protect all application layers. On your way through the sample, you will learn about important concepts of AAD.",
       "startsAt": "2021-04-16T09:00:00",
       "endsAt": "2021-04-16T09:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "2b9c4a87-fa59-48a1-a6a5-b8bd012434f8"
+        "7c4f976f-658f-4d9f-a919-e46b301c86e1",
+        "7d6ddad1-fc5e-4fb8-b882-c3878168e8c7"
       ],
       "categoryItems": [
         81457,
@@ -169,7 +170,7 @@
     {
       "id": "246345",
       "title": "A full Journey to Azure Kubernetes Service (AKS)",
-      "description": "Docker-basierte Dienste sind heutzutage unverzichtbar und Kubernetes ist zur Nummer eins der Containerorchestratoren geworden. Neben einer kurzen Einführung in den Azure Kubernetes Service (AKS) werden wir einen kompletten Cluster von 0 auf 100 bauen und in eine Azure Umgebung integrieren. Die behandelten Themen umfassen: AKS Deployment (ARM/CLI), AAD-Integration, öffentliche Endpunkte mit Application Gateway/WAF, Zertifikatsmanagement, Skalierung und Zero-Downtime Deployment.",
+      "description": "Docker-based services are indispensable nowadays and Kubernetes has become the number 1 container orchestrator. Besides a short introduction to Azure Kubernetes Service (AKS), we will set up a complete cluster from 0 to 100 and integrate it into an Azure Environment. The topics covered include: AKS Deployment (ARM/CLI), AAD Integration, Public Endpoints with nginx Ingress or Application Gateway/WAF, Certificate Management, Scaling and Zero-Downtime Deployments.",
       "startsAt": "2021-04-16T10:00:00",
       "endsAt": "2021-04-16T10:50:00",
       "isServiceSession": false,
@@ -283,7 +284,8 @@
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "fc1eabb6-63ee-4b6c-ab8e-f78b10481265"
+        "fc1eabb6-63ee-4b6c-ab8e-f78b10481265",
+        "6417ee21-2c19-4ede-ad84-d12516e5fc10"
       ],
       "categoryItems": [
         81456,
@@ -695,7 +697,12 @@
         77273,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "cloud-junior"
+        }
+      ],
       "roomId": 18548
     },
     {
@@ -809,9 +816,9 @@
     {
       "id": "254680",
       "title": "Was Brawl Stars so über dich weiß",
-      "description": "Du hast vielleicht schon mal gehört, dass wir alle \"Spuren im Internet\" hinterlassen. Seit ein paar Jahren hat jeder das Recht, die Daten die über ihn von einem Unternehmen gesammelt werden, zugesandt zu bekommen. Mein Sohn hat das für Brawl Star gemacht - und genau diese Daten werden wir (natürlich mit seiner Erlaubnis) analysieren.\r\nMeistens, so auch in diesem Fall, werden die Daten als JSON-Dateien zur Verfügung gestellt. Diese Dateien sind sowhl vom Computer als auch von uns Menschen lesbar. Die Vielzahl der darin enthaltenen Informationen lässt sich aber schwer durch einfaches Durchlesen auswerten. Daher werden wir ein kostenloses Werkzeug (Power BI) verwenden um die Informationen auch begreifbar zu machen.\r\n\r\nDinge, die wir also besprechen werden:\r\n* Das Recht auf die eigenen Daten\r\n* Datenformat JSON \r\n* Microsoft Power BI (kostenlos)",
+      "description": "Du hast vielleicht schon mal gehört, dass wir alle \"Spuren im Internet\" hinterlassen. Seit ein paar Jahren hat jeder das Recht, die Daten die über ihn von einem Unternehmen gesammelt werden, zugesandt zu bekommen. Mein Sohn hat das für Brawl Star gemacht - und genau diese Daten werden wir (natürlich mit seiner Erlaubnis) analysieren.\r\nMeistens, so auch in diesem Fall, werden die Daten als JSON-Dateien zur Verfügung gestellt. Diese Dateien sind sowohl vom Computer als auch von uns Menschen lesbar. Die Vielzahl der darin enthaltenen Informationen lässt sich aber schwer durch einfaches Durchlesen auswerten. Daher werden wir ein kostenloses Werkzeug (Power BI) verwenden um die Informationen auch begreifbar zu machen.\r\n\r\nDinge, die wir also besprechen werden:\r\n* Das Recht auf die eigenen Daten\r\n* Datenformat JSON \r\n* Microsoft Power BI (kostenlos)",
       "startsAt": "2021-04-16T15:00:00",
-      "endsAt": "2021-04-16T15:40:00",
+      "endsAt": "2021-04-16T15:45:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
@@ -821,7 +828,12 @@
         77273,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "brawl-stars"
+        }
+      ],
       "roomId": 18548
     },
     {
@@ -939,7 +951,7 @@
     {
       "id": "253583",
       "title": "RESTful Web Services mit Spring Boot",
-      "description": "Die Kommunikation zwischen Front- und Backend einer App erfolgt oft über eine sogenannte REST API. Dabei stellt das Backend bestimmte Methoden zur Verfügung, die Clients benutzen können. Doch wie funktioniert so eine REST API eigentlich und was sollte man dabei beachten? \r\n\r\nIn diesem Workshop werden wir einen einfachen Web Service mit Spring Boot implementieren, der eine API zum Wörter raten (wie beim Spiel Hangman) zur Verfügung stellt.\r\n\r\nUm an diesem Workshop teilzunehmen, solltest du folgendes auf deinem Computer installieren: \r\n* Java mit Version 1.8 oder höher\r\n* Eine Enwicklungsumgebung wie Intellij IDEA (bevorzugt) oder Eclipse (wenn du schon Erfahrung damit hast)",
+      "description": "Die Kommunikation zwischen Front- und Backend einer App erfolgt oft über eine sogenannte REST API. Dabei stellt das Backend bestimmte Methoden zur Verfügung, die Clients benutzen können. Doch wie funktioniert so eine REST API eigentlich und was sollte man dabei beachten? \r\n\r\nIn diesem Workshop werden wir einen einfachen Web Service mit Spring Boot implementieren.\r\n\r\nUm an diesem Workshop teilzunehmen, solltest du folgendes auf deinem Computer installieren: \r\n* Java mit Version 1.8 oder höher\r\n* Eine Enwicklungsumgebung wie Intellij IDEA (bevorzugt) oder Eclipse (wenn du schon Erfahrung damit hast)",
       "startsAt": "2021-04-16T16:00:00",
       "endsAt": "2021-04-16T16:45:00",
       "isServiceSession": false,
@@ -951,7 +963,12 @@
         77273,
         77274
       ],
-      "questionAnswers": [],
+      "questionAnswers": [
+        {
+          "questionId": 28454,
+          "answerValue": "spring-boot"
+        }
+      ],
       "roomId": 18548
     }
   ],
@@ -1328,11 +1345,6 @@
           "title": "Blog",
           "url": "http://www.yodabi.com",
           "linkType": "Blog"
-        },
-        {
-          "title": "Company Website",
-          "url": "http://www.pmone.com",
-          "linkType": "Company_Website"
         }
       ],
       "sessions": [
@@ -1417,43 +1429,6 @@
       "questionAnswers": []
     },
     {
-      "id": "2b9c4a87-fa59-48a1-a6a5-b8bd012434f8",
-      "firstName": "Marcel",
-      "lastName": "Zehner",
-      "bio": "I am a cloud and community champion operating out of Switzerland. I support community conferences and events around the globe with my Microsoft cloud expertise. I am a Microsoft Regional Director and a long-time Microsoft MVP and head of the Microsoft community events \"Experts Live Europe\" and \"Experts Live Switzerland\". More information about me can be found on http://about.me/marcelzehner.",
-      "tagLine": "Microsoft RD & Azure MVP",
-      "profilePicture": "https://sessionize.com/image/6411-400o400o2-87-fa59-48a1-a6a5-b8bd012434f8.4f0307f2-47b0-442b-a6f9-56e4028d0697.jpg",
-      "isTopSpeaker": false,
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://www.twitter.com/marcelzehner",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/marcelzehner",
-          "linkType": "LinkedIn"
-        },
-        {
-          "title": "Blog",
-          "url": "https://marcelzehner.ch",
-          "linkType": "Blog"
-        },
-        {
-          "title": "Company Website",
-          "url": "https://marcelzehner.ch",
-          "linkType": "Company_Website"
-        }
-      ],
-      "sessions": [
-        247854
-      ],
-      "fullName": "Marcel Zehner",
-      "categoryItems": [],
-      "questionAnswers": []
-    },
-    {
       "id": "f21baecf-1b61-4e0b-8fb8-71894f39022b",
       "firstName": "Mario",
       "lastName": "Schnalzenberger",
@@ -1505,6 +1480,33 @@
         246003
       ],
       "fullName": "Markus Ehrenmüller-Jensen",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "6417ee21-2c19-4ede-ad84-d12516e5fc10",
+      "firstName": "Martin",
+      "lastName": "Pawlik",
+      "bio": "Martin is the head of container platforms at BAWAG Group working on the latest containerisation & platform technologies during the past years. Besides technological aspects he is heavily focusing on organisational benefits & issues such systems often bring across. As a result, he is driving the transformation towards a modern DevSecOps Culture and focusing on different areas as access management, CI/CD, observability, operations, code management and many more.  \r\n\r\nhttps://www.linkedin.com/in/martin-pawlik/\r\n",
+      "tagLine": "Container Platform Team @BAWAG Group ",
+      "profilePicture": "https://sessionize.com/image/09d0-400o400o2-agZ6JCdttgtYQdrhbgEush.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/martin-pawlik/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://bawaggroup.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        249535
+      ],
+      "fullName": "Martin Pawlik",
       "categoryItems": [],
       "questionAnswers": []
     },
@@ -1677,7 +1679,8 @@
         }
       ],
       "sessions": [
-        248343
+        248343,
+        247854
       ],
       "fullName": "Rainer Stropek",
       "categoryItems": [],
@@ -1739,6 +1742,33 @@
         246605
       ],
       "fullName": "Sergey Chubarov",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "7c4f976f-658f-4d9f-a919-e46b301c86e1",
+      "firstName": "Simon",
+      "lastName": "Opelt",
+      "bio": "Simon is a senior software engineer at software architects gmbh where his daily business is split between developing time cockpit (SaaS time tracking) and various consulting topics. With 10+ years of experience in Azure and related technologies he supports teams in their journey towards DevSecOps and the cloud. In recent years he is often focused on .NET, infrastructure as code, identity/authentication, and cloud service architecture.",
+      "tagLine": "software architects",
+      "profilePicture": "https://sessionize.com/image/9ec9-400o400o2-292fe44d-603f-41c9-92b0-92ec34d58b09.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/simon-opelt-9b991299",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.timecockpit.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        247854
+      ],
+      "fullName": "Simon Opelt",
       "categoryItems": [],
       "questionAnswers": []
     },

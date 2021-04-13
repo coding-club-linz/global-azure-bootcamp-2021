@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { exec, execSync } = require('child_process');
 
-const rawData = fs.readFileSync('./../data/sessionize.json');
+const rawData = fs.readFileSync('./../../data/sessionize.json');
 const template = fs.readFileSync('thumbnail.svg', { encoding: 'utf-8' });
 const data = JSON.parse(rawData);
 

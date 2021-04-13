@@ -1166,10 +1166,20 @@ body {
     font-size: 14px;
 }
 
+.schedule-junior .calendar-link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.schedule-junior .btn {
+    margin-right: 20px;
+}
+
 .schedule .links a i,
 .sessions .links a i,
 .sessions .calendar-link a i,
-.schedule-session .links a i {
+.schedule-session .links a i,
+.schedule-junior a i {
     margin-right: 10px;
 }
 
