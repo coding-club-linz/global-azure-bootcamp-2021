@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:Ein Blick hinter die Kulissen der Microsoft Cloud: Wie sieht so eine Cloud denn tatsächlich aus?\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nJeder redet von der Cloud, aber möchtet ihr wissen was tatsächlich dahinter steckt? \n- WIe sieht so ein Rechenzentrum eigentlich aus?\n- Wie sind die miteinander verbunden?\n- Welche coolen Technologien stecken dahinter? (Wusstet ihr, dass wir z.B. auch an Unterwasser-Rechenzentren forschen, oder Microsoft mit riesigen Schiffen Netzwerkkabel quer durch die Ozeane verlegt?)\n- Wie kann man Rechenzentren bauen, die auch für die Umwelt verträglich sind? (Co2-Ausstoß, Energieverbrauch)\n- Und bald werden wir auch eigene Microsoft Rechenzentren in Österreich haben. Wozu eigentlich?\n\n---\n\nStreaming URL: https://globalazure.at/sessions/cloud-junior
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T140000
+DTEND;VALUE=DATE-TIME:20210416T144500
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:Ein Blick hinter die Kulissen der Microsoft Cloud: Wie sieht so eine Cloud denn tatsächlich aus?
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

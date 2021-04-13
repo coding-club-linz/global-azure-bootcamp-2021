@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:Was Brawl Stars so über dich weiß\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nDu hast vielleicht schon mal gehört, dass wir alle "Spuren im Internet" hinterlassen. Seit ein paar Jahren hat jeder das Recht, die Daten die über ihn von einem Unternehmen gesammelt werden, zugesandt zu bekommen. Mein Sohn hat das für Brawl Star gemacht - und genau diese Daten werden wir (natürlich mit seiner Erlaubnis) analysieren.\nMeistens, so auch in diesem Fall, werden die Daten als JSON-Dateien zur Verfügung gestellt. Diese Dateien sind sowohl vom Computer als auch von uns Menschen lesbar. Die Vielzahl der darin enthaltenen Informationen lässt sich aber schwer durch einfaches Durchlesen auswerten. Daher werden wir ein kostenloses Werkzeug (Power BI) verwenden um die Informationen auch begreifbar zu machen.\n\nDinge, die wir also besprechen werden:\n* Das Recht auf die eigenen Daten\n* Datenformat JSON \n* Microsoft Power BI (kostenlos)\n\n---\n\nStreaming URL: https://globalazure.at/sessions/brawl-stars
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T150000
+DTEND;VALUE=DATE-TIME:20210416T154500
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:Was Brawl Stars so über dich weiß
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

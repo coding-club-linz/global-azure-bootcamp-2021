@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:RESTful Web Services mit Spring Boot\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nDie Kommunikation zwischen Front- und Backend einer App erfolgt oft über eine sogenannte REST API. Dabei stellt das Backend bestimmte Methoden zur Verfügung, die Clients benutzen können. Doch wie funktioniert so eine REST API eigentlich und was sollte man dabei beachten? \n\nIn diesem Workshop werden wir einen einfachen Web Service mit Spring Boot implementieren.\n\nUm an diesem Workshop teilzunehmen, solltest du folgendes auf deinem Computer installieren: \n* Java mit Version 1.8 oder höher\n* Eine Enwicklungsumgebung wie Intellij IDEA (bevorzugt) oder Eclipse (wenn du schon Erfahrung damit hast)\n\n---\n\nStreaming URL: https://globalazure.at/sessions/spring-boot
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T160000
+DTEND;VALUE=DATE-TIME:20210416T164500
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:RESTful Web Services mit Spring Boot
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
