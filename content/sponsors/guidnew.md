@@ -5,17 +5,16 @@ logo: "guidnew.png"
 priority: 2
 ---
 
-Guid.New steht als Unternehmen für die zielgerichtete Digitalisierung bestehenderund die strategische Schaffung neuer Geschäftsprozesse. Wir entwickeln individuelle Lösungen in drei Kernbereichen:
+Software hat nur einen Zweck: Das Leben zu erleichtern – und das beginnt schon bei der Entwicklung. Darum entwickelt die Guid.New GmbH seit 2016 _Individualsoftware, die Freude bereitet_. Freude in der Anwendung, Entwicklung, Wartung und dem Betrieb. 
 
-Unsere Software Factory basiert auf den Prinzipien von Scrum und dem Manifest für agile Softwareentwicklung. Wir schaffen Anwendungen für spezifische Geschäftsfälle. Technologisch spezialisieren wir uns auf .NET, Angular, TypeScript, Xamarin, WPF und Microsoft Azure.
+Guid.New, das ist ein Team aus leidenschaftlichen Software-Enthusiasten, die cutting-edge Technologie leben und lieben. Spezialisiert auf Angular, .NET Core und Microsoft Azure entstehen leistungsstarke Softwarelösungen mit hoher Geschäftskritikalität für Businesskunden aus der DACH-Region. Es wird ausschließlich auf solide und weit verbreitete Technologien gesetzt, damit die Softwarelösung langfristig wartbar und skalierbar bleibt.
 
-Die Guid.New Produktlinie Botential steht für textbasierte Dialogsysteme Chatbots. Unsere Bots sind NLP basiert sie kommunizieren in natürlicher Sprache und ermöglichen die Automatisierung repetitiver Aufgaben.
+Mit individuell an den Prozess angepasster Software lassen sich Arbeitsprozesse optimieren und somit wertvolle Zeit sparen. Die Anwendungsgebiete sind vielfältig, ob Transportlogistik bei Österreichs größtem privaten Container-Operateur, Order-Monitoring beim Technologieführer im Bereich Wasserkraft oder ein Essensbestellsystem für Österreichs beliebteste Nudelmarke.
 
-In der Lean Start-Up Factory bieten wir kreativen Geistern eine wissenschaftliche Methode um Ideen schnell, effizient und risikoreduziert am Markt zu erproben.
+Guid.New - 100% Leidenschaft für die Entwicklung Ihrer Software.
 
-Besonderen Wert legen wir auf eine kollaborative Kommunikationskultur im Team und mit unseren Kunden. Die Styria Media AG, Beiersdorf AG, Tieto Austria GmbH, thyssenkrupp AG, Recheis GembH oder auch die Ärztekammer Steiermark vertrauen auf unsere Lösungskompetenz.
-
-Guid.New  
-Raiffeisenstraße 214 / 3  
+Guid.New GmbH  
+Liebenauer Hauptstraße 2-6  
 A-8041 Graz  
-[guidnew.com](https://guidnew.com)
+[hello@guidnew.com](mailto:hello@guidnew.com)  
+[guidnew.com](https://guidnew.com/?utm_source=globalazure&utm_medium=sponsorship&utm_campaign=traffic)
