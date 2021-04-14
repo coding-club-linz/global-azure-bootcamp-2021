@@ -699,8 +699,16 @@
       ],
       "questionAnswers": [
         {
+          "questionId": 28453,
+          "answerValue": "http://meet.coderdojo.net/Cloud"
+        },
+        {
           "questionId": 28454,
           "answerValue": "cloud-junior"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "http://meet.coderdojo.net/Cloud"
         }
       ],
       "roomId": 18548
@@ -830,8 +838,16 @@
       ],
       "questionAnswers": [
         {
+          "questionId": 28453,
+          "answerValue": "http://meet.coderdojo.net/BrawlStars"
+        },
+        {
           "questionId": 28454,
           "answerValue": "brawl-stars"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "http://meet.coderdojo.net/BrawlStars"
         }
       ],
       "roomId": 18548
@@ -873,7 +889,7 @@
       "isPlenumSession": false,
       "speakers": [
         "47d0e9bd-3ac9-49a9-b462-996de9a18c6b",
-        "da3dad4c-c9a2-4c16-977c-f8ae092d33b3"
+        "599c6723-3025-4795-b087-02a62140f5b5"
       ],
       "categoryItems": [
         81456,
@@ -966,8 +982,16 @@
       ],
       "questionAnswers": [
         {
+          "questionId": 28453,
+          "answerValue": "http://meet.coderdojo.net/SpringBoot"
+        },
+        {
           "questionId": 28454,
           "answerValue": "spring-boot"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "http://meet.coderdojo.net/SpringBoot"
         }
       ],
       "roomId": 18548
@@ -1725,12 +1749,12 @@
       "questionAnswers": []
     },
     {
-      "id": "da3dad4c-c9a2-4c16-977c-f8ae092d33b3",
+      "id": "599c6723-3025-4795-b087-02a62140f5b5",
       "firstName": "Ryan",
       "lastName": "Levick",
       "bio": "Ryan has been writing Rust since around version 0.10. He now focuses on Rust full time at Microsoft. When he's not doing Rust, he enjoys cooking, traveling and exploring Berlin where he lives.",
       "tagLine": "Cloud Advocate for Microsoft",
-      "profilePicture": "https://sessionize.com/image/0040-400o400o2-KRPoUudreRziHNQRSUtdnV.jpg",
+      "profilePicture": "https://sessionize.com/image/13bd-400o400o2-23-3025-4795-b087-02a62140f5b5.a8500eee-2e97-4153-84a3-a4e9c64a4521.jpg",
       "isTopSpeaker": false,
       "links": [
         {
@@ -1739,9 +1763,9 @@
           "linkType": "Twitter"
         },
         {
-          "title": "Company Website",
+          "title": "Blog",
           "url": "https://blog.ryanlevick.com",
-          "linkType": "Company_Website"
+          "linkType": "Blog"
         }
       ],
       "sessions": [

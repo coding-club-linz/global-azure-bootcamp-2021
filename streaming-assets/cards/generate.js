@@ -14,6 +14,14 @@ execSync(`"C:\\Program Files\\Inkscape\\bin\\inkscape" --export-filename "../../
     console.log('   ', error, stdout, stderr);
 });
 
+execSync(`"C:\\Program Files\\Inkscape\\bin\\inkscape" --export-filename "../../static/sessions/cards/technical-issues.png" --export-type "png" "technical-issues.svg"`, (error, stdout, stderr) => {
+    console.log('   ', error, stdout, stderr);
+});
+
+execSync(`"C:\\Program Files\\Inkscape\\bin\\inkscape" --export-filename "../../static/sessions/cards/technical-issues-cancelled.png" --export-type "png" "technical-issues-cancelled.svg"`, (error, stdout, stderr) => {
+    console.log('   ', error, stdout, stderr);
+});
+
 for (let session of data.sessions) {
     try {
         console.log(session.title);

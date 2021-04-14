@@ -63,7 +63,13 @@
                         {{ if eq (int $question.questionId) (int $youTubeVideoQuestionId) }}
                         {{ $.Scratch.Set "hasYouTubeVideoQuestionId" true }}
                         
-                        <a href="{{ $question.answerValue }}" class="btn btn-primary">Open in YouTube</a>
+                        <a href="{{ $question.answerValue }}" class="btn btn-primary">
+                            {{ if in $question.answerValue "meet.coderdojo.net" }}
+                            Open in Zoom
+                            {{ else }}
+                            Open in YouTube
+                            {{ end }}
+                        </a>
                         {{ end }}
                         {{ end }}
 
