@@ -49,41 +49,43 @@
                         {{ range $room := $.Site.Data.rooms.rooms }}
                         <td class="session">
                             {{ range (where (where (where $.Site.Data.sessionize.sessions "isServiceSession" false ) "roomId" .id ) "startsAt" $timeslot.startsAt) }}
-                            {{ if or (or (or (or (in .categoryItems 77272) (in .categoryItems 81456)) (in .categoryItems 81457)) (in .categoryItems 81458)) (in .categoryItems 81459) }}
+                                {{ if or (or (or (or (in .categoryItems 77272) (in .categoryItems 81456)) (in .categoryItems 81457)) (in .categoryItems 81458)) (in .categoryItems 81459) }}
 
-                            <div class="label label-default"><span class="timeslot">{{ dateFormat "15:04" $timeslot.startsAt }} - {{ dateFormat "15:04" .endsAt }}</span>
-                                {{ range $category := where (index $.Site.Data.sessionize.categories 1).items "id" "in" .categoryItems }}
-                                <span class="language">{{ .name }}</span>
-                                {{ end }}
-                            </div>
-                           
-                            <!-- href="/sessions#{{.id}}" -->
-                            <a class="session-link" onclick="$('#{{ .id }}').modal({})">{{ .title }}</a>
+                                {{ if ne .id "249036" }}
+                                <div class="label label-default"><span class="timeslot">{{ dateFormat "15:04" $timeslot.startsAt }} - {{ dateFormat "15:04" .endsAt }}</span>
+                                    {{ range $category := where (index $.Site.Data.sessionize.categories 1).items "id" "in" .categoryItems }}
+                                    <span class="language">{{ .name }}</span>
+                                    {{ end }}
+                                </div>
+                            
+                                <!-- href="/sessions#{{.id}}" -->
+                                <a class="session-link" onclick="$('#{{ .id }}').modal({})">{{ .title }}</a>
 
-                            <div class="speaker">
-                                {{ range $index, $speaker := where $.Site.Data.sessionize.speakers "id" "in" .speakers }}
-                                {{ if ne $index 0 }}<span>, </span>{{ end }}<span onclick="$('#{{ $speaker.id }}').modal({})">{{ .firstName }} {{ .lastName }}</span>
-                                {{ end }}
-                            </div>
+                                <div class="speaker">
+                                    {{ range $index, $speaker := where $.Site.Data.sessionize.speakers "id" "in" .speakers }}
+                                    {{ if ne $index 0 }}<span>, </span>{{ end }}<span onclick="$('#{{ $speaker.id }}').modal({})">{{ .firstName }} {{ .lastName }}</span>
+                                    {{ end }}
+                                </div>
 
-                            <!-- <div class="links">
-                                {{ range $question := .questionAnswers }}
-                                {{ if eq (int $question.questionId) (int $youTubeVideoQuestionId) }}
-                                <a href="{{$question.answerValue}}" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i>Open in YouTube</a>
+                                <!-- <div class="links">
+                                    {{ range $question := .questionAnswers }}
+                                    {{ if eq (int $question.questionId) (int $youTubeVideoQuestionId) }}
+                                    <a href="{{$question.answerValue}}" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i>Open in YouTube</a>
+                                    {{ end }}
+                                    {{ end }}
+                                </div> -->
+                                <div class="links">
+                                    {{ range $question := .questionAnswers }}
+                                    {{ if eq (int $question.questionId) (int $shortLinkQuestionId) }}
+                                    <a href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar" aria-hidden="true"></i>Add
+                                        to calendar</a><br />
+                                    <a href="/sessions/{{$question.answerValue}}" target="_blank"><i class="fa fa-video-camera" aria-hidden="true"></i>Join stream</a>
+                                    {{ end }}
+                                    {{ end }}
+                                </div>
                                 {{ end }}
-                                {{ end }}
-                            </div> -->
-                            <div class="links">
-                                {{ range $question := .questionAnswers }}
-                                {{ if eq (int $question.questionId) (int $shortLinkQuestionId) }}
-                                <a href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar" aria-hidden="true"></i>Add
-                                    to calendar</a><br />
-                                <a href="/sessions/{{$question.answerValue}}" target="_blank"><i class="fa fa-video-camera" aria-hidden="true"></i>Join stream</a>
-                                {{ end }}
-                                {{ end }}
-                            </div>
 
-                            {{ end }}
+                                {{ end }}
                             {{ end }}
                         </td>
                         {{ end }}
@@ -91,6 +93,14 @@
                     </tr>
                     {{ end }}
                 </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 changed-sessions">
+                <p><b>Session Updates</b></p>
+                <p>Unfortunately, the session <i>Let's explore Azure Bicep! ... and compare it to Hashicorp's Terraform</i> was cancelled.</p>
+                <p>We have new speakers for the Azure Active Directory related session.</p>
             </div>
         </div>
     </div>

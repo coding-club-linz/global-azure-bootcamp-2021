@@ -59,23 +59,27 @@
                     {{ $.Scratch.Set "hasYouTubeVideoQuestionId" false }}
 
                     <p class="text-center">
-                        {{ range $question := $session.questionAnswers }}
-                        {{ if eq (int $question.questionId) (int $youTubeVideoQuestionId) }}
-                        {{ $.Scratch.Set "hasYouTubeVideoQuestionId" true }}
-                        
-                        <a href="{{ $question.answerValue }}" class="btn btn-primary">
-                            {{ if in $question.answerValue "meet.coderdojo.net" }}
-                            Open in Zoom
-                            {{ else }}
-                            Open in YouTube
+                        {{ if eq $session.id "249036" }}
+                            <p class="bg-warning warning streaming-link">Unfortunately, this session was cancelled.</p>
+                        {{ else }}
+                            {{ range $question := $session.questionAnswers }}
+                            {{ if eq (int $question.questionId) (int $youTubeVideoQuestionId) }}
+                            {{ $.Scratch.Set "hasYouTubeVideoQuestionId" true }}
+                            
+                            <a href="{{ $question.answerValue }}" class="btn btn-primary">
+                                {{ if in $question.answerValue "meet.coderdojo.net" }}
+                                Open in Zoom
+                                {{ else }}
+                                Open in YouTube
+                                {{ end }}
+                            </a>
                             {{ end }}
-                        </a>
-                        {{ end }}
-                        {{ end }}
+                            {{ end }}
 
-                        {{ if eq ($.Scratch.Get "hasYouTubeVideoQuestionId") false }}
-                        <p class="bg-warning warning streaming-link">The streaming link will be published here a few days before the event.</p>
-                        {{ end }}
+                            {{ if eq ($.Scratch.Get "hasYouTubeVideoQuestionId") false }}
+                            <p class="bg-warning warning streaming-link">The streaming link will be published here a few days before the event.</p>
+                            {{ end }}
+                            {{ end }}
                     </p>
 
                     {{ range where $.Site.Data.sessionize.speakers "id" "in" $session.speakers }}
