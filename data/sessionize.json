@@ -872,7 +872,8 @@
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "47d0e9bd-3ac9-49a9-b462-996de9a18c6b"
+        "47d0e9bd-3ac9-49a9-b462-996de9a18c6b",
+        "da3dad4c-c9a2-4c16-977c-f8ae092d33b3"
       ],
       "categoryItems": [
         81456,
@@ -1720,6 +1721,33 @@
         248339
       ],
       "fullName": "Roman Schacherl",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "da3dad4c-c9a2-4c16-977c-f8ae092d33b3",
+      "firstName": "Ryan",
+      "lastName": "Levick",
+      "bio": "Ryan has been writing Rust since around version 0.10. He now focuses on Rust full time at Microsoft. When he's not doing Rust, he enjoys cooking, traveling and exploring Berlin where he lives.",
+      "tagLine": "Cloud Advocate for Microsoft",
+      "profilePicture": "https://sessionize.com/image/0040-400o400o2-KRPoUudreRziHNQRSUtdnV.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/ryan_levick",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://blog.ryanlevick.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        250262
+      ],
+      "fullName": "Ryan Levick",
       "categoryItems": [],
       "questionAnswers": []
     },
