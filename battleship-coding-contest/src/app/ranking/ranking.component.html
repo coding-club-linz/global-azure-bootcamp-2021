@@ -1,37 +1,84 @@
 <p class="text-right">
-    <button type="button" class="btn" (click)="refresh()"><i class="fa fa-refresh" aria-hidden="true"></i><span class="hidden-xs"> Refresh</span></button>
+    <button type="button" class="btn" (click)="refresh()"><i class="fa fa-refresh" aria-hidden="true"></i><span
+            class="hidden-xs"> Refresh</span></button>
 </p>
 <table class="table">
     <thead>
         <tr>
-            <th class="hidden-xs">Position</th>
             <th>Player</th>
             <th class="hidden-xs text-right">Shots</th>
             <th class="hidden-xs text-right">Std Dev <i class="fa fa-info-circle" aria-hidden="true"><span
-                data-tooltip="Standard Deviation"></span></i></th>
+                        data-tooltip="Standard Deviation"></span></i></th>
         </tr>
     </thead>
 
     <tbody>
         <ng-container *ngIf="!isLoading">
-            <tr *ngFor="let player of ranking; index as i">
-                <td class="visible-xs">
-                    {{i + 1}}. {{player.name}}<br/>
-                    Average number of shots: {{player.avgNumberOfShots | number:'0.2-2'}}<br/>
-                    Standard deviation: {{player.stdDev | number:'0.2-2'}}
-                </td>
-                <td class="hidden-xs">{{i + 1}}.</td>
-                <td class="hidden-xs">
-                    {{player.name}}
-                </td>
-                <td class="hidden-xs text-right">{{player.avgNumberOfShots | number:'0.2-2'}}</td>
-                <td class="hidden-xs text-right">{{player.stdDev | number:'0.2-2'}}</td>
-            </tr>
+            <ng-container *ngFor="let player of ranking; index as i">
+                <tr (click)="expand($event, player)">
+                    <td class="visible-xs">
+                        <i class="fa" [ngClass]="{'fa-caret-right': !player.expanded, 'fa-caret-down': player.expanded}"
+                            aria-hidden="true"></i>
+
+                        <span class="pos">{{i + 1}}.</span>{{player.name}}
+                        <div class="shots">
+                            Average number of shots: {{player.avgNumberOfShots | number:'0.2-2'}}<br />
+                            Standard deviation: {{player.stdDev | number:'0.2-2'}}
+                        </div>
+
+                        <div class="player-details" *ngIf="player.expanded">
+                            <div>
+                                <i class="fa fa-user" aria-hidden="true"></i>{{player.userNickName}}
+                            </div>
+                            <div *ngIf="player.publicTwitter">
+                                <i class="fa fa-twitter" aria-hidden="true"></i><a
+                                    href="https://twitter.com/{{player.publicTwitter}}"
+                                    target="_blank">{{player.publicTwitter}}</a>
+                            </div>
+                            <div *ngIf="player.publicUrl">
+                                <i class="fa fa-home" aria-hidden="true"></i><a href="{{player.publicUrl}}"
+                                    target="_blank">{{player.publicUrl}}</a>
+                            </div>
+                            <div *ngIf="player.gitHubUrl">
+                                <i class="fa fa-github" aria-hidden="true"></i><a href="{{player.gitHubUrl}}"
+                                    target="_blank">{{player.gitHubUrl}}</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <i class="fa" [ngClass]="{'fa-caret-right': !player.expanded, 'fa-caret-down': player.expanded}"
+                            aria-hidden="true"></i>
+                            
+                        <span class="pos">{{i + 1}}.</span>{{player.name}}
+
+                        <div class="player-details" *ngIf="player.expanded">
+                            <div>
+                                <i class="fa fa-user" aria-hidden="true"></i>{{player.userNickName}}
+                            </div>
+                            <div *ngIf="player.publicTwitter">
+                                <i class="fa fa-twitter" aria-hidden="true"></i><a
+                                    href="https://twitter.com/{{player.publicTwitter}}"
+                                    target="_blank">{{player.publicTwitter}}</a>
+                            </div>
+                            <div *ngIf="player.publicUrl">
+                                <i class="fa fa-home" aria-hidden="true"></i><a href="{{player.publicUrl}}"
+                                    target="_blank">{{player.publicUrl}}</a>
+                            </div>
+                            <div *ngIf="player.gitHubUrl">
+                                <i class="fa fa-github" aria-hidden="true"></i><a href="{{player.gitHubUrl}}"
+                                    target="_blank">{{player.gitHubUrl}}</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="hidden-xs text-right">{{player.avgNumberOfShots | number:'0.2-2'}}</td>
+                    <td class="hidden-xs text-right">{{player.stdDev | number:'0.2-2'}}</td>
+                </tr>
+            </ng-container>
         </ng-container>
 
         <tr *ngIf="isLoading">
-            <td colspan="7" class="text-center"><i class="fa fa-spinner loading-players"
-                    aria-hidden="true"></i>loading players</td>
+            <td colspan="7" class="text-center"><i class="fa fa-spinner loading-players" aria-hidden="true"></i>loading
+                players</td>
         </tr>
     </tbody>
 </table>

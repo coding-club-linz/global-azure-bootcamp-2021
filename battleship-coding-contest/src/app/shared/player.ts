@@ -9,5 +9,6 @@ export interface Player {
     apiKey: string;
     apiKeyChanged?: boolean;
     needsThrottling: boolean;
-    gitHubUrl?: string
+    gitHubUrl?: string;
+    expanded?: boolean;
 }
