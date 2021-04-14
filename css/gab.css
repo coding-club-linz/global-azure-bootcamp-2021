@@ -1162,6 +1162,10 @@ body {
     font-size: 12px;
 }
 
+#schedule .changed-sessions p {
+    font-size: 15px;
+}
+
 .sessions .links a {
     font-size: 14px;
 }
