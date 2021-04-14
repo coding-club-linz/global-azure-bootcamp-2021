@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "build-local": "ng build -c local --output-hashing none && node scripts/concatenate",
     "build-dev": "ng build --output-hashing none && node scripts/concatenate",
     "build": "ng build --prod --output-hashing none && node scripts/concatenate",
     "test": "ng test",
