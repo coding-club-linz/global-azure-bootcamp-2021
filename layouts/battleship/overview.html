@@ -8,7 +8,7 @@
 <body id="page">
     {{ partial "nav.html" . }}
 
-    <section id="battleship-coding-contest">
+    <section id="battleship-coding-contest" class="bg-secondary">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -40,8 +40,70 @@
                         <a class="btn btn-primary page-scroll"  href="https://github.com/rstropek/BattleshipContestFunc/wiki" target="_blank">Learn more in WIKI</a>
                     </p>
                 </div>
-
             </div>
+        </div>
+    </section> 
+    <section id="battleship-coding-contest-prices">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Prices</h2>
+                    <hr>
+                    <p>
+                        We have three awesome prices for you! The winner chooses first.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-sm-4 text-center">
+                    <p class="text-center">
+                        3-Day Ticket for Basta!
+                    </p> 
+                    <p class="text-center">
+                        <a  href="https://basta.net/" target="_blank"><img src="/img/basta-logo.png" class="basta" /></a>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-sm-4 text-center">
+                    <p class="text-center">
+                        DJI Mini 2
+                    </p> 
+                    <p class="text-center">
+                        <a href="https://www.dji.com/at/mini-2" target="_blank"><img src="/img/dji-mini2.jpg" /></a>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-sm-4 text-center">
+                    <p class="text-center">
+                        100$ GitHub Gift Card
+                    </p> 
+                    <p class="text-center">
+                        <a href="https://github.myshopify.com/" target="_blank"><img src="/img/octoplush.png" /></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="battleship-coding-contest-ranking" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Battleship Ranking</h2>
+                    <hr class="light">
+                    <p>
+                        Here are the most successful players.
+                    </p>
+                </div>
+
+                <div class="col-sm-12">
+                    <battleship-ranking></battleship-ranking>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="battleship-coding-contest-faq" class="bg-secondary">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center faq">
                     <h2>FAQ</h2>
@@ -98,12 +160,6 @@
                         <a href="https://discord.gg/CVGFZFy" target="_blank">our Discord server</a>.
                     </p>
                     
-                    <h3>Can I win something?</h3>
-                    <p class="text-faded">
-                        Oh yes, you can! The developers of the best computer players will receive great prices.
-                        Details will be announced at <i>Global Azure Austria 2021</i> on April 16th, 2021.
-                    </p>
-
                     <h3>Terms and Conditions</h3>
                     <p class="text-faded">
                         Participating in this coding contest is 100% free. By registering, you agree to its 
@@ -113,24 +169,6 @@
                         and add them to their newsletter. You can always cancel your subscription if you don't
                         like their newsletter.
                     </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="battleship-coding-contest-ranking" class="bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Battleship Ranking</h2>
-                    <hr class="light">
-                    <p>
-                        Here are the most successful players.
-                    </p>
-                </div>
-
-                <div class="col-sm-12">
-                    <battleship-ranking></battleship-ranking>
                 </div>
             </div>
         </div>

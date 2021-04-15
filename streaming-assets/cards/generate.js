@@ -22,6 +22,10 @@ execSync(`"C:\\Program Files\\Inkscape\\bin\\inkscape" --export-filename "../../
     console.log('   ', error, stdout, stderr);
 });
 
+execSync(`"C:\\Program Files\\Inkscape\\bin\\inkscape" --export-filename "../../static/sessions/cards/global-azure-at.png" --export-type "png" "global-azure-at.svg"`, (error, stdout, stderr) => {
+    console.log('   ', error, stdout, stderr);
+});
+
 for (let session of data.sessions) {
     try {
         console.log(session.title);

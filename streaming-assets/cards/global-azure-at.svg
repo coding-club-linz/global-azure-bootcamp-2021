@@ -1,0 +1,27 @@
+<svg width="1920" height="1080" viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+    <image x="0" y="0" width="1920" height="1080" xlink:href="../hero-bkg-1920x1080.png" />
+
+    <image x="660" y="150" width="600" height="462" xlink:href="../gab2021.png" />
+
+
+    <!-- Speaker -->
+    <rect x="100" y="700" width="1720" height="100" rx="50" ry="50" fill="#e3c038" />
+    <text font-family="Segoe UI" font-size="40" x="960" y="765" fill="#000" text-anchor="middle" alignment-baseline="central">
+        More than 30 free sessions about azure and cloud computing.
+    </text>
+
+    <!-- Date -->
+    <text font-family="Segoe UI" font-size="50" font-weight="bold" x="960" y="900" fill="#e3c038" text-anchor="middle" alignment-baseline="central">
+        Join us on Friday, April 16th, 08:00 - 17:00 CEST
+    </text>
+
+    <text font-family="Segoe UI" font-size="40" x="960" y="965" fill="#e3c038" text-anchor="middle" alignment-baseline="central">
+        https://globalazure.at
+    </text>
+
+    <!-- Gold Sponsor -->
+    <text font-family="Segoe UI" font-size="26" font-weight="300" x="1560" y="1040" fill="#e3c038" text-anchor="middle" alignment-baseline="central">
+        Gold Sponsor
+    </text>
+    <image x="1680" y="1010" width="200" height="42.8" xlink:href="../microsoft.png" />
+</svg>
