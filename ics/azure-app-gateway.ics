@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:Calendar
+VERSION:2.0
+BEGIN:VEVENT
+UID:0@gaaustria2021
+CLASS:PUBLIC
+DESCRIPTION:Azure App Gateway and Azure Front Door Reverse Proxy Setup\nNOTE that date/time is in CEST time zone (UTC +2)\n\n---\n\nThis is a short walk-though on how to configure an Azure App Gateway as well as a Front Door instance to be used as a Reverse Proxy for App Service based microservice deployment scenarios.\n\n---\n\nStreaming URL: https://globalazure.at/sessions/azure-app-gateway
+DTSTAMP;VALUE=DATE-TIME:20210416T120000
+DTSTART;VALUE=DATE-TIME:20210416T150000
+DTEND;VALUE=DATE-TIME:20210416T155000
+LOCATION:Online
+SUMMARY;LANGUAGE=en-us:Azure App Gateway and Azure Front Door Reverse Proxy Setup
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
