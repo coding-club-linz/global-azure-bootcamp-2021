@@ -23,7 +23,7 @@ Die Ermittlung der Gewinner obliegt allein dem Coding Club Linz. Die GewinnerInn
 
 ### Teilnahmeberechtigung
 
-Teilnahmeberechtigt sind natürliche Personen ab 18 Jahren. TeilnehmerInnen unter 18 Jahren können ebenfalls teilnehmen, benötigen dafür jedoch die Zustimmung des Erziehungsberechtigten (Einverständniserklärung). Mitglieder des Vereinsvorstands des Coding Club Linz können zwar am BSCC teilnehmen, erhalten jedoch unabhängig von ihrer Platzierung keinesfalls Gewinne.
+Teilnahmeberechtigt sind natürliche Personen ab 18 Jahren. TeilnehmerInnen unter 18 Jahren können ebenfalls teilnehmen, benötigen dafür jedoch die Zustimmung des Erziehungsberechtigten (Einverständniserklärung). Mitglieder des Vereinsvorstands des Coding Club Linz, die an der Entwicklung oder Organisation des BSCC beteiligt waren, können zwar am BSCC teilnehmen, erhalten jedoch unabhängig von ihrer Platzierung keinesfalls Gewinne.
 
 Der Coding Club Linz behält sich das Recht vor, von TeilnehmerInnen einen Nachweis für die Erfüllung der genannten Voraussetzungen einzufordern. Wird der Nachweis bei Aufforderung nicht erbracht, kann der/die TeilnehmerIn vom Spiel ausgeschlossen werden.
 
