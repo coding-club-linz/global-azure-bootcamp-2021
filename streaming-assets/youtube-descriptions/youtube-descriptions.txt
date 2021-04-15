@@ -60,11 +60,11 @@ Join us on Discord: https://discord.gg/CVGFZFy
 =============================================================================
 =============================================================================
 
-Inside Azure AD Authentication
+Web API Security With Azure Active Directory
 =============================================================================
-This session brings you deep into the world of Azure Active Directory Authentication - definitely a must-know for everyone who works with AAD! Marcel, a Microsoft Regional Director and Azure MVP from Switzerland will be your guide on the bumpy roads to authentication procedures, App registrations, OAuth, Access Tokens and much more. Don't miss this essential session!
+Getting started with Azure Active Directory (AAD) can be a bit confusing. Flows, app registrations, service principals, redirect URIs, scopes, client IDs vs. object IDs - the sheer number of concepts you have to be familiar with scares many people away. With his session, Rainer would like to bring some clarity into the auth jungle of AAD. He will not show slides. Instead, he will build an end-to-end application with Angular in the front-end and .NET 5 in the back-end. Rainer will demonstrate how AAD can be used to protect all application layers. On your way through the sample, you will learn about important concepts of AAD.
 
-Marcel Zehner, Microsoft RD & Azure MVP
+Simon Opelt, Rainer Stropek
 
 Global Azure Austria 2021
 *****************************************************************************
@@ -115,7 +115,7 @@ Join us on Discord: https://discord.gg/CVGFZFy
 
 A full Journey to Azure Kubernetes Service (AKS)
 =============================================================================
-Docker-basierte Dienste sind heutzutage unverzichtbar und Kubernetes ist zur Nummer eins der Containerorchestratoren geworden. Neben einer kurzen Einführung in den Azure Kubernetes Service (AKS) werden wir einen kompletten Cluster von 0 auf 100 bauen und in eine Azure Umgebung integrieren. Die behandelten Themen umfassen: AKS Deployment (ARM/CLI), AAD-Integration, öffentliche Endpunkte mit Application Gateway/WAF, Zertifikatsmanagement, Skalierung und Zero-Downtime Deployment.
+Docker-based services are indispensable nowadays and Kubernetes has become the number 1 container orchestrator. Besides a short introduction to Azure Kubernetes Service (AKS), we will set up a complete cluster from 0 to 100 and integrate it into an Azure Environment. The topics covered include: AKS Deployment (ARM/CLI), AAD Integration, Public Endpoints with nginx Ingress or Application Gateway/WAF, Certificate Management, Scaling and Zero-Downtime Deployments.
 
 Marc Müller, Principal Consultant @ 4tecture GmbH
 
@@ -196,7 +196,7 @@ BAWAGs Reise zur Cloud Container Plattform mit Microsoft Azure
 =============================================================================
 Wie viele andere Unternehmen betreibt die BAWAG Group seit einigen Jahren eine Microservice Architektur. Um die Vorteile einer solchen Architektur voll ausnützen zu können wurde Ende 2019 beschlossen die aktuelle on-prem Infrastruktur in die Cloud zu bringen. Mit Azure & Microsoft als strategischem Partner ist daher im letzten Jahr eine der größten AKS (Azure Kubernetes Service) Umgebungen Österreichs entstanden die mehrere kundennahe Applikationen beheimatet. In dieser Session wollen wir einen Einblick in die Reise & Ziele geben: die Auswahl der Container Plattform, Effizienz- und Verbesserungspotentiale gegenüber der Bestandsplattform, Architekturüberlegungen, der Weg von der Entwicklungs-, Test- bis zur Produktiv-Umgebung & schlussendlich die erfolgreiche Migration der Applikationen.
 
-Gerwald Oberleitner, Azure Application Development & DevOps Specialist @ Microsoft
+Gerwald Oberleitner, Martin Pawlik
 
 Global Azure Austria 2021
 *****************************************************************************
@@ -483,6 +483,29 @@ Join us on Discord: https://discord.gg/CVGFZFy
 =============================================================================
 =============================================================================
 
+Ein Blick hinter die Kulissen der Microsoft Cloud: Wie sieht so eine Cloud denn tatsächlich aus?
+=============================================================================
+Jeder redet von der Cloud, aber möchtet ihr wissen was tatsächlich dahinter steckt?
+
+WIe sieht so ein Rechenzentrum eigentlich aus?
+Wie sind die miteinander verbunden?
+Welche coolen Technologien stecken dahinter? (Wusstet ihr, dass wir z.B. auch an Unterwasser-Rechenzentren forschen, oder Microsoft mit riesigen Schiffen Netzwerkkabel quer durch die Ozeane verlegt?)
+Wie kann man Rechenzentren bauen, die auch für die Umwelt verträglich sind? (Co2-Ausstoß, Energieverbrauch)
+Und bald werden wir auch eigene Microsoft Rechenzentren in Österreich haben. Wozu eigentlich?
+
+Thomas Vater, Datacenter Lead Cloud Solution Architect @ Microsoft
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/cloud-junior
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
 Serverless Rendering with Azure Functions and TypeScript
 =============================================================================
 Oh, the pendulum swings!
@@ -509,22 +532,17 @@ Join us on Discord: https://discord.gg/CVGFZFy
 =============================================================================
 =============================================================================
 
-Let's explore Azure Bicep! ... and compare it to Hashicorp's Terraform
+Azure App Gateway and Azure Front Door Reverse Proxy Setup
 =============================================================================
-Recently I started to explore Azure and it's tools to implement Infrastructure as Code (IaC).  I use Terraform for years now, but sometimes it can be fun to break a habit ;-)
+This is a short walk-though on how to configure an Azure App Gateway as well as a Front Door instance to be used as a Reverse Proxy for App Service based microservice deployment scenarios.
 
-In this session we will take look into Azure Bicep and compare it to Hashicorp's popular IaC tool Terraform.
-Chosing the right tool, that fits your needs is hard. So let's take a  look into both tools to see which one you can use in your next awesome project.
-Additionally, we will  we discover Bicep hands-on by implementing a simple static website using Azure Storage Account.
-This session requires at least basic knowledge of Infrastructure as code, Terraform and Azure Resource Manager (ARM).
-
-Nora Schöner, Senior Software Engineer @ Codecamp:N
+Raphael Schwarz, codeworx gmbh
 
 Global Azure Austria 2021
 *****************************************************************************
 Event Website: https://globalazure.at
 Event Schedule: https://globalazure.at/schedule
-Session Details: https://globalazure.at/sessions/bicep
+Session Details: https://globalazure.at/sessions/azure-app-gateway
 Join us on Discord: https://discord.gg/CVGFZFy
 *****************************************************************************
 
@@ -577,6 +595,29 @@ Join us on Discord: https://discord.gg/CVGFZFy
 =============================================================================
 =============================================================================
 
+Was Brawl Stars so über dich weiß
+=============================================================================
+Du hast vielleicht schon mal gehört, dass wir alle "Spuren im Internet" hinterlassen. Seit ein paar Jahren hat jeder das Recht, die Daten die über ihn von einem Unternehmen gesammelt werden, zugesandt zu bekommen. Mein Sohn hat das für Brawl Star gemacht - und genau diese Daten werden wir (natürlich mit seiner Erlaubnis) analysieren.
+
+Meistens, so auch in diesem Fall, werden die Daten als JSON-Dateien zur Verfügung gestellt. Diese Dateien sind sowohl vom Computer als auch von uns Menschen lesbar. Die Vielzahl der darin enthaltenen Informationen lässt sich aber schwer durch einfaches Durchlesen auswerten. Daher werden wir ein kostenloses Werkzeug (Power BI) verwenden um die Informationen auch begreifbar zu machen.
+Dinge, die wir also besprechen werden:
+Das Recht auf die eigenen Daten
+Datenformat JSON
+Microsoft Power BI (kostenlos)
+
+Markus Ehrenmüller-Jensen, BI Architect
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/brawl-stars
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
 Die Qual der Wahl bei den Single Page Application Frameworks
 =============================================================================
 Dieser Vortrag gibt einen Überblick über die aktuellen Single Page Applikation Frameworks und versucht diese zu vergleichen. Der Fokus liegt dabei auf den aktuellen "Top 3" der SPA Frameworks: Angular, React und Vue.js. Der Vortrag schaut aber auch über den Tellerrand und beleuchtet aktuelle Trends und Entwicklungen bei modernen Webframeworks.
@@ -598,7 +639,7 @@ Rust, Kubernetes, and the Cloud
 =============================================================================
 Moving to the cloud is a Big Deal™. So why would you want to throw a new language like Rust into the mix? Join us as we demonstrate how Rust can be used with Azure to simplify and bring safety to your code. We'll give a brief overview of the strengths and weaknesses of using Rust in the cloud in general before demoing how you can use Rust to connect to and leverage the Azure APIs. Kubernetes more your thing? We've got that covered too! We'll show how Rust makes interfacing with and writing tooling for Kubernetes a breeze, followed by a practical demo of a Rust project (Krustlet) in action on AKS.
 
-Taylor Thomas, Senior Software Engineer
+Ryan Levick, Taylor Thomas
 
 Global Azure Austria 2021
 *****************************************************************************
@@ -639,6 +680,28 @@ Global Azure Austria 2021
 Event Website: https://globalazure.at
 Event Schedule: https://globalazure.at/schedule
 Session Details: https://globalazure.at/sessions/ai-power-bi
+Join us on Discord: https://discord.gg/CVGFZFy
+*****************************************************************************
+
+=============================================================================
+=============================================================================
+
+RESTful Web Services mit Spring Boot
+=============================================================================
+Die Kommunikation zwischen Front- und Backend einer App erfolgt oft über eine sogenannte REST API. Dabei stellt das Backend bestimmte Methoden zur Verfügung, die Clients benutzen können. Doch wie funktioniert so eine REST API eigentlich und was sollte man dabei beachten?
+
+In diesem Workshop werden wir einen einfachen Web Service mit Spring Boot implementieren.
+Um an diesem Workshop teilzunehmen, solltest du folgendes auf deinem Computer installieren:
+Java mit Version 1.8 oder höher
+Eine Enwicklungsumgebung wie Intellij IDEA (bevorzugt) oder Eclipse (wenn du schon Erfahrung damit hast)
+
+Katharina Sick, Software Engineer @ Dynatrace
+
+Global Azure Austria 2021
+*****************************************************************************
+Event Website: https://globalazure.at
+Event Schedule: https://globalazure.at/schedule
+Session Details: https://globalazure.at/sessions/spring-boot
 Join us on Discord: https://discord.gg/CVGFZFy
 *****************************************************************************
 

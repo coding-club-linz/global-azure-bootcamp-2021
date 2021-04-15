@@ -741,6 +741,37 @@
       "roomId": 18083
     },
     {
+      "id": "255873",
+      "title": "Azure App Gateway and Azure Front Door Reverse Proxy Setup",
+      "description": "This is a short walk-though on how to configure an Azure App Gateway as well as a Front Door instance to be used as a Reverse Proxy for App Service based microservice deployment scenarios.",
+      "startsAt": "2021-04-16T15:00:00",
+      "endsAt": "2021-04-16T15:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "cff627a2-1b05-43ad-a0ba-a690e18c006e"
+      ],
+      "categoryItems": [
+        81456,
+        77275
+      ],
+      "questionAnswers": [
+        {
+          "questionId": 28453,
+          "answerValue": "https://globalazure.at/sessions/azure-app-gateway/"
+        },
+        {
+          "questionId": 28454,
+          "answerValue": "azure-app-gateway"
+        },
+        {
+          "questionId": 28455,
+          "answerValue": "https://www.youtube.com/watch?v=efPx3cipMsQ"
+        }
+      ],
+      "roomId": 18084
+    },
+    {
       "id": "249036",
       "title": "Let's explore Azure Bicep! ... and compare it to Hashicorp's Terraform",
       "description": "Recently I started to explore Azure and it's tools to implement Infrastructure as Code (IaC).  I use Terraform for years now, but sometimes it can be fun to break a habit ;-)\r\n\r\nIn this session we will take look into Azure Bicep and compare it to Hashicorp's popular IaC tool Terraform.\r\nChosing the right tool, that fits your needs is hard. So let's take a  look into both tools to see which one you can use in your next awesome project.\r\n\r\nAdditionally, we will  we discover Bicep hands-on by implementing a simple static website using Azure Storage Account.\r\n\r\nThis session requires at least basic knowledge of Infrastructure as code, Terraform and Azure Resource Manager (ARM).",
@@ -1335,7 +1366,7 @@
       "id": "0979c01c-b27b-4c4a-be3b-b1d0a927bd6a",
       "firstName": "Katharina",
       "lastName": "Sick",
-      "bio": "Katharina is a enthusiastic Java and Kotlin Developer. She started off as a mobile developer, but  soon decided to focus on backend and IoT solutions. She enjoys being part of the full development cycle of applications. Therefore, she is also quite interested in graphics design and fronted development.",
+      "bio": "Katharina is a enthusiastic Java and Kotlin Developer. She started off as a mobile developer, but  soon decided to focus on backend and IoT solutions. She enjoys being part of the full development cycle of applications. Therefore, she is also quite interested in graphics design and frontend development.",
       "tagLine": "Software Engineer @ Dynatrace",
       "profilePicture": "https://sessionize.com/image/6b62-400o400o2-TrJcSMM4W5bkgmytAvzV5h.jpg",
       "isTopSpeaker": false,
@@ -1708,6 +1739,28 @@
         247854
       ],
       "fullName": "Rainer Stropek",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "cff627a2-1b05-43ad-a0ba-a690e18c006e",
+      "firstName": "Raphael",
+      "lastName": "Schwarz",
+      "bio": "I am a freelance software consultant/solution architect for over 12 Years now and my main focus is, helping my customers design sustainable solutions and overcome the barriers they hit when using new, modern technologies and frameworks lacking the expertise and experience of using them in the field.",
+      "tagLine": "codeworx gmbh",
+      "profilePicture": "https://sessionize.com/image/83a6-400o400o2-a2-1b05-43ad-a0ba-a690e18c006e.33d2ecdc-8a40-41c6-af49-4bd8c57aa8d4.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Company Website",
+          "url": "http://www.codeworx.at",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        255873
+      ],
+      "fullName": "Raphael Schwarz",
       "categoryItems": [],
       "questionAnswers": []
     },
