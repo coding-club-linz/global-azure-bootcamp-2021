@@ -74,15 +74,15 @@
                                     {{ end }}
                                     {{ end }}
                                 </div> -->
+                                {{ if ne .id "249535" }}
                                 <div class="links">
                                     {{ range $question := .questionAnswers }}
-                                    {{ if eq (int $question.questionId) (int $shortLinkQuestionId) }}
-                                    <a href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar" aria-hidden="true"></i>Add
-                                        to calendar</a><br />
-                                    <a href="/sessions/{{$question.answerValue}}" target="_blank"><i class="fa fa-video-camera" aria-hidden="true"></i>Join stream</a>
+                                    {{ if eq (int $question.questionId) (int $youTubeVideoQuestionId) }}
+                                    <a href="{{$question.answerValue}}" target="_blank"><i class="fa fa-video-camera" aria-hidden="true"></i>Open in YouTube</a>
                                     {{ end }}
                                     {{ end }}
                                 </div>
+                                {{ end }}
                                 {{ end }}
 
                                 {{ end }}
@@ -171,16 +171,15 @@
                 <p class="text-muted">{{ safeHTML  (replace .description "\r\n" "<br/>") }}</p>
                 
                 {{ $shortLinkQuestionId := (index (where $.Site.Data.sessionize.questions "question" "Short Link") 0).id }}
+                {{ if ne .id "249535" }}
                 <div class="links">
                     {{ range $question := .questionAnswers }}
-                    {{ if eq (int $question.questionId) (int $shortLinkQuestionId) }}
-                    <a class="btn btn-primary btn-xs float-left" href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar"
-                            aria-hidden="true"></i>Add
-                        to calendar</a>
-                    <a class="btn btn-primary btn-xs" href="/sessions/{{$question.answerValue}}" target="_blank"><i class="fa fa-video-camera" aria-hidden="true"></i>Join stream</a>
+                    {{ if eq (int $question.questionId) (int $youTubeVideoQuestionId) }}
+                    <a class="btn btn-primary btn-xs" href="{{$question.answerValue}}" target="_blank"><i class="fa fa-video-camera" aria-hidden="true"></i>Open in YouTube</a>
                     {{ end }}
                     {{ end }}
                 </div>
+                {{ end }}
                 
                 {{ range where $.Site.Data.sessionize.speakers "id" "in" .speakers }}
                 <figure class="avatar"><img src="{{ .profilePicture }}" alt="{{ .firstName }} {{ .lastName }}">

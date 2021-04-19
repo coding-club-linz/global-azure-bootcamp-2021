@@ -5,6 +5,8 @@
     {{ partial "head.html" . }}
 </head>
 
+{{ $youTubeVideoQuestionId := (index (where $.Site.Data.sessionize.questions "question" "YouTube Video") 0).id }}
+
 <body id="page">
     {{ partial "nav.html" . }}
 
@@ -62,17 +64,16 @@
                     <p class="text-muted">{{ safeHTML  (replace .description "\r\n" "<br/>") }}</p>
 
                     {{ $shortLinkQuestionId := (index (where $.Site.Data.sessionize.questions "question" "Short Link") 0).id }}
+                    {{ if ne .id "249535" }}
                     <div class="calendar-link">
                         {{ range $question := .questionAnswers }}
-                        {{ if eq (int $question.questionId) (int $shortLinkQuestionId) }}
-                        <a class="btn btn-info btn-xs float-left" href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar"
-                                aria-hidden="true"></i>Add
-                            to calendar</a>
-                        <a class="btn btn-info btn-xs" href="/sessions/{{$question.answerValue}}" target="_blank"><i
-                                class="fa fa-video-camera" aria-hidden="true"></i>Join stream</a>
+                        {{ if eq (int $question.questionId) (int $youTubeVideoQuestionId) }}
+                        <a class="btn btn-info btn-xs" href="{{$question.answerValue}}" target="_blank"><i
+                                class="fa fa-video-camera" aria-hidden="true"></i>Open in YouTube</a>
                         {{ end }}
                         {{ end }}
                     </div>
+                    {{ end }}
 
                     {{ range where $.Site.Data.sessionize.speakers "id" "in" .speakers }}
                     <h4>About {{ .firstName }} {{ .lastName }}</h4>

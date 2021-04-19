@@ -61,18 +61,19 @@
                                     <h4>{{ .title }}</h4>
                                     <div class="description text-faded">{{ safeHTML  (replace .description "\r\n" "<br/>") }}</div>
 
+                                    {{ $youTubeVideoQuestionId := (index (where $.Site.Data.sessionize.questions "question" "YouTube Video") 0).id }}
                                     {{ $shortLinkQuestionId := (index (where $.Site.Data.sessionize.questions "question" "Short Link") 0).id }}
-                                    <div class="calendar-link text-center">
+                                    <!-- <div class="calendar-link text-center">
                                         {{ range $question := .questionAnswers }}
-                                        {{ if eq (int $question.questionId) (int $shortLinkQuestionId) }}
-                                        <!-- <a class="btn btn-primary btn-xs float-left" href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar"
+                                        {{ if eq (int $question.questionId) (int $youTubeVideoQuestionId) }}
+                                        <!- - <a class="btn btn-primary btn-xs float-left" href="/ics/{{$question.answerValue}}.ics" download><i class="fa fa-calendar"
                                                 aria-hidden="true"></i>Add
-                                            to calendar</a> -->
-                                        <a class="btn btn-primary btn-xs" href="/sessions/{{$question.answerValue}}" target="_blank"><i
-                                                class="fa fa-video-camera" aria-hidden="true"></i>Join stream</a>
+                                            to calendar</a> - ->
+                                        <a class="btn btn-primary btn-xs" href="{{$question.answerValue}}" target="_blank"><i
+                                                class="fa fa-video-camera" aria-hidden="true"></i>Open in YouTube</a>
                                         {{ end }}
                                         {{ end }}
-                                    </div>
+                                    </div> -->
 
                                     <!-- {{ range where $.Site.Data.sessionize.speakers "id" "in" .speakers }}
                                     <h5>About {{ .firstName }} {{ .lastName }}</h5>
